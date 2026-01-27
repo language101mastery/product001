@@ -1,35 +1,6 @@
 
 // 1. Data
-const cheonjamunData = [
-    {
-        phrase: { hanja: '天地玄黃 宇宙洪荒', chineseS: '天地玄黄 宇宙洪荒', japanese: '天地玄黄 宇宙洪荒' },
-        details: [
-            {
-                char: '天',
-                hanja: { sound: '천', meaning: '하늘' },
-                chineseS: { sound: 'tiān', meaning: 'sky' },
-                japanese: { sound: 'てん (ten)', meaning: 'あめ' }
-            },
-            // --- Placeholder for the other 7 characters ---
-            { char: '地', hanja: { sound: '지', meaning: '땅' } },
-            { char: '玄', hanja: { sound: '현', meaning: '검을' } },
-            { char: '黃', hanja: { sound: '황', meaning: '누를' } },
-            { char: '宇', hanja: { sound: '우', meaning: '집' } },
-            { char: '宙', hanja: { sound: '주', meaning: '집' } },
-            { char: '洪', hanja: { sound: '홍', meaning: '넓을' } },
-            { char: '荒', hanja: { sound: '황', meaning: '거칠' } },
-        ]
-    },
-    {
-        phrase: { hanja: '日月盈昃 辰宿列張', chineseS: '日月盈昃 辰宿列张', japanese: '日月盈昃 辰宿列張' },
-        details: [ { char: '日' }, { char: '月' }, { char: '盈' }, { char: '昃' }, { char: '辰' }, { char: '宿' }, { char: '列' }, { char: '張' } ]
-    },
-    {
-        phrase: { hanja: '寒來暑往 秋收冬藏', chineseS: '寒来暑往 秋收冬藏', japanese: '寒来暑往 秋収冬蔵' },
-        details: [ { char: '寒' }, { char: '來' }, { char: '暑' }, { char: '往' }, { char: '秋' }, { char: '收' }, { char: '冬' }, { char: '藏' } ]
-    }
-    // ... more data would follow this structure
-];
+let cheonjamunData = []; // Will be loaded from data.json
 
 
 // 2. State Management
@@ -97,7 +68,7 @@ customElements.define('cheonjamun-card', CheonjamunCard);
 
 
 // 4. Application Logic
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => { // Made async to await data fetch
     const cheonjamunCard = document.querySelector('cheonjamun-card');
     const detailsContainer = document.getElementById('details-container');
     const prevBtn = document.getElementById('prev-btn');
@@ -130,6 +101,18 @@ document.addEventListener('DOMContentLoaded', () => {
         setTheme(newTheme);
     });
     // --- End Theme Management Logic ---
+
+    // --- Data Loading ---
+    try {
+        const response = await fetch('data.json');
+        cheonjamunData = await response.json();
+    } catch (error) {
+        console.error('Failed to load cheonjamunData:', error);
+        // Display an error message to the user if data loading fails
+        detailsContainer.innerHTML = '<p style="color: red;">천자문 데이터를 불러오는데 실패했습니다. data.json 파일이 올바른지 확인해주세요.</p>';
+        return; // Stop further execution if data is not loaded
+    }
+    // --- End Data Loading ---
 
 
     function renderCharacterDetails(details) {
@@ -177,6 +160,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     function showCheonjamun(index) {
+        // Ensure data is loaded before trying to display
+        if (cheonjamunData.length === 0) {
+            console.warn('cheonjamunData is not loaded yet.');
+            return;
+        }
+
         cheonjamunCard.style.opacity = '0';
         cheonjamunCard.style.transform = 'scale(0.95)';
         
@@ -214,8 +203,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function initialize() {
-        showCheonjamun(currentCheonjamunIndex);
+        if (cheonjamunData.length > 0) {
+            showCheonjamun(currentCheonjamunIndex);
+        } else {
+            console.warn('Initialization delayed: cheonjamunData not yet loaded.');
+        }
     }
 
-    initialize();
+    initialize(); // Initial call to show the first card after data is loaded
 });
