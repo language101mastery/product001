@@ -101,3 +101,29 @@ h1 {
   transform: translateY(0);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+/* Cheonjamun Container Styles */
+#cheonjamun-container {
+  background-color: var(--card-background);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0,0,0,0.05);
+  max-height: 400px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+#cheonjamun-container p {
+  font-family: var(--hanja-font);
+  font-size: 1.5rem;
+  line-height: 2;
+  color: var(--text-color);
+  margin: 0 0 1rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+#cheonjamun-container p:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
