@@ -1,14 +1,29 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
+  <title>한자 학습</title>
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+  <div class="container">
+    <h1>한자 학습</h1>
+    
+    <div class="char-set-selector">
+      <button data-charset="hanja" class="active">한자 (Hanja)</button>
+      <button data-charset="chineseT">정체 (Traditional)</button>
+      <button data-charset="chineseS">간체 (Simplified)</button>
+      <button data-charset="japanese">일본어 (Kanji)</button>
+    </div>
+
+    <hanja-card></hanja-card>
+
+    <div class="navigation">
+      <button id="prev-btn">이전</button>
+      <button id="next-btn">다음</button>
+    </div>
+  </div>
+  <script defer type="module" src="/main.js"></script>
 </body>
 </html>
