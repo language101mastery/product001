@@ -108,8 +108,12 @@ document.addEventListener('DOMContentLoaded', async () => { // Made async to awa
             return; // Data for this charset already loaded
         }
         try {
-            const fileName = `data/${charset}_data.json`;
-            const response = await fetch(fileName);
+                                            let fileName;
+                                            if (charset === 'chineseS') {
+                                                fileName = `data/simplified_chinese_data.json`;
+                                            } else {
+                                                fileName = `data/${charset}_data.json`;
+                                            }            const response = await fetch(fileName);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
