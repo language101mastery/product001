@@ -1,0 +1,25 @@
+[
+  {
+    "phrase": "天地玄黄 宇宙洪荒",
+    "details": [
+      {
+        "char": "天",
+        "chineseS": {
+          "sound": "tiān",
+          "meaning": "sky"
+        }
+      },
+      {
+        "char": "地",
+        "chineseS": {
+          "sound": "dì",
+          "meaning": "earth"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "日月盈昃 辰宿列张",
+    "details": []
+  }
+]

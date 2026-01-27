@@ -1,0 +1,25 @@
+[
+  {
+    "phrase": "天地玄黄 宇宙洪荒",
+    "details": [
+      {
+        "char": "天",
+        "japanese": {
+          "sound": "てん (ten)",
+          "meaning": "あめ"
+        }
+      },
+      {
+        "char": "地",
+        "japanese": {
+          "sound": "ち (chi)",
+          "meaning": "つち"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "日月盈昃 辰宿列張",
+    "details": []
+  }
+]

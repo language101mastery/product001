@@ -1,6 +1,6 @@
 
 // 1. Data
-let cheonjamunData = []; // Will be loaded from data.json
+let cheonjamunData = {}; // Will be loaded from data.json
 
 
 // 2. State Management
@@ -103,14 +103,29 @@ document.addEventListener('DOMContentLoaded', async () => { // Made async to awa
     // --- End Theme Management Logic ---
 
     // --- Data Loading ---
+    async function loadCheonjamunData(charset) {
+        if (cheonjamunData[charset]) {
+            return; // Data for this charset already loaded
+        }
+        try {
+            const fileName = `data/${charset}_data.json`;
+            const response = await fetch(fileName);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            cheonjamunData[charset] = await response.json();
+        } catch (error) {
+            console.error(`Failed to load cheonjamunData for ${charset}:`, error);
+            detailsContainer.innerHTML = `<p style="color: red;">천자문 데이터를 불러오는데 실패했습니다 (${charset}). ${charset}_data.json 파일이 올바른지 확인해주세요.</p>`;
+            throw error; // Re-throw to propagate the error
+        }
+    }
+
     try {
-        const response = await fetch('data.json');
-        cheonjamunData = await response.json();
+        await loadCheonjamunData(currentCharset); // Load initial data for currentCharset
     } catch (error) {
-        console.error('Failed to load cheonjamunData:', error);
-        // Display an error message to the user if data loading fails
-        detailsContainer.innerHTML = '<p style="color: red;">천자문 데이터를 불러오는데 실패했습니다. data.json 파일이 올바른지 확인해주세요.</p>';
-        return; // Stop further execution if data is not loaded
+        // Error already handled in loadCheonjamunData, just prevent further execution
+        return;
     }
     // --- End Data Loading ---
 
@@ -159,16 +174,17 @@ document.addEventListener('DOMContentLoaded', async () => { // Made async to awa
     }
     
     function showCheonjamun(index) {
-        // Ensure data is loaded before trying to display
-        if (cheonjamunData.length === 0) {
-            console.warn('cheonjamunData is not loaded yet.');
+        // Ensure data for the current charset is available
+        const currentLanguageData = cheonjamunData[currentCharset];
+        if (!currentLanguageData || currentLanguageData.length === 0) {
+            console.warn(`Data for charset "${currentCharset}" is not loaded or is empty.`);
             return;
         }
 
         cheonjamunCard.style.opacity = '0';
         cheonjamunCard.style.transform = 'scale(0.95)';
         
-        const data = cheonjamunData[index];
+        const data = currentLanguageData[index];
 
         setTimeout(() => {
             cheonjamunCard.update(data);
@@ -179,34 +195,45 @@ document.addEventListener('DOMContentLoaded', async () => { // Made async to awa
     }
 
     prevBtn.addEventListener('click', () => {
-        currentCheonjamunIndex = (currentCheonjamunIndex - 1 + cheonjamunData.length) % cheonjamunData.length;
+        currentCheonjamunIndex = (currentCheonjamunIndex - 1 + cheonjamunData[currentCharset].length) % cheonjamunData[currentCharset].length;
         showCheonjamun(currentCheonjamunIndex);
     });
 
     nextBtn.addEventListener('click', () => {
-        currentCheonjamunIndex = (currentCheonjamunIndex + 1) % cheonjamunData.length;
+        currentCheonjamunIndex = (currentCheonjamunIndex + 1) % cheonjamunData[currentCharset].length;
         showCheonjamun(currentCheonjamunIndex);
     });
 
     charsetButtons.forEach(button => {
-        button.addEventListener('click', () => {
+        button.addEventListener('click', async () => {
             currentCharset = button.dataset.charset;
             charsetButtons.forEach(btn => btn.classList.remove('active'));
             button.classList.add('active');
             
+            // Load data for the new charset if not already loaded
+            try {
+                await loadCheonjamunData(currentCharset);
+            } catch (error) {
+                // Error handled in loadCheonjamunData, prevent further execution
+                return;
+            }
+
+            // Reset index to 0 when changing charset
+            currentCheonjamunIndex = 0;
+            
             // Update both the main card and the details view
             cheonjamunCard.switchCharset(currentCharset);
-            const currentData = cheonjamunData[currentCheonjamunIndex];
-            renderCharacterDetails(currentData.details);
+            showCheonjamun(currentCheonjamunIndex); // Call showCheonjamun to re-render with new data
         });
     });
 
-    function initialize() {
-        if (cheonjamunData.length > 0) {
-            showCheonjamun(currentCheonjamunIndex);
-        } else {
-            console.warn('Initialization delayed: cheonjamunData not yet loaded.');
+    async function initialize() {
+        // Ensure initial data is loaded before trying to display
+        if (!cheonjamunData[currentCharset] || cheonjamunData[currentCharset].length === 0) {
+            console.warn('Initialization delayed: cheonjamunData for current charset not yet loaded.');
+            return;
         }
+        showCheonjamun(currentCheonjamunIndex);
     }
 
     initialize(); // Initial call to show the first card after data is loaded
