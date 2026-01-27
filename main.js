@@ -37,6 +37,16 @@ let currentCheonjamunIndex = 0;
 let currentCharset = 'hanja'; // 'hanja', 'chineseS', 'japanese'
 
 // 3. Web Component
+
+function getFontVariable(charset) {
+    switch (charset) {
+        case 'hanja': return 'var(--font-hanja)';
+        case 'chineseS': return 'var(--font-chineseS)';
+        case 'japanese': return 'var(--font-japanese)';
+        default: return 'var(--font-hanja)'; // Default to hanja font
+    }
+}
+
 class CheonjamunCard extends HTMLElement {
     constructor() {
         super();
@@ -59,7 +69,7 @@ class CheonjamunCard extends HTMLElement {
                     transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
                 }
                 .phrase {
-                    font-family: var(--hanja-font, 'Noto Serif KR', serif);
+                    font-family: var(--font-hanja); /* Default font */
                     font-size: 3rem;
                     font-weight: 700;
                     color: #1a1a1a;
@@ -77,8 +87,9 @@ class CheonjamunCard extends HTMLElement {
 
     switchCharset(charset) {
         if (this.currentData) {
-            const phrase = this.currentData.phrase[charset] || this.currentData.phrase['hanja'];
-            this.shadowRoot.querySelector('.phrase').textContent = phrase;
+            const phraseElement = this.shadowRoot.querySelector('.phrase');
+            phraseElement.textContent = this.currentData.phrase[charset] || this.currentData.phrase['hanja'];
+            phraseElement.style.fontFamily = getFontVariable(charset);
         }
     }
 }
@@ -106,6 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const charHeader = document.createElement('h3');
             charHeader.textContent = charDetail.char;
+            charHeader.style.fontFamily = getFontVariable(currentCharset);
             detailCard.appendChild(charHeader);
             
             // For the demo, we only have full details for '天'

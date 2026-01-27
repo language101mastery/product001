@@ -1,12 +1,14 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&family=Orbitron:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+CJK+JP:wght@400;700&family=Noto+Sans+CJK+KR:wght@400;700&family=Noto+Sans+CJK+SC:wght@400;700&family=Noto+Serif+KR:wght@400;700&family=Orbitron:wght@700&display=swap');
 
 :root {
   --background-color: #f0f0f0;
   --card-background: #ffffff;
   --text-color: #333;
-  --hanja-font: 'Noto Serif KR', serif;
-  --main-font: 'Orbitron', sans-serif;
+  --font-hanja: 'Noto Sans CJK KR', sans-serif; /* For Korean Hanja */
+  --font-chineseS: 'Noto Sans CJK SC', sans-serif; /* For Simplified Chinese */
+  --font-japanese: 'Noto Sans CJK JP', sans-serif; /* For Japanese Kanji */
+  --main-font: 'Orbitron', sans-serif; /* For UI elements like buttons and huneum/meaning */
   --glow-color: rgba(77, 144, 254, 0.5);
 }
 
