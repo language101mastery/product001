@@ -268,6 +268,7 @@ async function handleBlogListPage() {
     if (!blogPostsListDiv) return;
 
     try {
+        console.log('handleBlogListPage: Fetching blog_posts.json');
         const response = await fetch('blog/blog_posts.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
@@ -275,6 +276,7 @@ async function handleBlogListPage() {
         const blogPosts = await response.json();
 
         blogPostsListDiv.innerHTML = ''; // Clear "Loading..."
+        console.log('handleBlogListPage: Blog posts fetched and cleared loading message.');
 
         const postList = document.createElement('ul');
         postList.className = 'blog-list';
@@ -299,9 +301,10 @@ async function handleBlogListPage() {
             postList.appendChild(listItem);
         });
         blogPostsListDiv.appendChild(postList);
+        console.log('handleBlogListPage: Blog posts rendered.');
 
     } catch (error) {
-        console.error('Failed to load blog posts:', error);
+        console.error('handleBlogListPage: Failed to load blog posts:', error);
         blogPostsListDiv.innerHTML = '<p style="color: red;">블로그 게시물을 불러오는데 실패했습니다.</p>';
     }
 }
@@ -314,6 +317,7 @@ async function handleBlogPostPage() {
     const blogPostContentDiv = document.getElementById('blog-post-content');
 
     if (!postSlug || !blogPostContentDiv) {
+        console.log('handleBlogPostPage: No post slug or content div found.');
         if (blogPostContentDiv) blogPostContentDiv.innerHTML = '<p style="color: red;">게시물을 찾을 수 없습니다.</p>';
         if (postTitleH1) postTitleH1.textContent = '게시물 없음';
         return;
@@ -321,6 +325,7 @@ async function handleBlogPostPage() {
 
     try {
         // Fetch blog post metadata to get the title
+        console.log(`handleBlogPostPage: Fetching blog_posts.json for slug: ${postSlug}`);
         const responseMeta = await fetch('blog/blog_posts.json');
         if (!responseMeta.ok) throw new Error(`HTTP error! status: ${responseMeta.status}`);
         const blogPostsMeta = await responseMeta.json();
@@ -335,6 +340,7 @@ async function handleBlogPostPage() {
         }
 
         // Fetch Markdown content
+        console.log(`handleBlogPostPage: Fetching Markdown for slug: ${postSlug}`);
         const responseMd = await fetch(`blog/${postSlug}.md`);
         if (!responseMd.ok) {
             throw new Error(`HTTP error! status: ${responseMd.status}`);
@@ -342,10 +348,18 @@ async function handleBlogPostPage() {
         const markdownContent = await responseMd.text();
 
         // Render Markdown to HTML
-        blogPostContentDiv.innerHTML = marked.parse(markdownContent);
+        console.log('handleBlogPostPage: Markdown content fetched. Checking marked...');
+        if (typeof marked === 'undefined') {
+            console.error('handleBlogPostPage: "marked" library is not defined!');
+        } else {
+            console.log('handleBlogPostPage: "marked" library is defined. Parsing Markdown.');
+            blogPostContentDiv.innerHTML = marked.parse(markdownContent);
+            console.log('handleBlogPostPage: Markdown parsed and rendered.');
+        }
+
 
     } catch (error) {
-        console.error(`Failed to load blog post "${postSlug}":`, error);
+        console.error(`handleBlogPostPage: Failed to load blog post "${postSlug}":`, error);
         if (blogPostContentDiv) blogPostContentDiv.innerHTML = '<p style="color: red;">게시물을 불러오는데 실패했습니다.</p>';
         if (postTitleH1) postTitleH1.textContent = '오류 발생';
     }
