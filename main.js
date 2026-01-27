@@ -59,7 +59,7 @@ class CheonjamunCard extends HTMLElement {
     switchCharset(charset) {
         if (this.currentData) {
             const phraseElement = this.shadowRoot.querySelector('.phrase');
-            phraseElement.textContent = this.currentData.phrase[charset] || this.currentData.phrase['hanja'];
+            phraseElement.textContent = this.currentData.phrase;
             phraseElement.style.fontFamily = getFontVariable(charset);
         }
     }
