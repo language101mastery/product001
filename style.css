@@ -1,21 +1,46 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+CJK+JP:wght@400;700&family=Noto+Sans+CJK+KR:wght@400;700&family=Noto+Sans+CJK+SC:wght@400;700&family=Noto+Serif+KR:wght@400;700&family=Orbitron:wght@700&display=swap');
 
+/* Light Theme (Default) */
 :root {
-  --background-color: #f0f0f0;
+  --body-background: #f0f0f0;
   --card-background: #ffffff;
   --text-color: #333;
-  --font-hanja: 'Noto Sans CJK KR', sans-serif; /* For Korean Hanja */
-  --font-chineseS: 'Noto Sans CJK SC', sans-serif; /* For Simplified Chinese */
-  --font-japanese: 'Noto Sans CJK JP', sans-serif; /* For Japanese Kanji */
-  --main-font: 'Orbitron', sans-serif; /* For UI elements like buttons and huneum/meaning */
+  --button-bg: #e9e9e9;
+  --button-text: #555;
+  --button-border: #ccc;
+  --button-active-bg: var(--text-color);
+  --button-active-text: var(--card-background);
+  --button-active-border: var(--text-color);
+  --detail-card-bg: #fafafa;
+  --detail-card-border: #e0e0e0;
   --glow-color: rgba(77, 144, 254, 0.5);
+
+  --font-hanja: 'Noto Sans CJK KR', sans-serif;
+  --font-chineseS: 'Noto Sans CJK SC', sans-serif;
+  --font-japanese: 'Noto Sans CJK JP', sans-serif;
+  --main-font: 'Orbitron', sans-serif;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --body-background: #1a1a2e;
+  --card-background: #2e2e4a;
+  --text-color: #e0e0ff;
+  --button-bg: #3c3c5c;
+  --button-text: #bbb;
+  --button-border: #4a4a6e;
+  --button-active-bg: var(--text-color);
+  --button-active-text: var(--body-background);
+  --button-active-border: var(--text-color);
+  --detail-card-bg: #3a3a5e;
+  --detail-card-border: #4e4e7a;
+  --glow-color: rgba(100, 150, 255, 0.7);
 }
 
 body {
   font-family: var(--main-font);
-  background-color: var(--background-color);
-  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.1'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: var(--body-background);
   color: var(--text-color);
   display: flex;
   justify-content: center;
@@ -23,11 +48,12 @@ body {
   min-height: 100vh;
   margin: 0;
   text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for theme change */
 }
 
 .container {
   width: 90%;
-  max-width: 500px; /* Increased max-width for the new buttons */
+  max-width: 500px;
 }
 
 h1 {
@@ -35,42 +61,92 @@ h1 {
   margin-bottom: 2rem;
   color: var(--text-color);
   text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  transition: color 0.3s ease;
 }
+
+/* Common button styles */
+.control-button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: 1px solid var(--button-border);
+  padding: 0.6rem 1rem;
+  font-family: var(--main-font);
+  font-size: 0.85rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: none;
+  margin: 0.25rem; /* Add some margin for spacing */
+}
+
+.control-button:hover {
+  background-color: var(--button-bg); /* Keep base color */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 0 15px var(--glow-color);
+}
+
+.control-button.active {
+  background-color: var(--button-active-bg);
+  color: var(--button-active-text);
+  border-color: var(--button-active-border);
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Theme Toggle Button specific styling */
+#theme-toggle {
+    font-size: 1.5rem; /* Larger icon */
+    padding: 0.5rem 1rem;
+    border-radius: 50%; /* Make it round */
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto; /* Center and give space */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#theme-toggle:hover {
+    transform: rotate(15deg) scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2), 0 0 15px var(--glow-color);
+}
+
 
 /* Character Set Selector Styles */
 .char-set-selector {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  flex-wrap: wrap;
   gap: 0.75rem;
   margin-bottom: 2rem;
 }
 
 .char-set-selector button {
-  background-color: #e9e9e9;
-  color: #555;
-  border: 1px solid #ccc;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: 1px solid var(--button-border);
   padding: 0.6rem 1rem;
   font-family: var(--main-font);
   font-size: 0.85rem;
-  border-radius: 20px; /* More rounded buttons */
+  border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: none; /* Simpler look for these buttons */
+  box-shadow: none;
 }
 
 .char-set-selector button:hover {
-  background-color: #dcdcdc;
-  transform: none; /* No lift effect on hover */
+  background-color: var(--button-bg);
+  transform: none;
   box-shadow: none;
 }
 
 .char-set-selector button.active {
-  background-color: var(--text-color);
-  color: var(--card-background);
-  border-color: var(--text-color);
+  background-color: var(--button-active-bg);
+  color: var(--button-active-text);
+  border-color: var(--button-active-border);
   font-weight: bold;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Glow for active button */
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 .navigation {
@@ -83,7 +159,7 @@ h1 {
 #prev-btn, #next-btn {
   background-color: var(--card-background);
   color: var(--text-color);
-  border: 1px solid #ccc;
+  border: 1px solid var(--button-border);
   padding: 0.8rem 1.5rem;
   font-family: var(--main-font);
   font-size: 1rem;
@@ -96,13 +172,14 @@ h1 {
 #prev-btn:hover, #next-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.15), 0 0 15px var(--glow-color);
-  color: #0056b3;
+  color: var(--text-color);
 }
 
 #prev-btn:active, #next-btn:active {
   transform: translateY(0);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Details Container Styles */
 #details-container {
@@ -117,23 +194,26 @@ h1 {
 }
 
 .detail-card {
-  background-color: #fafafa;
-  border: 1px solid #e0e0e0;
+  background-color: var(--detail-card-bg);
+  border: 1px solid var(--detail-card-border);
   border-radius: 8px;
   padding: 1rem;
   text-align: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .detail-card h3 {
   font-family: var(--hanja-font);
   font-size: 2rem;
   margin: 0 0 1rem 0;
-  color: #333;
+  color: var(--text-color); /* Use text color variable */
+  transition: color 0.3s ease;
 }
 
 .detail-card p {
   font-family: var(--main-font);
   font-size: 0.9rem;
-  color: #555;
+  color: var(--text-color); /* Use text color variable */
   margin: 0.25rem 0;
+  transition: color 0.3s ease;
 }

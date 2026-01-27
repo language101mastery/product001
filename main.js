@@ -72,7 +72,7 @@ class CheonjamunCard extends HTMLElement {
                     font-family: var(--font-hanja); /* Default font */
                     font-size: 3rem;
                     font-weight: 700;
-                    color: #1a1a1a;
+                    color: var(--text-color);
                     line-height: 1.5;
                 }
             </style>
@@ -103,6 +103,34 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevBtn = document.getElementById('prev-btn');
     const nextBtn = document.getElementById('next-btn');
     const charsetButtons = document.querySelectorAll('.char-set-selector button');
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement; // Get the html element for data-theme attribute
+
+    // --- Theme Management Logic ---
+    function setTheme(theme) {
+        htmlElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙'; // Update icon
+    }
+
+    // Initialize theme on page load
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        setTheme(savedTheme);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme('dark'); // System preference is dark
+    } else {
+        setTheme('light'); // Default to light
+    }
+
+    // Theme toggle button listener
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = htmlElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        setTheme(newTheme);
+    });
+    // --- End Theme Management Logic ---
+
 
     function renderCharacterDetails(details) {
         detailsContainer.innerHTML = ''; // Clear previous details
