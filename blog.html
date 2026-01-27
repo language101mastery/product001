@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog - 한자 학습</title>
+  <link href='/style.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="container">
+    <h1>블로그</h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+      </ul>
+    </nav>
+
+    <div id="blog-posts-list">
+      <!-- Blog posts will be loaded here by JavaScript -->
+      <p>로딩 중...</p>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.10/marked.min.js"></script>
+  <script defer type="module" src="/main.js"></script>
+</body>
+</html>
