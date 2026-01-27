@@ -131,28 +131,27 @@ document.addEventListener('DOMContentLoaded', async () => { // Made async to awa
             charHeader.style.fontFamily = getFontVariable(currentCharset);
             detailCard.appendChild(charHeader);
             
-            // For the demo, we only have full details for '天'
-            if (charDetail.details) {
-                 const selectedDetail = charDetail.details[currentCharset] || charDetail.details.hanja;
-                 if(selectedDetail) {
-                    const soundEl = document.createElement('p');
-                    soundEl.innerHTML = `<strong>음:</strong> ${selectedDetail.sound}`;
-                    detailCard.appendChild(soundEl);
+            // Determine which set of details to use based on currentCharset
+            let selectedDetailData = null;
+            if (charDetail[currentCharset]) {
+                selectedDetailData = charDetail[currentCharset];
+            } else if (charDetail.hanja) { // Fallback to hanja if specific charset not found
+                selectedDetailData = charDetail.hanja;
+            }
 
-                    const meaningEl = document.createElement('p');
-                    meaningEl.innerHTML = `<strong>뜻:</strong> ${selectedDetail.meaning}`;
-                    detailCard.appendChild(meaningEl);
-                 }
-            } else if (charDetail.hanja) { // Fallback for placeholders
+            if (selectedDetailData) {
                 const soundEl = document.createElement('p');
-                soundEl.innerHTML = `<strong>음:</strong> ${charDetail.hanja.sound}`;
+                soundEl.innerHTML = `<strong>음:</strong> ${selectedDetailData.sound || 'N/A'}`;
                 detailCard.appendChild(soundEl);
 
                 const meaningEl = document.createElement('p');
-                meaningEl.innerHTML = `<strong>뜻:</strong> ${charDetail.hanja.meaning}`;
+                meaningEl.innerHTML = `<strong>뜻:</strong> ${selectedDetailData.meaning || 'N/A'}`;
                 detailCard.appendChild(meaningEl);
+            } else {
+                const noDataEl = document.createElement('p');
+                noDataEl.textContent = '정보 없음';
+                detailCard.appendChild(noDataEl);
             }
-
 
             grid.appendChild(detailCard);
         });
