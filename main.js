@@ -1,16 +1,34 @@
+
 // 1. Data
-// NOTE: This is a sample dataset for demonstration purposes.
-// The Simplified Chinese and Japanese characters are partially generated
-// and may not be fully accurate.
 const cheonjamunData = [
-    { hanja: '天地玄黃 宇宙洪荒', chineseS: '天地玄黄 宇宙洪荒', japanese: '天地玄黄 宇宙洪荒' },
-    { hanja: '日月盈昃 辰宿列張', chineseS: '日月盈昃 辰宿列张', japanese: '日月盈昃 辰宿列張' },
-    { hanja: '寒來暑往 秋收冬藏', chineseS: '寒来暑往 秋收冬藏', japanese: '寒来暑往 秋収冬蔵' },
-    { hanja: '閏餘成歲 律呂調陽', chineseS: '闰余成岁 律吕调阳', japanese: '閏余成歳 律呂調陽' },
-    { hanja: '雲騰致雨 露結爲霜', chineseS: '云腾致雨 露结为霜', japanese: '雲騰致雨 露結為霜' },
-    { hanja: '金生麗水 玉出崑岡', chineseS: '金生丽水 玉出昆冈', japanese: '金生麗水 玉出崑岡' },
-    { hanja: '劍號巨闕 珠稱夜光', chineseS: '剑号巨阙 珠称夜光', japanese: '剣号巨闕 珠称夜光' },
-    { hanja: '果珍李柰 菜重芥薑', chineseS: '果珍李柰 菜重芥姜', japanese: '果珍李柰 菜重芥薑' }
+    {
+        phrase: { hanja: '天地玄黃 宇宙洪荒', chineseS: '天地玄黄 宇宙洪荒', japanese: '天地玄黄 宇宙洪荒' },
+        details: [
+            {
+                char: '天',
+                hanja: { sound: '천', meaning: '하늘' },
+                chineseS: { sound: 'tiān', meaning: 'sky' },
+                japanese: { sound: 'てん (ten)', meaning: 'あめ' }
+            },
+            // --- Placeholder for the other 7 characters ---
+            { char: '地', hanja: { sound: '지', meaning: '땅' } },
+            { char: '玄', hanja: { sound: '현', meaning: '검을' } },
+            { char: '黃', hanja: { sound: '황', meaning: '누를' } },
+            { char: '宇', hanja: { sound: '우', meaning: '집' } },
+            { char: '宙', hanja: { sound: '주', meaning: '집' } },
+            { char: '洪', hanja: { sound: '홍', meaning: '넓을' } },
+            { char: '荒', hanja: { sound: '황', meaning: '거칠' } },
+        ]
+    },
+    {
+        phrase: { hanja: '日月盈昃 辰宿列張', chineseS: '日月盈昃 辰宿列张', japanese: '日月盈昃 辰宿列張' },
+        details: [ { char: '日' }, { char: '月' }, { char: '盈' }, { char: '昃' }, { char: '辰' }, { char: '宿' }, { char: '列' }, { char: '張' } ]
+    },
+    {
+        phrase: { hanja: '寒來暑往 秋收冬藏', chineseS: '寒来暑往 秋收冬藏', japanese: '寒来暑往 秋収冬蔵' },
+        details: [ { char: '寒' }, { char: '來' }, { char: '暑' }, { char: '往' }, { char: '秋' }, { char: '收' }, { char: '冬' }, { char: '藏' } ]
+    }
+    // ... more data would follow this structure
 ];
 
 
@@ -28,13 +46,12 @@ class CheonjamunCard extends HTMLElement {
             <style>
                 :host {
                     display: flex;
-                    flex-direction: column;
                     justify-content: center;
                     align-items: center;
                     background-color: var(--card-background, #ffffff);
                     border-radius: 15px;
                     padding: 2.5rem;
-                    min-height: 350px;
+                    min-height: 250px; /* Adjusted height */
                     width: 100%;
                     box-sizing: border-box;
                     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0,0,0,0.05);
@@ -55,12 +72,12 @@ class CheonjamunCard extends HTMLElement {
 
     update(data) {
         this.currentData = data;
-        this.switchCharset(currentCharset); // Immediately display with the current charset
+        this.switchCharset(currentCharset);
     }
 
     switchCharset(charset) {
         if (this.currentData) {
-            const phrase = this.currentData[charset] || this.currentData['hanja'];
+            const phrase = this.currentData.phrase[charset] || this.currentData.phrase['hanja'];
             this.shadowRoot.querySelector('.phrase').textContent = phrase;
         }
     }
@@ -71,15 +88,63 @@ customElements.define('cheonjamun-card', CheonjamunCard);
 // 4. Application Logic
 document.addEventListener('DOMContentLoaded', () => {
     const cheonjamunCard = document.querySelector('cheonjamun-card');
+    const detailsContainer = document.getElementById('details-container');
     const prevBtn = document.getElementById('prev-btn');
     const nextBtn = document.getElementById('next-btn');
     const charsetButtons = document.querySelectorAll('.char-set-selector button');
+
+    function renderCharacterDetails(details) {
+        detailsContainer.innerHTML = ''; // Clear previous details
+        if (!details) return;
+
+        const grid = document.createElement('div');
+        grid.className = 'details-grid';
+
+        details.forEach(charDetail => {
+            const detailCard = document.createElement('div');
+            detailCard.className = 'detail-card';
+
+            const charHeader = document.createElement('h3');
+            charHeader.textContent = charDetail.char;
+            detailCard.appendChild(charHeader);
+            
+            // For the demo, we only have full details for '天'
+            if (charDetail.details) {
+                 const selectedDetail = charDetail.details[currentCharset] || charDetail.details.hanja;
+                 if(selectedDetail) {
+                    const soundEl = document.createElement('p');
+                    soundEl.innerHTML = `<strong>음:</strong> ${selectedDetail.sound}`;
+                    detailCard.appendChild(soundEl);
+
+                    const meaningEl = document.createElement('p');
+                    meaningEl.innerHTML = `<strong>뜻:</strong> ${selectedDetail.meaning}`;
+                    detailCard.appendChild(meaningEl);
+                 }
+            } else if (charDetail.hanja) { // Fallback for placeholders
+                const soundEl = document.createElement('p');
+                soundEl.innerHTML = `<strong>음:</strong> ${charDetail.hanja.sound}`;
+                detailCard.appendChild(soundEl);
+
+                const meaningEl = document.createElement('p');
+                meaningEl.innerHTML = `<strong>뜻:</strong> ${charDetail.hanja.meaning}`;
+                detailCard.appendChild(meaningEl);
+            }
+
+
+            grid.appendChild(detailCard);
+        });
+        detailsContainer.appendChild(grid);
+    }
     
     function showCheonjamun(index) {
         cheonjamunCard.style.opacity = '0';
         cheonjamunCard.style.transform = 'scale(0.95)';
+        
+        const data = cheonjamunData[index];
+
         setTimeout(() => {
-            cheonjamunCard.update(cheonjamunData[index]);
+            cheonjamunCard.update(data);
+            renderCharacterDetails(data.details); // Render details for the new phrase
             cheonjamunCard.style.opacity = '1';
             cheonjamunCard.style.transform = 'scale(1)';
         }, 200);
@@ -100,7 +165,11 @@ document.addEventListener('DOMContentLoaded', () => {
             currentCharset = button.dataset.charset;
             charsetButtons.forEach(btn => btn.classList.remove('active'));
             button.classList.add('active');
+            
+            // Update both the main card and the details view
             cheonjamunCard.switchCharset(currentCharset);
+            const currentData = cheonjamunData[currentCheonjamunIndex];
+            renderCharacterDetails(currentData.details);
         });
     });
 

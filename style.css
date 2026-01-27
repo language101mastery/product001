@@ -102,28 +102,36 @@ h1 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Cheonjamun Container Styles */
-#cheonjamun-container {
-  background-color: var(--card-background);
-  border-radius: 15px;
-  padding: 2rem;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0,0,0,0.05);
-  max-height: 400px;
-  overflow-y: auto;
-  text-align: left;
+/* Details Container Styles */
+#details-container {
+  margin-top: 2rem;
+  width: 100%;
 }
 
-#cheonjamun-container p {
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.detail-card {
+  background-color: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.detail-card h3 {
   font-family: var(--hanja-font);
-  font-size: 1.5rem;
-  line-height: 2;
-  color: var(--text-color);
+  font-size: 2rem;
   margin: 0 0 1rem 0;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #eee;
+  color: #333;
 }
 
-#cheonjamun-container p:last-child {
-  margin-bottom: 0;
-  border-bottom: none;
+.detail-card p {
+  font-family: var(--main-font);
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0.25rem 0;
 }
