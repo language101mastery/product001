@@ -189,8 +189,7 @@ h1 {
 
 .details-grid {
   display: grid;
-  /* This is the key for responsiveness */
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(4, 1fr); /* Default to 4 columns */
   gap: 1rem;
 }
 
@@ -448,7 +447,7 @@ h1 {
   }
 
   .details-grid {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
     gap: 0.5rem;
   }
   
