@@ -43,16 +43,18 @@ body {
   color: var(--text-color);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* Align to the top */
   min-height: 100vh;
   margin: 0;
+  padding: 2rem 1rem; /* Add some padding to the body */
   text-align: center;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for theme change */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-sizing: border-box;
 }
 
 .container {
-  width: 90%;
-  max-width: 500px;
+  width: 100%;
+  max-width: 700px; /* Increased max-width for better desktop view */
 }
 
 h1 {
@@ -75,11 +77,11 @@ h1 {
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: none;
-  margin: 0.25rem; /* Add some margin for spacing */
+  margin: 0.25rem;
 }
 
 .control-button:hover {
-  background-color: var(--button-bg); /* Keep base color */
+  background-color: var(--button-bg);
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 0 15px var(--glow-color);
 }
@@ -94,15 +96,15 @@ h1 {
 
 /* Theme Toggle Button specific styling */
 #theme-toggle {
-    font-size: 1.5rem; /* Larger icon */
+    font-size: 1.5rem;
     padding: 0.5rem 1rem;
-    border-radius: 50%; /* Make it round */
+    border-radius: 50%;
     width: 3rem;
     height: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem auto; /* Center and give space */
+    margin: 1rem auto;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
@@ -110,7 +112,6 @@ h1 {
     transform: rotate(15deg) scale(1.05);
     box-shadow: 0 6px 12px rgba(0,0,0,0.2), 0 0 15px var(--glow-color);
 }
-
 
 /* Character Set Selector Styles */
 .char-set-selector {
@@ -188,7 +189,8 @@ h1 {
 
 .details-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Force 4 columns */
+  /* This is the key for responsiveness */
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1rem;
 }
 
@@ -205,17 +207,18 @@ h1 {
   font-family: var(--hanja-font);
   font-size: 2rem;
   margin: 0 0 1rem 0;
-  color: var(--text-color); /* Use text color variable */
+  color: var(--text-color);
   transition: color 0.3s ease;
 }
 
 .detail-card p {
   font-family: var(--main-font);
   font-size: 0.9rem;
-  color: var(--text-color); /* Use text color variable */
+  color: var(--text-color);
   margin: 0.25rem 0;
   transition: color 0.3s ease;
 }
+
 /* Main Navigation Styles */
 .main-nav {
   margin-bottom: 2rem;
@@ -248,6 +251,7 @@ h1 {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transform: translateY(-2px);
 }
+
 /* Blog List Styles */
 .blog-list {
   list-style: none;
@@ -282,12 +286,12 @@ h1 {
 }
 
 .blog-list li a:hover {
-  color: var(--glow-color); /* Use glow color on hover for links */
+  color: var(--glow-color);
 }
 
 .blog-list .post-date {
   font-size: 0.9rem;
-  color: #888; /* A bit muted */
+  color: #888;
   display: block;
   margin-bottom: 1rem;
 }
@@ -410,8 +414,62 @@ h1 {
   border-color: var(--button-border);
 }
 
-/* Ensure empty placeholders take up space to maintain layout */
 .post-navigation span {
-  width: 100px; /* Same as min-width of nav-btn */
+  width: 100px;
   display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem 0.5rem;
+  }
+  
+  .container {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  
+  cheonjamun-card {
+    /* The component itself will manage its internal padding via its shadow DOM styles */
+  }
+
+  .navigation {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #prev-btn, #next-btn {
+    width: 100%;
+  }
+
+  .details-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.5rem;
+  }
+  
+  .detail-card {
+    padding: 0.75rem;
+  }
+
+  .detail-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .detail-card p {
+    font-size: 0.8rem;
+  }
+
+  .main-nav ul {
+    gap: 0.5rem;
+  }
+  
+  .main-nav li a {
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+  }
 }

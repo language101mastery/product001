@@ -34,13 +34,13 @@ class CheonjamunCard extends HTMLElement {
                     align-items: center;
                     background-color: var(--card-background, #ffffff);
                     border-radius: 15px;
-                    padding: 2.5rem;
-                    min-height: 250px; /* Adjusted height */
+                    padding: 2.5rem; /* Default padding for desktop */
+                    min-height: 250px; 
                     width: 100%;
                     box-sizing: border-box;
                     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0,0,0,0.05);
                     text-align: center;
-                    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+                    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out, padding 0.3s ease;
                 }
                 .phrase {
                     font-family: var(--font-hanja); /* Default font */
@@ -56,6 +56,20 @@ class CheonjamunCard extends HTMLElement {
                     font-weight: 400;
                     color: var(--text-color);
                     opacity: 0.9;
+                }
+
+                /* Responsive styles for the card itself */
+                @media (max-width: 600px) {
+                    :host {
+                        padding: 1.5rem; /* Reduced padding on smaller screens */
+                        min-height: 200px;
+                    }
+                    .phrase {
+                        font-size: 2.2rem; /* Adjust font size for mobile */
+                    }
+                    .meaning {
+                        font-size: 1rem; /* Adjust font size for mobile */
+                    }
                 }
             </style>
             <div class="phrase"></div>
@@ -83,7 +97,6 @@ class CheonjamunCard extends HTMLElement {
 customElements.define('cheonjamun-card', CheonjamunCard);
 
 
-// 4. Application Logic
 // 4. Application Logic
 // Helper to get query parameters
 function getQueryParams() {
@@ -124,14 +137,9 @@ async function loadCheonjamunData(charset) {
     if (cheonjamunData[charset]) {
         return; // Data for this charset already loaded
     }
-    const detailsContainer = document.getElementById('details-container'); // Need to get this here or pass
+    const detailsContainer = document.getElementById('details-container'); 
     try {
-        let fileName;
-        if (charset === 'chineseS') {
-            fileName = `data/simplified_chinese_data.json`;
-        } else {
-            fileName = `data/${charset}_data.json`;
-        }
+        let fileName = `data/${charset}_data.json`;
         const response = await fetch(fileName);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
@@ -139,14 +147,14 @@ async function loadCheonjamunData(charset) {
         cheonjamunData[charset] = await response.json();
     } catch (error) {
         console.error(`Failed to load cheonjamunData for ${charset}:`, error);
-        if (detailsContainer) { // Only update if element exists on current page
-            detailsContainer.innerHTML = `<p style="color: red;">천자문 데이터를 불러오는데 실패했습니다 (${charset}). ${charset}_data.json 파일이 올바른지 확인해주세요.</p>`;
+        if (detailsContainer) { 
+            detailsContainer.innerHTML = `<p style="color: red;">천자문 데이터를 불러오는데 실패했습니다 (${charset}). 파일을 확인해주세요.</p>`;
         }
-        throw error; // Re-throw to propagate the error
+        throw error; 
     }
 }
 
-// --- Cheonjamun Logic (extracted to a function) ---
+// --- Cheonjamun Logic ---
 async function handleIndexPage() {
     const cheonjamunCard = document.querySelector('cheonjamun-card');
     const detailsContainer = document.getElementById('details-container');
@@ -155,7 +163,7 @@ async function handleIndexPage() {
     const charsetButtons = document.querySelectorAll('.char-set-selector button');
     const themeToggle = document.getElementById('theme-toggle');
 
-    if (themeToggle) { // Attach listener only if theme toggle exists
+    if (themeToggle) { 
         themeToggle.addEventListener('click', () => {
             const currentTheme = htmlElement.getAttribute('data-theme');
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
@@ -164,8 +172,8 @@ async function handleIndexPage() {
     }
 
     function renderCharacterDetails(details) {
-        if (!detailsContainer) return; // Guard for pages without details container
-        detailsContainer.innerHTML = ''; // Clear previous details
+        if (!detailsContainer) return; 
+        detailsContainer.innerHTML = ''; 
         if (!details || details.length === 0) {
             detailsContainer.innerHTML = '<p>상세 정보가 없습니다.</p>';
             return;
@@ -183,12 +191,7 @@ async function handleIndexPage() {
             charHeader.style.fontFamily = getFontVariable(currentCharset);
             detailCard.appendChild(charHeader);
             
-            let selectedDetailData = null;
-            if (charDetail[currentCharset]) {
-                selectedDetailData = charDetail[currentCharset];
-            } else if (charDetail.hanja) {
-                selectedDetailData = charDetail.hanja;
-            }
+            let selectedDetailData = charDetail[currentCharset] || charDetail.hanja;
 
             if (selectedDetailData) {
                 const soundEl = document.createElement('p');
@@ -216,7 +219,7 @@ async function handleIndexPage() {
             return;
         }
 
-        if (cheonjamunCard) { // Check if card exists on this page
+        if (cheonjamunCard) {
             cheonjamunCard.style.opacity = '0';
             cheonjamunCard.style.transform = 'scale(0.95)';
             
@@ -231,21 +234,21 @@ async function handleIndexPage() {
         }
     }
 
-    if (prevBtn) { // Attach listener only if button exists
+    if (prevBtn) {
         prevBtn.addEventListener('click', () => {
             currentCheonjamunIndex = (currentCheonjamunIndex - 1 + cheonjamunData[currentCharset].length) % cheonjamunData[currentCharset].length;
             showCheonjamun(currentCheonjamunIndex);
         });
     }
 
-    if (nextBtn) { // Attach listener only if button exists
+    if (nextBtn) {
         nextBtn.addEventListener('click', () => {
             currentCheonjamunIndex = (currentCheonjamunIndex + 1) % cheonjamunData[currentCharset].length;
             showCheonjamun(currentCheonjamunIndex);
         });
     }
 
-    if (charsetButtons) { // Attach listeners only if buttons exist
+    if (charsetButtons) {
         charsetButtons.forEach(button => {
             button.addEventListener('click', async () => {
                 currentCharset = button.dataset.charset;
@@ -267,52 +270,38 @@ async function handleIndexPage() {
     }
 
     try {
-        await loadCheonjamunData(currentCharset); // Load initial data for currentCharset
+        await loadCheonjamunData(currentCharset); 
         if (cheonjamunData[currentCharset] && cheonjamunData[currentCharset].length > 0) {
             showCheonjamun(currentCheonjamunIndex);
         } else {
-            console.warn('Initialization delayed: cheonjamunData for current charset not yet loaded.');
+            console.warn('Initialization delayed: data for current charset not yet loaded.');
         }
     } catch (error) {
-        console.error("Initial Cheonjamun data load failed:", error);
+        console.error("Initial data load failed:", error);
     }
 }
 
 // --- Blog Listing Page Logic ---
 async function handleBlogListPage() {
-    console.log('handleBlogListPage: Function started.'); // Added log
     const blogPostsListDiv = document.getElementById('blog-posts-list');
-    if (!blogPostsListDiv) {
-        console.log('handleBlogListPage: blog-posts-list div not found, exiting.');
-        return;
-    }
-    console.log('handleBlogListPage: Initiated for blog.html');
-
+    if (!blogPostsListDiv) return;
+    
     try {
-        console.log('handleBlogListPage: Attempting to fetch blog/blog_posts.json');
         const response = await fetch('blog/blog_posts.json');
-        console.log(`handleBlogListPage: Fetch response received. Status: ${response.status}, OK: ${response.ok}`);
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         const blogPosts = await response.json();
-        console.log('handleBlogListPage: blog_posts.json parsed successfully.', blogPosts);
 
-        blogPostsListDiv.innerHTML = ''; // Clear "Loading..."
-        console.log('handleBlogListPage: Cleared "Loading..." message.');
+        blogPostsListDiv.innerHTML = ''; 
 
         if (blogPosts.length === 0) {
             blogPostsListDiv.innerHTML = '<p>게시물이 없습니다.</p>';
-            console.log('handleBlogListPage: No blog posts found.');
             return;
         }
 
         const postList = document.createElement('ul');
         postList.className = 'blog-list';
-        console.log('handleBlogListPage: Created ul.blog-list element.');
 
         blogPosts.forEach(post => {
-            // console.log(`handleBlogListPage: Processing post: ${post.slug}`); // Removed for less verbosity
             const listItem = document.createElement('li');
             const link = document.createElement('a');
             link.href = `post.html?slug=${post.slug}`;
@@ -330,13 +319,11 @@ async function handleBlogListPage() {
             listItem.appendChild(dateSpan);
             listItem.appendChild(summaryP);
             postList.appendChild(listItem);
-            // console.log(`handleBlogListPage: Appended post ${post.slug} to list.`); // Removed for less verbosity
         });
         blogPostsListDiv.appendChild(postList);
-        console.log('handleBlogListPage: All blog posts rendered and appended to blog-posts-list.');
 
     } catch (error) {
-        console.error('handleBlogListPage: Failed to load blog posts:', error);
+        console.error('Failed to load blog posts:', error);
         blogPostsListDiv.innerHTML = '<p style="color: red;">블로그 게시물을 불러오는데 실패했습니다.</p>';
     }
 }
@@ -349,98 +336,58 @@ async function handleBlogPostPage() {
     const blogPostContentDiv = document.getElementById('blog-post-content');
 
     if (!postSlug || !blogPostContentDiv) {
-        console.log('handleBlogPostPage: No post slug or content div found.');
         if (blogPostContentDiv) blogPostContentDiv.innerHTML = '<p style="color: red;">게시물을 찾을 수 없습니다.</p>';
         if (postTitleH1) postTitleH1.textContent = '게시물 없음';
         return;
     }
 
     try {
-        // Fetch blog post metadata to get the title
-        console.log(`handleBlogPostPage: Fetching blog_posts.json for slug: ${postSlug}`);
-        const responseMeta = await fetch('blog/blog_posts.json');
-        if (!responseMeta.ok) throw new Error(`HTTP error! status: ${responseMeta.status}`);
-        const blogPostsMeta = await responseMeta.json();
+        // Fetch metadata and content simultaneously
+        const [metaResponse, mdResponse] = await Promise.all([
+            fetch('blog/blog_posts.json'),
+            fetch(`blog/${postSlug}.md`)
+        ]);
+
+        if (!metaResponse.ok) throw new Error(`HTTP error! status: ${metaResponse.status}`);
+        const blogPostsMeta = await metaResponse.json();
         const postMeta = blogPostsMeta.find(p => p.slug === postSlug);
         const currentIndex = blogPostsMeta.findIndex(p => p.slug === postSlug);
 
+        if (!mdResponse.ok) throw new Error(`HTTP error! status: ${mdResponse.status}`);
+        const markdownContent = await mdResponse.text();
+
+        // Update Title
         if (postTitleH1 && postMeta) {
             postTitleH1.textContent = postMeta.title;
-            document.title = `${postMeta.title} - 한자 학습`; // Update page title
+            document.title = `${postMeta.title} - 한자 학습`;
         } else if (postTitleH1) {
              postTitleH1.textContent = '게시물 없음';
              document.title = '게시물 없음 - 한자 학습';
         }
 
+        // Render Content
+        if (typeof marked !== 'undefined') {
+            blogPostContentDiv.innerHTML = marked.parse(markdownContent);
+        } else {
+            console.error('marked library is not defined!');
+            blogPostContentDiv.innerHTML = '<p>Error rendering content.</p>';
+        }
+
         // --- Navigation Buttons Logic ---
         const navContainer = document.getElementById('post-navigation');
         if (navContainer && currentIndex !== -1) {
-            navContainer.innerHTML = ''; // Clear existing
-
-            // Next Post (Newer) -> index - 1
             const nextPost = currentIndex > 0 ? blogPostsMeta[currentIndex - 1] : null;
-            // Previous Post (Older) -> index + 1
             const prevPost = currentIndex < blogPostsMeta.length - 1 ? blogPostsMeta[currentIndex + 1] : null;
-
-            // Create Previous Button (Left side visually, but chronologically older)
-            if (prevPost) {
-                const prevBtn = document.createElement('a');
-                prevBtn.href = `post.html?slug=${prevPost.slug}`;
-                prevBtn.className = 'nav-btn prev';
-                prevBtn.textContent = `← 이전 글`;
-                // Optional: Add tooltip or small text for title? For now, simple.
-                navContainer.appendChild(prevBtn);
-            } else {
-                 // Placeholder to keep spacing if using flex space-between, 
-                 // but since we center or use gaps, maybe not needed. 
-                 // Let's just add an empty span if we want rigid structure, 
-                 // or just nothing.
-                 const emptySpan = document.createElement('span');
-                 navContainer.appendChild(emptySpan);
-            }
-
-            // List Button (Center)
-            const listBtn = document.createElement('a');
-            listBtn.href = 'blog.html';
-            listBtn.className = 'nav-btn list';
-            listBtn.textContent = '목록';
-            navContainer.appendChild(listBtn);
-
-            // Next Button (Right side visually, chronologically newer)
-            if (nextPost) {
-                const nextBtn = document.createElement('a');
-                nextBtn.href = `post.html?slug=${nextPost.slug}`;
-                nextBtn.className = 'nav-btn next';
-                nextBtn.textContent = `다음 글 →`;
-                navContainer.appendChild(nextBtn);
-            } else {
-                const emptySpan = document.createElement('span');
-                 navContainer.appendChild(emptySpan);
-            }
+            
+            navContainer.innerHTML = `
+                ${prevPost ? `<a href="post.html?slug=${prevPost.slug}" class="nav-btn prev">← 이전 글</a>` : '<span></span>'}
+                <a href="blog.html" class="nav-btn list">목록</a>
+                ${nextPost ? `<a href="post.html?slug=${nextPost.slug}" class="nav-btn next">다음 글 →</a>` : '<span></span>'}
+            `;
         }
-        // --- End Navigation Buttons Logic ---
-
-        // Fetch Markdown content
-        console.log(`handleBlogPostPage: Fetching Markdown for slug: ${postSlug}`);
-        const responseMd = await fetch(`blog/${postSlug}.md`);
-        if (!responseMd.ok) {
-            throw new Error(`HTTP error! status: ${responseMd.status}`);
-        }
-        const markdownContent = await responseMd.text();
-
-        // Render Markdown to HTML
-        console.log('handleBlogPostPage: Markdown content fetched. Checking marked...');
-        if (typeof marked === 'undefined') {
-            console.error('handleBlogPostPage: "marked" library is not defined!');
-        } else {
-            console.log('handleBlogPostPage: "marked" library is defined. Parsing Markdown.');
-            blogPostContentDiv.innerHTML = marked.parse(markdownContent);
-            console.log('handleBlogPostPage: Markdown parsed and rendered.');
-        }
-
 
     } catch (error) {
-        console.error(`handleBlogPostPage: Failed to load blog post "${postSlug}":`, error);
+        console.error(`Failed to load blog post "${postSlug}":`, error);
         if (blogPostContentDiv) blogPostContentDiv.innerHTML = '<p style="color: red;">게시물을 불러오는데 실패했습니다.</p>';
         if (postTitleH1) postTitleH1.textContent = '오류 발생';
     }
@@ -448,9 +395,6 @@ async function handleBlogPostPage() {
 
 // Main routing logic
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM Content Loaded'); // Added log
-    
-    // Use element detection for robust routing
     if (document.querySelector('cheonjamun-card')) {
         handleIndexPage();
     } else if (document.getElementById('blog-posts-list')) {
