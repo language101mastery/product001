@@ -1,6 +1,72 @@
 // main.js loaded
 console.log('main.js loaded');
 
+// 0. i18n
+const translations = {};
+
+async function setLanguage(lang) {
+    await loadTranslations(lang);
+    translatePage(lang);
+    updateLangUI(lang);
+    localStorage.setItem('userLanguage', lang);
+    document.documentElement.lang = lang;
+}
+
+async function loadTranslations(lang) {
+    if (translations[lang]) {
+        return; // Already loaded
+    }
+    try {
+        const response = await fetch(`locales/${lang}.json`);
+        if (!response.ok) {
+            throw new Error(`Could not load translation file for ${lang}`);
+        }
+        translations[lang] = await response.json();
+    } catch (error) {
+        console.error(error);
+        // Fallback to Korean if the selected language fails to load
+        if (lang !== 'ko') {
+            await setLanguage('ko');
+        }
+    }
+}
+
+function translatePage(lang) {
+    const translatableElements = document.querySelectorAll('[data-i18n-key]');
+    translatableElements.forEach(element => {
+        const key = element.getAttribute('data-i18n-key');
+        if (translations[lang] && translations[lang][key]) {
+            element.textContent = translations[lang][key];
+        } else {
+          console.warn(`No translation found for key: ${key} in language: ${lang}`);
+        }
+    });
+}
+
+function updateLangUI(lang) {
+    const langButtons = document.querySelectorAll('.lang-selector button');
+    langButtons.forEach(button => {
+        button.classList.toggle('active', button.dataset.lang === lang);
+    });
+}
+
+async function initI18n() {
+    const langButtons = document.querySelectorAll('.lang-selector button');
+    langButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            const newLang = e.target.dataset.lang;
+            if(newLang) setLanguage(newLang);
+        });
+    });
+
+    const savedLang = localStorage.getItem('userLanguage');
+    const browserLang = navigator.language.split('-')[0]; 
+    const defaultLang = savedLang || (['ko', 'en', 'zh', 'ja'].includes(browserLang) ? browserLang : 'ko');
+
+    await setLanguage(defaultLang);
+}
+
+
 // 1. Data
 let cheonjamunData = {}; // Will be loaded from data.json
 
@@ -400,11 +466,13 @@ async function handleBlogPostPage() {
 
 // Main routing logic
 document.addEventListener('DOMContentLoaded', () => {
-    if (document.querySelector('cheonjamun-card')) {
-        handleIndexPage();
-    } else if (document.getElementById('blog-posts-list')) {
-        handleBlogListPage();
-    } else if (document.getElementById('blog-post-content')) {
-        handleBlogPostPage();
-    }
+    initI18n().then(() => {
+        if (document.querySelector('cheonjamun-card')) {
+            handleIndexPage();
+        } else if (document.getElementById('blog-posts-list')) {
+            handleBlogListPage();
+        } else if (document.getElementById('blog-post-content')) {
+            handleBlogPostPage();
+        }
+    });
 });

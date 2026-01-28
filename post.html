@@ -3,23 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Post - 한자 학습</title>
+  <title data-i18n-key="pageTitle">Post - 천자문 학습</title>
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
   <div class="container">
+    <div class="lang-selector-container">
+      <div class="lang-dropdown">
+        <button class="lang-dropdown-btn">🇰🇷</button>
+        <div class="lang-dropdown-content">
+          <button data-lang="ko">🇰🇷</button>
+          <button data-lang="en">🇺🇸</button>
+          <button data-lang="zh">🇨🇳</button>
+          <button data-lang="ja">🇯🇵</button>
+        </div>
+      </div>
+    </div>
     <h1></h1> <!-- Post title will be inserted here -->
     <nav class="main-nav">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="1000.html">1000</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a href="index.html" data-i18n-key="navHome">Home</a></li>
+        <li><a href="1000.html" data-i18n-key="nav1000">1000</a></li>
+        <li><a href="blog.html" data-i18n-key="navBlog">Blog</a></li>
       </ul>
     </nav>
 
     <div id="blog-post-content">
       <!-- Blog post content will be loaded and rendered here by JavaScript -->
-      <p>로딩 중...</p>
+      <p data-i18n-key="loadingMessage">로딩 중...</p>
     </div>
     
     <div id="post-navigation" class="post-navigation">

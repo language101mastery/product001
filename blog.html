@@ -3,23 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog - 한자 학습</title>
+  <title data-i18n-key="pageTitle">Blog - 천자문 학습</title>
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
   <div class="container">
-    <h1>블로그</h1>
+    <div class="lang-selector-container">
+      <div class="lang-dropdown">
+        <button class="lang-dropdown-btn">🇰🇷</button>
+        <div class="lang-dropdown-content">
+          <button data-lang="ko">🇰🇷</button>
+          <button data-lang="en">🇺🇸</button>
+          <button data-lang="zh">🇨🇳</button>
+          <button data-lang="ja">🇯🇵</button>
+        </div>
+      </div>
+    </div>
+    <h1 data-i18n-key="blogPageTitle">블로그</h1>
     <nav class="main-nav">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="1000.html">1000</a></li>
-        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="index.html" data-i18n-key="navHome">Home</a></li>
+        <li><a href="1000.html" data-i18n-key="nav1000">1000</a></li>
+        <li><a href="blog.html" class="active" data-i18n-key="navBlog">Blog</a></li>
       </ul>
     </nav>
 
     <div id="blog-posts-list">
       <!-- Blog posts will be loaded here by JavaScript -->
-      <p>로딩 중...</p>
+      <p data-i18n-key="loadingMessage">로딩 중...</p>
     </div>
   </div>
   <script src="js/marked.min.js"></script>

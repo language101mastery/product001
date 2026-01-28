@@ -3,21 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>천자문 학습</title>
+  <title data-i18n-key="pageTitle">천자문 학습</title>
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
   <div class="container">
-    <h1>천자문 공부</h1>
+    <div class="lang-selector-container">
+      <div class="lang-dropdown">
+        <button class="lang-dropdown-btn">🇰🇷</button>
+        <div class="lang-dropdown-content">
+          <button data-lang="ko">🇰🇷</button>
+          <button data-lang="en">🇺🇸</button>
+          <button data-lang="zh">🇨🇳</button>
+          <button data-lang="ja">🇯🇵</button>
+        </div>
+      </div>
+    </div>
+    <h1 data-i18n-key="welcomeTitle">천자문 공부</h1>
     <nav class="main-nav">
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="1000.html">1000</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a href="index.html" class="active" data-i18n-key="navHome">Home</a></li>
+        <li><a href="1000.html" data-i18n-key="nav1000">1000</a></li>
+        <li><a href="blog.html" data-i18n-key="navBlog">Blog</a></li>
       </ul>
     </nav>
     <div class="welcome-card">
-      <h2>천자문 공부 페이지에 오신 것을 환영합니다.</h2>
+      <h2 data-i18n-key="welcomeMessage">천자문 공부 페이지에 오신 것을 환영합니다.</h2>
     </div>
   </div>
   <script defer type="module" src="/main.js"></script>

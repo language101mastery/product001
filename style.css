@@ -55,7 +55,72 @@ body {
 .container {
   width: 100%;
   max-width: 700px; /* Increased max-width for better desktop view */
+  position: relative;
 }
+
+/* Language Selector (Dropdown) */
+.lang-selector-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.lang-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.lang-dropdown-btn {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: 1px solid var(--button-border);
+    padding: 0.6rem 1rem;
+    font-family: var(--main-font);
+    font-size: 1.2rem; /* Larger emoji */
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lang-dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: var(--card-background);
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px;
+    padding: 0.5rem 0;
+}
+
+.lang-dropdown:hover .lang-dropdown-content {
+    display: block;
+}
+
+.lang-dropdown-content button {
+    color: var(--button-text);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem; /* Match button emoji size */
+}
+
+.lang-dropdown-content button:hover {
+    background-color: var(--button-bg);
+}
+
+.lang-dropdown-content button.active {
+  font-weight: bold;
+  /* You can add more styles for the active language in the dropdown */
+}
+
 
 h1 {
   font-size: 2.5rem;
