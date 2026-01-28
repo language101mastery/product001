@@ -1,25 +1,126 @@
 [
   {
     "phrase": "天地玄黄 宇宙洪荒",
+    "meaning": "天は玄（くろ）く地は黄なり、宇宙は洪（ひろ）く荒（あれ）たり。",
     "details": [
       {
         "char": "天",
         "japanese": {
           "sound": "てん (ten)",
-          "meaning": "あめ"
+          "meaning": "あめ (heaven)"
         }
       },
       {
         "char": "地",
         "japanese": {
           "sound": "ち (chi)",
-          "meaning": "つち"
+          "meaning": "つち (earth)"
+        }
+      },
+      {
+        "char": "玄",
+        "japanese": {
+          "sound": "げん (gen)",
+          "meaning": "くろ (black/mysterious)"
+        }
+      },
+      {
+        "char": "黄",
+        "japanese": {
+          "sound": "こう (kou)",
+          "meaning": "き (yellow)"
+        }
+      },
+      {
+        "char": "宇",
+        "japanese": {
+          "sound": "う (u)",
+          "meaning": "のき (eaves/universe)"
+        }
+      },
+      {
+        "char": "宙",
+        "japanese": {
+          "sound": "ちゅう (chu)",
+          "meaning": "そら (mid-air/space)"
+        }
+      },
+      {
+        "char": "洪",
+        "japanese": {
+          "sound": "こう (kou)",
+          "meaning": "おおみず (flood)"
+        }
+      },
+      {
+        "char": "荒",
+        "japanese": {
+          "sound": "こう (kou)",
+          "meaning": "あれる (rough)"
         }
       }
     ]
   },
   {
     "phrase": "日月盈昃 辰宿列張",
-    "details": []
+    "meaning": "日は盈ち月は昃り、辰宿列り張る。",
+    "details": [
+      {
+        "char": "日",
+        "japanese": {
+          "sound": "にち (nichi)",
+          "meaning": "ひ (sun/day)"
+        }
+      },
+      {
+        "char": "月",
+        "japanese": {
+          "sound": "げつ (getsu)",
+          "meaning": "つき (moon)"
+        }
+      },
+      {
+        "char": "盈",
+        "japanese": {
+          "sound": "えい (ei)",
+          "meaning": "みちる (full)"
+        }
+      },
+      {
+        "char": "昃",
+        "japanese": {
+          "sound": "しょく (shoku)",
+          "meaning": "かたむく (decline)"
+        }
+      },
+      {
+        "char": "辰",
+        "japanese": {
+          "sound": "しん (shin)",
+          "meaning": "たつ (dragon/sign)"
+        }
+      },
+      {
+        "char": "宿",
+        "japanese": {
+          "sound": "しゅく (shuku)",
+          "meaning": "やど (lodging/star)"
+        }
+      },
+      {
+        "char": "列",
+        "japanese": {
+          "sound": "れつ (retsu)",
+          "meaning": "つらなる (row)"
+        }
+      },
+      {
+        "char": "張",
+        "japanese": {
+          "sound": "ちょう (cho)",
+          "meaning": "はる (stretch)"
+        }
+      }
+    ]
   }
 ]

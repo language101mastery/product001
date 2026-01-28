@@ -29,6 +29,7 @@ class CheonjamunCard extends HTMLElement {
             <style>
                 :host {
                     display: flex;
+                    flex-direction: column; /* Stack phrase and meaning */
                     justify-content: center;
                     align-items: center;
                     background-color: var(--card-background, #ffffff);
@@ -48,8 +49,17 @@ class CheonjamunCard extends HTMLElement {
                     color: var(--text-color);
                     line-height: 1.5;
                 }
+                .meaning {
+                    margin-top: 1rem;
+                    font-family: var(--main-font);
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    color: var(--text-color);
+                    opacity: 0.9;
+                }
             </style>
             <div class="phrase"></div>
+            <div class="meaning"></div>
         `;
     }
 
@@ -61,8 +71,12 @@ class CheonjamunCard extends HTMLElement {
     switchCharset(charset) {
         if (this.currentData) {
             const phraseElement = this.shadowRoot.querySelector('.phrase');
+            const meaningElement = this.shadowRoot.querySelector('.meaning');
+            
             phraseElement.textContent = this.currentData.phrase;
             phraseElement.style.fontFamily = getFontVariable(charset);
+            
+            meaningElement.textContent = this.currentData.meaning || '';
         }
     }
 }

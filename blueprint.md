@@ -26,6 +26,11 @@ This project is a web application designed to help users study Hanja (Chinese ch
 
 ## Current Plan
 
+### Task: Add Phrase Meanings to Cheonjamun Card
+- Updated data files (`hanja_data.json`, `simplified_chinese_data.json`, `japanese_data.json`) to include a `meaning` field for each phrase and missing character details.
+- Modified `CheonjamunCard` in `main.js` to render the translated meaning below the main phrase.
+- Added styling for the meaning text within the component's Shadow DOM.
+
 ### Task: Add Blog Post Navigation
 - Added navigation controls to the blog post view (`post.html`).
 - Implemented "Previous Post", "List", and "Next Post" buttons in `main.js`.

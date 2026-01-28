@@ -1,6 +1,7 @@
 [
   {
     "phrase": "天地玄黄 宇宙洪荒",
+    "meaning": "天是青黑色的，地是黄色的；宇宙辽阔广大。",
     "details": [
       {
         "char": "天",
@@ -15,11 +16,111 @@
           "sound": "dì",
           "meaning": "earth"
         }
+      },
+      {
+        "char": "玄",
+        "chineseS": {
+          "sound": "xuán",
+          "meaning": "black/mysterious"
+        }
+      },
+      {
+        "char": "黄",
+        "chineseS": {
+          "sound": "huáng",
+          "meaning": "yellow"
+        }
+      },
+      {
+        "char": "宇",
+        "chineseS": {
+          "sound": "yǔ",
+          "meaning": "universe/space"
+        }
+      },
+      {
+        "char": "宙",
+        "chineseS": {
+          "sound": "zhòu",
+          "meaning": "universe/time"
+        }
+      },
+      {
+        "char": "洪",
+        "chineseS": {
+          "sound": "hóng",
+          "meaning": "flood/vast"
+        }
+      },
+      {
+        "char": "荒",
+        "chineseS": {
+          "sound": "huāng",
+          "meaning": "wasteland/famine"
+        }
       }
     ]
   },
   {
     "phrase": "日月盈昃 辰宿列张",
-    "details": []
+    "meaning": "太阳升落，月圆月缺；星辰罗列分布。",
+    "details": [
+      {
+        "char": "日",
+        "chineseS": {
+          "sound": "rì",
+          "meaning": "sun/day"
+        }
+      },
+      {
+        "char": "月",
+        "chineseS": {
+          "sound": "yuè",
+          "meaning": "moon/month"
+        }
+      },
+      {
+        "char": "盈",
+        "chineseS": {
+          "sound": "yíng",
+          "meaning": "full/surplus"
+        }
+      },
+      {
+        "char": "昃",
+        "chineseS": {
+          "sound": "zè",
+          "meaning": "sun declining"
+        }
+      },
+      {
+        "char": "辰",
+        "chineseS": {
+          "sound": "chén",
+          "meaning": "star/time"
+        }
+      },
+      {
+        "char": "宿",
+        "chineseS": {
+          "sound": "xiù",
+          "meaning": "constellation"
+        }
+      },
+      {
+        "char": "列",
+        "chineseS": {
+          "sound": "liè",
+          "meaning": "arrange/line up"
+        }
+      },
+      {
+        "char": "张",
+        "chineseS": {
+          "sound": "zhāng",
+          "meaning": "spread/sheet"
+        }
+      }
+    ]
   }
 ]
