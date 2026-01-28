@@ -1,0 +1,7752 @@
+[
+  {
+    "phrase": "天地玄黃 宇宙洪荒",
+    "meaning": "하늘은 검고 땅은 누르며, 우주는 넓고 거칠다.",
+    "details": [
+      {
+        "char": "天",
+        "hanja": {
+          "sound": "천",
+          "meaning": "하늘"
+        }
+      },
+      {
+        "char": "地",
+        "hanja": {
+          "sound": "지",
+          "meaning": "땅"
+        }
+      },
+      {
+        "char": "玄",
+        "hanja": {
+          "sound": "현",
+          "meaning": "검을"
+        }
+      },
+      {
+        "char": "黃",
+        "hanja": {
+          "sound": "황",
+          "meaning": "누를"
+        }
+      },
+      {
+        "char": "宇",
+        "hanja": {
+          "sound": "우",
+          "meaning": "집"
+        }
+      },
+      {
+        "char": "宙",
+        "hanja": {
+          "sound": "주",
+          "meaning": "집"
+        }
+      },
+      {
+        "char": "洪",
+        "hanja": {
+          "sound": "홍",
+          "meaning": "넓을"
+        }
+      },
+      {
+        "char": "荒",
+        "hanja": {
+          "sound": "황",
+          "meaning": "거칠"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "日月盈昃 辰宿列張",
+    "meaning": "해와 달이 차고 기울며, 별들은 넓게 퍼져 있다.",
+    "details": [
+      {
+        "char": "日",
+        "hanja": {
+          "sound": "일",
+          "meaning": "날"
+        }
+      },
+      {
+        "char": "月",
+        "hanja": {
+          "sound": "월",
+          "meaning": "달"
+        }
+      },
+      {
+        "char": "盈",
+        "hanja": {
+          "sound": "영",
+          "meaning": "찰"
+        }
+      },
+      {
+        "char": "昃",
+        "hanja": {
+          "sound": "측",
+          "meaning": "기울"
+        }
+      },
+      {
+        "char": "辰",
+        "hanja": {
+          "sound": "진",
+          "meaning": "별"
+        }
+      },
+      {
+        "char": "宿",
+        "hanja": {
+          "sound": "수",
+          "meaning": "잘"
+        }
+      },
+      {
+        "char": "列",
+        "hanja": {
+          "sound": "열",
+          "meaning": "벌일"
+        }
+      },
+      {
+        "char": "張",
+        "hanja": {
+          "sound": "장",
+          "meaning": "베풀"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "寒來暑往 秋收冬藏",
+    "meaning": "찬 것이 오면 더운 것이 가고, 가을에 수확하며 겨울에 저장한다.",
+    "details": [
+      {
+        "char": "寒",
+        "hanja": {
+          "sound": "한",
+          "meaning": "찰"
+        }
+      },
+      {
+        "char": "來",
+        "hanja": {
+          "sound": "래",
+          "meaning": "올"
+        }
+      },
+      {
+        "char": "暑",
+        "hanja": {
+          "sound": "서",
+          "meaning": "더울"
+        }
+      },
+      {
+        "char": "往",
+        "hanja": {
+          "sound": "왕",
+          "meaning": "갈"
+        }
+      },
+      {
+        "char": "秋",
+        "hanja": {
+          "sound": "추",
+          "meaning": "가을"
+        }
+      },
+      {
+        "char": "收",
+        "hanja": {
+          "sound": "수",
+          "meaning": "거둘"
+        }
+      },
+      {
+        "char": "冬",
+        "hanja": {
+          "sound": "동",
+          "meaning": "겨울"
+        }
+      },
+      {
+        "char": "藏",
+        "hanja": {
+          "sound": "장",
+          "meaning": "감출"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "閏餘成歲 律呂調陽",
+    "meaning": "윤달이 남아 해를 이루고, 율려가 양의 가락을 이루니,",
+    "details": [
+      {
+        "char": "閏",
+        "hanja": {
+          "sound": "윤",
+          "meaning": "윤달"
+        }
+      },
+      {
+        "char": "餘",
+        "hanja": {
+          "sound": "여",
+          "meaning": "남을"
+        }
+      },
+      {
+        "char": "成",
+        "hanja": {
+          "sound": "성",
+          "meaning": "이룰"
+        }
+      },
+      {
+        "char": "歲",
+        "hanja": {
+          "sound": "세",
+          "meaning": "해"
+        }
+      },
+      {
+        "char": "律",
+        "hanja": {
+          "sound": "율",
+          "meaning": "가락"
+        }
+      },
+      {
+        "char": "呂",
+        "hanja": {
+          "sound": "려",
+          "meaning": "음률"
+        }
+      },
+      {
+        "char": "調",
+        "hanja": {
+          "sound": "조",
+          "meaning": "고를"
+        }
+      },
+      {
+        "char": "陽",
+        "hanja": {
+          "sound": "양",
+          "meaning": "볕"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "雲騰致雨 露結爲霜",
+    "meaning": "구름이 올라가 비가 되며, 이슬이 맺히고 서리가 내린다.",
+    "details": [
+      {
+        "char": "雲",
+        "hanja": {
+          "sound": "운",
+          "meaning": "구름"
+        }
+      },
+      {
+        "char": "騰",
+        "hanja": {
+          "sound": "등",
+          "meaning": "오를"
+        }
+      },
+      {
+        "char": "致",
+        "hanja": {
+          "sound": "치",
+          "meaning": "이를"
+        }
+      },
+      {
+        "char": "雨",
+        "hanja": {
+          "sound": "우",
+          "meaning": "비"
+        }
+      },
+      {
+        "char": "露",
+        "hanja": {
+          "sound": "노",
+          "meaning": "이슬"
+        }
+      },
+      {
+        "char": "結",
+        "hanja": {
+          "sound": "결",
+          "meaning": "맺을"
+        }
+      },
+      {
+        "char": "爲",
+        "hanja": {
+          "sound": "위",
+          "meaning": "할"
+        }
+      },
+      {
+        "char": "霜",
+        "hanja": {
+          "sound": "상",
+          "meaning": "서리"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "金生麗水 玉出崑岡",
+    "meaning": "금은 여수에서 나고 옥은 곤강에서 난다.",
+    "details": [
+      {
+        "char": "金",
+        "hanja": {
+          "sound": "금",
+          "meaning": "쇠"
+        }
+      },
+      {
+        "char": "生",
+        "hanja": {
+          "sound": "생",
+          "meaning": "낳을"
+        }
+      },
+      {
+        "char": "麗",
+        "hanja": {
+          "sound": "여",
+          "meaning": "고울"
+        }
+      },
+      {
+        "char": "水",
+        "hanja": {
+          "sound": "수",
+          "meaning": "물"
+        }
+      },
+      {
+        "char": "玉",
+        "hanja": {
+          "sound": "옥",
+          "meaning": "구슬"
+        }
+      },
+      {
+        "char": "出",
+        "hanja": {
+          "sound": "출",
+          "meaning": "날"
+        }
+      },
+      {
+        "char": "崑",
+        "hanja": {
+          "sound": "곤",
+          "meaning": "메"
+        }
+      },
+      {
+        "char": "岡",
+        "hanja": {
+          "sound": "강",
+          "meaning": "메"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "劍號巨闕 珠稱夜光",
+    "meaning": "칼은 거궐(월왕의 보검)이 유명하고, 구슬은 야광주가 칭송받는다.",
+    "details": [
+      {
+        "char": "劍",
+        "hanja": {
+          "sound": "검",
+          "meaning": "칼"
+        }
+      },
+      {
+        "char": "號",
+        "hanja": {
+          "sound": "호",
+          "meaning": "이름"
+        }
+      },
+      {
+        "char": "巨",
+        "hanja": {
+          "sound": "거",
+          "meaning": "클"
+        }
+      },
+      {
+        "char": "闕",
+        "hanja": {
+          "sound": "궐",
+          "meaning": "대궐"
+        }
+      },
+      {
+        "char": "珠",
+        "hanja": {
+          "sound": "주",
+          "meaning": "구슬"
+        }
+      },
+      {
+        "char": "稱",
+        "hanja": {
+          "sound": "칭",
+          "meaning": "일컬을"
+        }
+      },
+      {
+        "char": "夜",
+        "hanja": {
+          "sound": "야",
+          "meaning": "밤"
+        }
+      },
+      {
+        "char": "光",
+        "hanja": {
+          "sound": "광",
+          "meaning": "빛"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "果珍李柰 菜重芥薑",
+    "meaning": "과일 중엔 자두와 능금이요, 채소 중엔 겨자와 생강이라",
+    "details": [
+      {
+        "char": "果",
+        "hanja": {
+          "sound": "과",
+          "meaning": "과실"
+        }
+      },
+      {
+        "char": "珍",
+        "hanja": {
+          "sound": "진",
+          "meaning": "보배"
+        }
+      },
+      {
+        "char": "李",
+        "hanja": {
+          "sound": "리",
+          "meaning": "오얏"
+        }
+      },
+      {
+        "char": "柰",
+        "hanja": {
+          "sound": "내",
+          "meaning": "능금나무"
+        }
+      },
+      {
+        "char": "菜",
+        "hanja": {
+          "sound": "채",
+          "meaning": "나물"
+        }
+      },
+      {
+        "char": "重",
+        "hanja": {
+          "sound": "중",
+          "meaning": "무거울"
+        }
+      },
+      {
+        "char": "芥",
+        "hanja": {
+          "sound": "개",
+          "meaning": "겨자"
+        }
+      },
+      {
+        "char": "薑",
+        "hanja": {
+          "sound": "강",
+          "meaning": "생강"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "海鹹河淡 鱗潛羽翔",
+    "meaning": "바다는 짜고 강은 맑으며, 비늘 있는 것은 (물에) 잠겨있고 깃털 있는 것은 (하늘을) 난다.",
+    "details": [
+      {
+        "char": "海",
+        "hanja": {
+          "sound": "해",
+          "meaning": "바다"
+        }
+      },
+      {
+        "char": "鹹",
+        "hanja": {
+          "sound": "함",
+          "meaning": "짤"
+        }
+      },
+      {
+        "char": "河",
+        "hanja": {
+          "sound": "하",
+          "meaning": "물"
+        }
+      },
+      {
+        "char": "淡",
+        "hanja": {
+          "sound": "담",
+          "meaning": "묽을"
+        }
+      },
+      {
+        "char": "鱗",
+        "hanja": {
+          "sound": "인",
+          "meaning": "비늘"
+        }
+      },
+      {
+        "char": "潛",
+        "hanja": {
+          "sound": "잠",
+          "meaning": "잠길"
+        }
+      },
+      {
+        "char": "羽",
+        "hanja": {
+          "sound": "우",
+          "meaning": "깃"
+        }
+      },
+      {
+        "char": "翔",
+        "hanja": {
+          "sound": "상",
+          "meaning": "높이 날"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "龍師火帝 鳥官人皇",
+    "meaning": "(복희는) 용의 이름으로, (염제 신농은) 불로 벼슬 이름을 지었고, (소호는) 새 이름으로, 황제는 인문을 갖추었다.",
+    "details": [
+      {
+        "char": "龍",
+        "hanja": {
+          "sound": "용",
+          "meaning": "용"
+        }
+      },
+      {
+        "char": "師",
+        "hanja": {
+          "sound": "사",
+          "meaning": "스승"
+        }
+      },
+      {
+        "char": "火",
+        "hanja": {
+          "sound": "화",
+          "meaning": "불"
+        }
+      },
+      {
+        "char": "帝",
+        "hanja": {
+          "sound": "제",
+          "meaning": "임금"
+        }
+      },
+      {
+        "char": "鳥",
+        "hanja": {
+          "sound": "조",
+          "meaning": "새"
+        }
+      },
+      {
+        "char": "官",
+        "hanja": {
+          "sound": "관",
+          "meaning": "벼슬"
+        }
+      },
+      {
+        "char": "人",
+        "hanja": {
+          "sound": "인",
+          "meaning": "사람"
+        }
+      },
+      {
+        "char": "皇",
+        "hanja": {
+          "sound": "황",
+          "meaning": "임금"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "始制文字 乃服衣裳",
+    "meaning": "(복희씨의 신하 창힐이) 비로소 처음 문자를 만들고, (황제가) 윗옷과 치마를 정했다.",
+    "details": [
+      {
+        "char": "始",
+        "hanja": {
+          "sound": "시",
+          "meaning": "처음"
+        }
+      },
+      {
+        "char": "制",
+        "hanja": {
+          "sound": "제",
+          "meaning": "지을"
+        }
+      },
+      {
+        "char": "文",
+        "hanja": {
+          "sound": "문",
+          "meaning": "글월"
+        }
+      },
+      {
+        "char": "字",
+        "hanja": {
+          "sound": "자",
+          "meaning": "글자"
+        }
+      },
+      {
+        "char": "乃",
+        "hanja": {
+          "sound": "내",
+          "meaning": "이에"
+        }
+      },
+      {
+        "char": "服",
+        "hanja": {
+          "sound": "복",
+          "meaning": "옷"
+        }
+      },
+      {
+        "char": "衣",
+        "hanja": {
+          "sound": "의",
+          "meaning": "옷"
+        }
+      },
+      {
+        "char": "裳",
+        "hanja": {
+          "sound": "상",
+          "meaning": "치마"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "推位讓國 有虞陶唐",
+    "meaning": "자리에서 물러나 나라를 사양한 자는 유우와 도당이다.",
+    "details": [
+      {
+        "char": "推",
+        "hanja": {
+          "sound": "퇴",
+          "meaning": "밀"
+        }
+      },
+      {
+        "char": "位",
+        "hanja": {
+          "sound": "위",
+          "meaning": "자리"
+        }
+      },
+      {
+        "char": "讓",
+        "hanja": {
+          "sound": "양",
+          "meaning": "사양할"
+        }
+      },
+      {
+        "char": "國",
+        "hanja": {
+          "sound": "국",
+          "meaning": "나라"
+        }
+      },
+      {
+        "char": "有",
+        "hanja": {
+          "sound": "유",
+          "meaning": "있을"
+        }
+      },
+      {
+        "char": "虞",
+        "hanja": {
+          "sound": "우",
+          "meaning": "헤아릴"
+        }
+      },
+      {
+        "char": "陶",
+        "hanja": {
+          "sound": "도",
+          "meaning": "질그릇"
+        }
+      },
+      {
+        "char": "唐",
+        "hanja": {
+          "sound": "당",
+          "meaning": "당나라"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "弔民伐罪 周發殷湯",
+    "meaning": "백성을 위로하고 죄를 벌함은 주나라 무왕과 은나라 탕왕이라.",
+    "details": [
+      {
+        "char": "弔",
+        "hanja": {
+          "sound": "조",
+          "meaning": "슬퍼할"
+        }
+      },
+      {
+        "char": "民",
+        "hanja": {
+          "sound": "민",
+          "meaning": "백성"
+        }
+      },
+      {
+        "char": "伐",
+        "hanja": {
+          "sound": "벌",
+          "meaning": "칠"
+        }
+      },
+      {
+        "char": "罪",
+        "hanja": {
+          "sound": "죄",
+          "meaning": "허물"
+        }
+      },
+      {
+        "char": "周",
+        "hanja": {
+          "sound": "주",
+          "meaning": "두루"
+        }
+      },
+      {
+        "char": "發",
+        "hanja": {
+          "sound": "발",
+          "meaning": "필"
+        }
+      },
+      {
+        "char": "殷",
+        "hanja": {
+          "sound": "은",
+          "meaning": "나라이름"
+        }
+      },
+      {
+        "char": "湯",
+        "hanja": {
+          "sound": "탕",
+          "meaning": "끓을"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "坐朝問道 垂拱平章",
+    "meaning": "조정에 앉아 도를 물으니, 옷자락을 늘어뜨리고 팔짱만 끼고 있어도 밝게 다스려진다.",
+    "details": [
+      {
+        "char": "坐",
+        "hanja": {
+          "sound": "좌",
+          "meaning": "앉을"
+        }
+      },
+      {
+        "char": "朝",
+        "hanja": {
+          "sound": "조",
+          "meaning": "아침"
+        }
+      },
+      {
+        "char": "問",
+        "hanja": {
+          "sound": "문",
+          "meaning": "물을"
+        }
+      },
+      {
+        "char": "道",
+        "hanja": {
+          "sound": "도",
+          "meaning": "길/말할"
+        }
+      },
+      {
+        "char": "垂",
+        "hanja": {
+          "sound": "수",
+          "meaning": "드리울"
+        }
+      },
+      {
+        "char": "拱",
+        "hanja": {
+          "sound": "공",
+          "meaning": "껴안을"
+        }
+      },
+      {
+        "char": "平",
+        "hanja": {
+          "sound": "평",
+          "meaning": "평평할"
+        }
+      },
+      {
+        "char": "章",
+        "hanja": {
+          "sound": "장",
+          "meaning": "글월"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "愛育黎首 臣伏戎羌",
+    "meaning": "백성을 친자식처럼 아껴 기르면, 모든 오랑캐(융강 - 서융, 강족)들도 신하가 되어 엎드리고,",
+    "details": [
+      {
+        "char": "愛",
+        "hanja": {
+          "sound": "애",
+          "meaning": "사랑"
+        }
+      },
+      {
+        "char": "育",
+        "hanja": {
+          "sound": "육",
+          "meaning": "기를"
+        }
+      },
+      {
+        "char": "黎",
+        "hanja": {
+          "sound": "려",
+          "meaning": "검을"
+        }
+      },
+      {
+        "char": "首",
+        "hanja": {
+          "sound": "수",
+          "meaning": "머리"
+        }
+      },
+      {
+        "char": "臣",
+        "hanja": {
+          "sound": "신",
+          "meaning": "신하"
+        }
+      },
+      {
+        "char": "伏",
+        "hanja": {
+          "sound": "복",
+          "meaning": "엎드릴"
+        }
+      },
+      {
+        "char": "戎",
+        "hanja": {
+          "sound": "융",
+          "meaning": "오랑캐"
+        }
+      },
+      {
+        "char": "羌",
+        "hanja": {
+          "sound": "강",
+          "meaning": "종족이름"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "遐邇壹體 率賓歸王",
+    "meaning": "멀고 가까운 데가 다 한몸이 되어, 거느리고 와서 왕(천자)에게 모인다.",
+    "details": [
+      {
+        "char": "遐",
+        "hanja": {
+          "sound": "하",
+          "meaning": "멀"
+        }
+      },
+      {
+        "char": "邇",
+        "hanja": {
+          "sound": "이",
+          "meaning": "가까울"
+        }
+      },
+      {
+        "char": "壹",
+        "hanja": {
+          "sound": "일",
+          "meaning": "한"
+        }
+      },
+      {
+        "char": "體",
+        "hanja": {
+          "sound": "체",
+          "meaning": "몸"
+        }
+      },
+      {
+        "char": "率",
+        "hanja": {
+          "sound": "솔",
+          "meaning": "거느릴 솔/비율"
+        }
+      },
+      {
+        "char": "賓",
+        "hanja": {
+          "sound": "빈",
+          "meaning": "손"
+        }
+      },
+      {
+        "char": "歸",
+        "hanja": {
+          "sound": "귀",
+          "meaning": "돌아갈"
+        }
+      },
+      {
+        "char": "王",
+        "hanja": {
+          "sound": "왕",
+          "meaning": "임금"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "鳴鳳在樹 白駒食場",
+    "meaning": "우는 봉황새는 나무 위에 있고, 흰 망아지는 마당에서 풀을 뜯는다.",
+    "details": [
+      {
+        "char": "鳴",
+        "hanja": {
+          "sound": "명",
+          "meaning": "울"
+        }
+      },
+      {
+        "char": "鳳",
+        "hanja": {
+          "sound": "봉",
+          "meaning": "봉황새"
+        }
+      },
+      {
+        "char": "在",
+        "hanja": {
+          "sound": "재",
+          "meaning": "있을"
+        }
+      },
+      {
+        "char": "樹",
+        "hanja": {
+          "sound": "수",
+          "meaning": "나무"
+        }
+      },
+      {
+        "char": "白",
+        "hanja": {
+          "sound": "백",
+          "meaning": "흰"
+        }
+      },
+      {
+        "char": "駒",
+        "hanja": {
+          "sound": "구",
+          "meaning": "망아지"
+        }
+      },
+      {
+        "char": "食",
+        "hanja": {
+          "sound": "식",
+          "meaning": "밥"
+        }
+      },
+      {
+        "char": "場",
+        "hanja": {
+          "sound": "장",
+          "meaning": "마당"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "化被草木 賴及萬方",
+    "meaning": "덕화(德化)가 풀, 나무에까지 미치고, 힘입음이 온 누리에 미친다.",
+    "details": [
+      {
+        "char": "化",
+        "hanja": {
+          "sound": "화",
+          "meaning": "될"
+        }
+      },
+      {
+        "char": "被",
+        "hanja": {
+          "sound": "피",
+          "meaning": "입을"
+        }
+      },
+      {
+        "char": "草",
+        "hanja": {
+          "sound": "초",
+          "meaning": "풀"
+        }
+      },
+      {
+        "char": "木",
+        "hanja": {
+          "sound": "목",
+          "meaning": "나무"
+        }
+      },
+      {
+        "char": "賴",
+        "hanja": {
+          "sound": "뇌",
+          "meaning": "힘입을"
+        }
+      },
+      {
+        "char": "及",
+        "hanja": {
+          "sound": "급",
+          "meaning": "미칠"
+        }
+      },
+      {
+        "char": "萬",
+        "hanja": {
+          "sound": "만",
+          "meaning": "일만"
+        }
+      },
+      {
+        "char": "方",
+        "hanja": {
+          "sound": "방",
+          "meaning": "모"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "蓋此身髮 四大五常",
+    "meaning": "무릇 이 몸과 터럭은, 네 가지 큰 것(천지군친)과 다섯 가지 떳떳함(인의예지신)으로 이루어졌다.",
+    "details": [
+      {
+        "char": "蓋",
+        "hanja": {
+          "sound": "개",
+          "meaning": "덮을"
+        }
+      },
+      {
+        "char": "此",
+        "hanja": {
+          "sound": "차",
+          "meaning": "이"
+        }
+      },
+      {
+        "char": "身",
+        "hanja": {
+          "sound": "신",
+          "meaning": "몸"
+        }
+      },
+      {
+        "char": "髮",
+        "hanja": {
+          "sound": "발",
+          "meaning": "터럭"
+        }
+      },
+      {
+        "char": "四",
+        "hanja": {
+          "sound": "사",
+          "meaning": "넉"
+        }
+      },
+      {
+        "char": "大",
+        "hanja": {
+          "sound": "대",
+          "meaning": "큰"
+        }
+      },
+      {
+        "char": "五",
+        "hanja": {
+          "sound": "오",
+          "meaning": "다섯"
+        }
+      },
+      {
+        "char": "常",
+        "hanja": {
+          "sound": "상",
+          "meaning": "항상"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "恭惟鞠養 豈敢毁傷",
+    "meaning": "살피고 길러 주신 것을 곰곰히 생각하면, 어찌 함부로 헐고 다치게 할 수 있을까!",
+    "details": [
+      {
+        "char": "恭",
+        "hanja": {
+          "sound": "공",
+          "meaning": "공손할"
+        }
+      },
+      {
+        "char": "惟",
+        "hanja": {
+          "sound": "유",
+          "meaning": "오직"
+        }
+      },
+      {
+        "char": "鞠",
+        "hanja": {
+          "sound": "국",
+          "meaning": "국문할"
+        }
+      },
+      {
+        "char": "養",
+        "hanja": {
+          "sound": "양",
+          "meaning": "기를"
+        }
+      },
+      {
+        "char": "豈",
+        "hanja": {
+          "sound": "기",
+          "meaning": "어찌"
+        }
+      },
+      {
+        "char": "敢",
+        "hanja": {
+          "sound": "감",
+          "meaning": "감히"
+        }
+      },
+      {
+        "char": "毁",
+        "hanja": {
+          "sound": "훼",
+          "meaning": "헐"
+        }
+      },
+      {
+        "char": "傷",
+        "hanja": {
+          "sound": "상",
+          "meaning": "상할"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "女慕貞烈 男效才良",
+    "meaning": "계집은 곧고 굳음을 사모하고 사내는 어짊을 본받아야 하느니라.",
+    "details": [
+      {
+        "char": "女",
+        "hanja": {
+          "sound": "여",
+          "meaning": "계집"
+        }
+      },
+      {
+        "char": "慕",
+        "hanja": {
+          "sound": "모",
+          "meaning": "사모할"
+        }
+      },
+      {
+        "char": "貞",
+        "hanja": {
+          "sound": "정",
+          "meaning": "곧을"
+        }
+      },
+      {
+        "char": "烈",
+        "hanja": {
+          "sound": "렬",
+          "meaning": "매울"
+        }
+      },
+      {
+        "char": "男",
+        "hanja": {
+          "sound": "남",
+          "meaning": "사내"
+        }
+      },
+      {
+        "char": "效",
+        "hanja": {
+          "sound": "효",
+          "meaning": "본받을"
+        }
+      },
+      {
+        "char": "才",
+        "hanja": {
+          "sound": "재",
+          "meaning": "재주"
+        }
+      },
+      {
+        "char": "良",
+        "hanja": {
+          "sound": "량",
+          "meaning": "어질"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "知過必改 得能莫忘",
+    "meaning": "허물을 알았으면 반드시 고쳐야 하고, 할 수 있게 된 다음에는 잊지 말아야 한다.",
+    "details": [
+      {
+        "char": "知",
+        "hanja": {
+          "sound": "지",
+          "meaning": "알"
+        }
+      },
+      {
+        "char": "過",
+        "hanja": {
+          "sound": "과",
+          "meaning": "지날/허물"
+        }
+      },
+      {
+        "char": "必",
+        "hanja": {
+          "sound": "필",
+          "meaning": "반드시"
+        }
+      },
+      {
+        "char": "改",
+        "hanja": {
+          "sound": "개",
+          "meaning": "고칠"
+        }
+      },
+      {
+        "char": "得",
+        "hanja": {
+          "sound": "득",
+          "meaning": "얻을"
+        }
+      },
+      {
+        "char": "能",
+        "hanja": {
+          "sound": "능",
+          "meaning": "능할"
+        }
+      },
+      {
+        "char": "莫",
+        "hanja": {
+          "sound": "막",
+          "meaning": "말"
+        }
+      },
+      {
+        "char": "忘",
+        "hanja": {
+          "sound": "망",
+          "meaning": "잊을"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "罔談彼短 靡恃己長",
+    "meaning": "남의 모자란 점을 말하지 말고, 나의 좋은 점을 믿지 말라.",
+    "details": [
+      {
+        "char": "罔",
+        "hanja": {
+          "sound": "망",
+          "meaning": "없을"
+        }
+      },
+      {
+        "char": "談",
+        "hanja": {
+          "sound": "담",
+          "meaning": "말씀"
+        }
+      },
+      {
+        "char": "彼",
+        "hanja": {
+          "sound": "피",
+          "meaning": "저"
+        }
+      },
+      {
+        "char": "短",
+        "hanja": {
+          "sound": "단",
+          "meaning": "짧을"
+        }
+      },
+      {
+        "char": "靡",
+        "hanja": {
+          "sound": "미",
+          "meaning": "아닐"
+        }
+      },
+      {
+        "char": "恃",
+        "hanja": {
+          "sound": "시",
+          "meaning": "믿을"
+        }
+      },
+      {
+        "char": "己",
+        "hanja": {
+          "sound": "기",
+          "meaning": "몸"
+        }
+      },
+      {
+        "char": "長",
+        "hanja": {
+          "sound": "장",
+          "meaning": "길"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "信使可覆 器欲難量",
+    "meaning": "언약은 지킬 수 있게 하고, 그릇은 헤아리기 어렵게끔 되도록 하라.",
+    "details": [
+      {
+        "char": "信",
+        "hanja": {
+          "sound": "신",
+          "meaning": "믿을"
+        }
+      },
+      {
+        "char": "使",
+        "hanja": {
+          "sound": "사",
+          "meaning": "하여금"
+        }
+      },
+      {
+        "char": "可",
+        "hanja": {
+          "sound": "가",
+          "meaning": "옳을"
+        }
+      },
+      {
+        "char": "覆",
+        "hanja": {
+          "sound": "복",
+          "meaning": "뒤집힐"
+        }
+      },
+      {
+        "char": "器",
+        "hanja": {
+          "sound": "기",
+          "meaning": "그릇"
+        }
+      },
+      {
+        "char": "欲",
+        "hanja": {
+          "sound": "욕",
+          "meaning": "하고자할"
+        }
+      },
+      {
+        "char": "難",
+        "hanja": {
+          "sound": "난",
+          "meaning": "어려울"
+        }
+      },
+      {
+        "char": "量",
+        "hanja": {
+          "sound": "량",
+          "meaning": "헤아릴"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "墨悲絲染 詩讚羔羊",
+    "meaning": "묵자는 흰 실이 검게 물들여진 것을 슬퍼하였고, 시에서는 고양편을 기렸느니라.",
+    "details": [
+      {
+        "char": "墨",
+        "hanja": {
+          "sound": "묵",
+          "meaning": "먹"
+        }
+      },
+      {
+        "char": "悲",
+        "hanja": {
+          "sound": "비",
+          "meaning": "슬플"
+        }
+      },
+      {
+        "char": "絲",
+        "hanja": {
+          "sound": "사",
+          "meaning": "실"
+        }
+      },
+      {
+        "char": "染",
+        "hanja": {
+          "sound": "염",
+          "meaning": "물들일"
+        }
+      },
+      {
+        "char": "詩",
+        "hanja": {
+          "sound": "시",
+          "meaning": "시"
+        }
+      },
+      {
+        "char": "讚",
+        "hanja": {
+          "sound": "찬",
+          "meaning": "칭찬할"
+        }
+      },
+      {
+        "char": "羔",
+        "hanja": {
+          "sound": "고",
+          "meaning": "새끼양"
+        }
+      },
+      {
+        "char": "羊",
+        "hanja": {
+          "sound": "양",
+          "meaning": "양"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "景行維賢 克念作聖",
+    "meaning": "큰길을 걸어가는 사람은 어진 사람이 되니, 자잘한 생각을 이겨 나간다면 성인이 될 수 있다.",
+    "details": [
+      {
+        "char": "景",
+        "hanja": {
+          "sound": "경",
+          "meaning": "경치"
+        }
+      },
+      {
+        "char": "行",
+        "hanja": {
+          "sound": "행",
+          "meaning": "다닐 행/항렬"
+        }
+      },
+      {
+        "char": "維",
+        "hanja": {
+          "sound": "유",
+          "meaning": "벼리"
+        }
+      },
+      {
+        "char": "賢",
+        "hanja": {
+          "sound": "현",
+          "meaning": "어질"
+        }
+      },
+      {
+        "char": "克",
+        "hanja": {
+          "sound": "극",
+          "meaning": "이길"
+        }
+      },
+      {
+        "char": "念",
+        "hanja": {
+          "sound": "념",
+          "meaning": "생각"
+        }
+      },
+      {
+        "char": "作",
+        "hanja": {
+          "sound": "작",
+          "meaning": "지을"
+        }
+      },
+      {
+        "char": "聖",
+        "hanja": {
+          "sound": "성",
+          "meaning": "성인"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "德建名立 形端表正",
+    "meaning": "덕이 세워지면 이름이 서게 되고, 몸매가 깔끔해야 겉모습이 똑바르게 된다.",
+    "details": [
+      {
+        "char": "德",
+        "hanja": {
+          "sound": "덕",
+          "meaning": "덕"
+        }
+      },
+      {
+        "char": "建",
+        "hanja": {
+          "sound": "건",
+          "meaning": "세울"
+        }
+      },
+      {
+        "char": "名",
+        "hanja": {
+          "sound": "명",
+          "meaning": "이름"
+        }
+      },
+      {
+        "char": "立",
+        "hanja": {
+          "sound": "립",
+          "meaning": "설"
+        }
+      },
+      {
+        "char": "形",
+        "hanja": {
+          "sound": "형",
+          "meaning": "모양"
+        }
+      },
+      {
+        "char": "端",
+        "hanja": {
+          "sound": "단",
+          "meaning": "바를"
+        }
+      },
+      {
+        "char": "表",
+        "hanja": {
+          "sound": "표",
+          "meaning": "겉"
+        }
+      },
+      {
+        "char": "正",
+        "hanja": {
+          "sound": "정",
+          "meaning": "바를"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "空谷傳聲 虛堂習聽",
+    "meaning": "텅 빈 골짜기에서도 소리는 전해지듯, 빈 대청에는 들림이 겹쳐지듯,",
+    "details": [
+      {
+        "char": "空",
+        "hanja": {
+          "sound": "공",
+          "meaning": "빌"
+        }
+      },
+      {
+        "char": "谷",
+        "hanja": {
+          "sound": "곡",
+          "meaning": "골"
+        }
+      },
+      {
+        "char": "傳",
+        "hanja": {
+          "sound": "전",
+          "meaning": "전할"
+        }
+      },
+      {
+        "char": "聲",
+        "hanja": {
+          "sound": "성",
+          "meaning": "소리"
+        }
+      },
+      {
+        "char": "虛",
+        "hanja": {
+          "sound": "허",
+          "meaning": "빌"
+        }
+      },
+      {
+        "char": "堂",
+        "hanja": {
+          "sound": "당",
+          "meaning": "집"
+        }
+      },
+      {
+        "char": "習",
+        "hanja": {
+          "sound": "습",
+          "meaning": "익힐"
+        }
+      },
+      {
+        "char": "聽",
+        "hanja": {
+          "sound": "청",
+          "meaning": "들을"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "禍因惡積 福緣善慶",
+    "meaning": "언짢은 일은 못된 짓을 쌓는 데서 말미암는 것이요, 복은 착한 일을 쌓은 경사로움에서 말미암는 것이다.",
+    "details": [
+      {
+        "char": "禍",
+        "hanja": {
+          "sound": "화",
+          "meaning": "재앙"
+        }
+      },
+      {
+        "char": "因",
+        "hanja": {
+          "sound": "인",
+          "meaning": "인할"
+        }
+      },
+      {
+        "char": "惡",
+        "hanja": {
+          "sound": "악",
+          "meaning": "악할 악/미워할"
+        }
+      },
+      {
+        "char": "積",
+        "hanja": {
+          "sound": "적",
+          "meaning": "쌓을"
+        }
+      },
+      {
+        "char": "福",
+        "hanja": {
+          "sound": "복",
+          "meaning": "복"
+        }
+      },
+      {
+        "char": "緣",
+        "hanja": {
+          "sound": "연",
+          "meaning": "인연"
+        }
+      },
+      {
+        "char": "善",
+        "hanja": {
+          "sound": "선",
+          "meaning": "착할"
+        }
+      },
+      {
+        "char": "慶",
+        "hanja": {
+          "sound": "경",
+          "meaning": "경사"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "尺璧非寶 寸陰是競",
+    "meaning": "한 자 되는 구슬이라고 해서 보배는 아니니, 마디그늘이라도 다퉈 아껴야 한다.",
+    "details": [
+      {
+        "char": "尺",
+        "hanja": {
+          "sound": "척",
+          "meaning": "자"
+        }
+      },
+      {
+        "char": "璧",
+        "hanja": {
+          "sound": "벽",
+          "meaning": "구슬"
+        }
+      },
+      {
+        "char": "非",
+        "hanja": {
+          "sound": "비",
+          "meaning": "아닐"
+        }
+      },
+      {
+        "char": "寶",
+        "hanja": {
+          "sound": "보",
+          "meaning": "보배"
+        }
+      },
+      {
+        "char": "寸",
+        "hanja": {
+          "sound": "촌",
+          "meaning": "마디"
+        }
+      },
+      {
+        "char": "陰",
+        "hanja": {
+          "sound": "음",
+          "meaning": "그늘"
+        }
+      },
+      {
+        "char": "是",
+        "hanja": {
+          "sound": "시",
+          "meaning": "옳을/이"
+        }
+      },
+      {
+        "char": "競",
+        "hanja": {
+          "sound": "경",
+          "meaning": "다툴"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "資父事君 曰嚴與敬",
+    "meaning": "어버이 섬기는 것을 바탕 삼아 임금 섬기는 것을, 팽팽함과 우러름이라고 하니,",
+    "details": [
+      {
+        "char": "資",
+        "hanja": {
+          "sound": "자",
+          "meaning": "자료"
+        }
+      },
+      {
+        "char": "父",
+        "hanja": {
+          "sound": "부",
+          "meaning": "아비"
+        }
+      },
+      {
+        "char": "事",
+        "hanja": {
+          "sound": "사",
+          "meaning": "일/섬길"
+        }
+      },
+      {
+        "char": "君",
+        "hanja": {
+          "sound": "군",
+          "meaning": "임금"
+        }
+      },
+      {
+        "char": "曰",
+        "hanja": {
+          "sound": "왈",
+          "meaning": "가로"
+        }
+      },
+      {
+        "char": "嚴",
+        "hanja": {
+          "sound": "엄",
+          "meaning": "엄할"
+        }
+      },
+      {
+        "char": "與",
+        "hanja": {
+          "sound": "여",
+          "meaning": "더불"
+        }
+      },
+      {
+        "char": "敬",
+        "hanja": {
+          "sound": "경",
+          "meaning": "공경할"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "孝當竭力 忠則盡命",
+    "meaning": "효도는 마땅히 그 힘을 다하여야 하고, 충성은 목숨을 다해야만 한다.",
+    "details": [
+      {
+        "char": "孝",
+        "hanja": {
+          "sound": "효",
+          "meaning": "효도"
+        }
+      },
+      {
+        "char": "當",
+        "hanja": {
+          "sound": "당",
+          "meaning": "마땅할"
+        }
+      },
+      {
+        "char": "竭",
+        "hanja": {
+          "sound": "갈",
+          "meaning": "다할"
+        }
+      },
+      {
+        "char": "力",
+        "hanja": {
+          "sound": "력",
+          "meaning": "힘"
+        }
+      },
+      {
+        "char": "忠",
+        "hanja": {
+          "sound": "충",
+          "meaning": "충성"
+        }
+      },
+      {
+        "char": "則",
+        "hanja": {
+          "sound": "즉",
+          "meaning": "곧 즉/법"
+        }
+      },
+      {
+        "char": "盡",
+        "hanja": {
+          "sound": "진",
+          "meaning": "다할"
+        }
+      },
+      {
+        "char": "命",
+        "hanja": {
+          "sound": "명",
+          "meaning": "목숨"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "臨深履薄 夙興溫凊",
+    "meaning": "깊은 물가에 다다른듯 살얼음을 밟듯이 하고, 일찍 일어나 따뜻한가 서늘한가를 살펴라.",
+    "details": [
+      {
+        "char": "臨",
+        "hanja": {
+          "sound": "임",
+          "meaning": "임할"
+        }
+      },
+      {
+        "char": "深",
+        "hanja": {
+          "sound": "심",
+          "meaning": "깊을"
+        }
+      },
+      {
+        "char": "履",
+        "hanja": {
+          "sound": "리",
+          "meaning": "밟을"
+        }
+      },
+      {
+        "char": "薄",
+        "hanja": {
+          "sound": "박",
+          "meaning": "얇을"
+        }
+      },
+      {
+        "char": "夙",
+        "hanja": {
+          "sound": "숙",
+          "meaning": "일찍"
+        }
+      },
+      {
+        "char": "興",
+        "hanja": {
+          "sound": "흥",
+          "meaning": "흥할"
+        }
+      },
+      {
+        "char": "溫",
+        "hanja": {
+          "sound": "온",
+          "meaning": "따뜻할"
+        }
+      },
+      {
+        "char": "凊",
+        "hanja": {
+          "sound": "청",
+          "meaning": "서늘할"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "似蘭斯馨 如松之盛",
+    "meaning": "난초 향기와 비슷하고, 소나무가 다옥함과 같다.",
+    "details": [
+      {
+        "char": "似",
+        "hanja": {
+          "sound": "사",
+          "meaning": "같을"
+        }
+      },
+      {
+        "char": "蘭",
+        "hanja": {
+          "sound": "란",
+          "meaning": "난초"
+        }
+      },
+      {
+        "char": "斯",
+        "hanja": {
+          "sound": "사",
+          "meaning": "이"
+        }
+      },
+      {
+        "char": "馨",
+        "hanja": {
+          "sound": "형",
+          "meaning": "향기"
+        }
+      },
+      {
+        "char": "如",
+        "hanja": {
+          "sound": "여",
+          "meaning": "같을"
+        }
+      },
+      {
+        "char": "松",
+        "hanja": {
+          "sound": "송",
+          "meaning": "소나무"
+        }
+      },
+      {
+        "char": "之",
+        "hanja": {
+          "sound": "지",
+          "meaning": "갈"
+        }
+      },
+      {
+        "char": "盛",
+        "hanja": {
+          "sound": "성",
+          "meaning": "성할"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "川流不息 淵澄取暎",
+    "meaning": "내는 흘러 쉬지 않고, 연못물이 맑으면 비춰 봄을 얻을 수 있다.",
+    "details": [
+      {
+        "char": "川",
+        "hanja": {
+          "sound": "천",
+          "meaning": "내"
+        }
+      },
+      {
+        "char": "流",
+        "hanja": {
+          "sound": "류",
+          "meaning": "흐를"
+        }
+      },
+      {
+        "char": "不",
+        "hanja": {
+          "sound": "불",
+          "meaning": "아니"
+        }
+      },
+      {
+        "char": "息",
+        "hanja": {
+          "sound": "식",
+          "meaning": "쉴"
+        }
+      },
+      {
+        "char": "淵",
+        "hanja": {
+          "sound": "연",
+          "meaning": "못"
+        }
+      },
+      {
+        "char": "澄",
+        "hanja": {
+          "sound": "징",
+          "meaning": "맑을"
+        }
+      },
+      {
+        "char": "取",
+        "hanja": {
+          "sound": "취",
+          "meaning": "취할"
+        }
+      },
+      {
+        "char": "暎",
+        "hanja": {
+          "sound": "영",
+          "meaning": "비칠"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "容止若思 言辭安定",
+    "meaning": "매무새와 몸가짐을 마치 생각하는 듯하고, 말의 씀씀이는 조용하고 올바르게 해야 한다.",
+    "details": [
+      {
+        "char": "容",
+        "hanja": {
+          "sound": "용",
+          "meaning": "얼굴"
+        }
+      },
+      {
+        "char": "止",
+        "hanja": {
+          "sound": "지",
+          "meaning": "그칠"
+        }
+      },
+      {
+        "char": "若",
+        "hanja": {
+          "sound": "약",
+          "meaning": "같을"
+        }
+      },
+      {
+        "char": "思",
+        "hanja": {
+          "sound": "사",
+          "meaning": "생각"
+        }
+      },
+      {
+        "char": "言",
+        "hanja": {
+          "sound": "언",
+          "meaning": "말씀"
+        }
+      },
+      {
+        "char": "辭",
+        "hanja": {
+          "sound": "사",
+          "meaning": "말씀"
+        }
+      },
+      {
+        "char": "安",
+        "hanja": {
+          "sound": "안",
+          "meaning": "편안"
+        }
+      },
+      {
+        "char": "定",
+        "hanja": {
+          "sound": "정",
+          "meaning": "정할"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "篤初誠美 愼終宜令",
+    "meaning": "첫발 뗄 때 온 힘을 쏟는 것이 참으로 아름답고, 끝맺음을 삼가면 마땅히 훌륭하게 될 것이다.",
+    "details": [
+      {
+        "char": "篤",
+        "hanja": {
+          "sound": "독",
+          "meaning": "도타울"
+        }
+      },
+      {
+        "char": "初",
+        "hanja": {
+          "sound": "초",
+          "meaning": "처음"
+        }
+      },
+      {
+        "char": "誠",
+        "hanja": {
+          "sound": "성",
+          "meaning": "정성"
+        }
+      },
+      {
+        "char": "美",
+        "hanja": {
+          "sound": "미",
+          "meaning": "아름다울"
+        }
+      },
+      {
+        "char": "愼",
+        "hanja": {
+          "sound": "신",
+          "meaning": "삼갈"
+        }
+      },
+      {
+        "char": "終",
+        "hanja": {
+          "sound": "종",
+          "meaning": "마지막"
+        }
+      },
+      {
+        "char": "宜",
+        "hanja": {
+          "sound": "의",
+          "meaning": "마땅"
+        }
+      },
+      {
+        "char": "令",
+        "hanja": {
+          "sound": "령",
+          "meaning": "하여금"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "榮業所基 籍甚無竟",
+    "meaning": "공적 쌓은 일을 피어나게 하는 터전이 된다면, 훌륭해짐이 마침없으리라.",
+    "details": [
+      {
+        "char": "榮",
+        "hanja": {
+          "sound": "영",
+          "meaning": "영화"
+        }
+      },
+      {
+        "char": "業",
+        "hanja": {
+          "sound": "업",
+          "meaning": "업"
+        }
+      },
+      {
+        "char": "所",
+        "hanja": {
+          "sound": "소",
+          "meaning": "바"
+        }
+      },
+      {
+        "char": "基",
+        "hanja": {
+          "sound": "기",
+          "meaning": "터"
+        }
+      },
+      {
+        "char": "籍",
+        "hanja": {
+          "sound": "적",
+          "meaning": "호적"
+        }
+      },
+      {
+        "char": "甚",
+        "hanja": {
+          "sound": "심",
+          "meaning": "심할"
+        }
+      },
+      {
+        "char": "無",
+        "hanja": {
+          "sound": "무",
+          "meaning": "없을"
+        }
+      },
+      {
+        "char": "竟",
+        "hanja": {
+          "sound": "경",
+          "meaning": "마침내"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "學優登仕 攝職從政",
+    "meaning": "배운 것이 넉넉하면 벼슬에 오를 수 있고, 자리를 잡아 정사에 몸담는다.",
+    "details": [
+      {
+        "char": "學",
+        "hanja": {
+          "sound": "학",
+          "meaning": "배울"
+        }
+      },
+      {
+        "char": "優",
+        "hanja": {
+          "sound": "우",
+          "meaning": "넉넉할"
+        }
+      },
+      {
+        "char": "登",
+        "hanja": {
+          "sound": "등",
+          "meaning": "오를"
+        }
+      },
+      {
+        "char": "仕",
+        "hanja": {
+          "sound": "사",
+          "meaning": "벼슬"
+        }
+      },
+      {
+        "char": "攝",
+        "hanja": {
+          "sound": "섭",
+          "meaning": "잡을"
+        }
+      },
+      {
+        "char": "職",
+        "hanja": {
+          "sound": "직",
+          "meaning": "벼슬"
+        }
+      },
+      {
+        "char": "從",
+        "hanja": {
+          "sound": "종",
+          "meaning": "좇을"
+        }
+      },
+      {
+        "char": "政",
+        "hanja": {
+          "sound": "정",
+          "meaning": "정사"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "存以甘棠 去而益詠",
+    "meaning": "이 팥배나무를 남겨두라, 떠난 뒤 더욱 기려서 읊는다니.",
+    "details": [
+      {
+        "char": "存",
+        "hanja": {
+          "sound": "존",
+          "meaning": "있을"
+        }
+      },
+      {
+        "char": "以",
+        "hanja": {
+          "sound": "이",
+          "meaning": "써"
+        }
+      },
+      {
+        "char": "甘",
+        "hanja": {
+          "sound": "감",
+          "meaning": "달"
+        }
+      },
+      {
+        "char": "棠",
+        "hanja": {
+          "sound": "당",
+          "meaning": "해당화"
+        }
+      },
+      {
+        "char": "去",
+        "hanja": {
+          "sound": "거",
+          "meaning": "갈"
+        }
+      },
+      {
+        "char": "而",
+        "hanja": {
+          "sound": "이",
+          "meaning": "어조사"
+        }
+      },
+      {
+        "char": "益",
+        "hanja": {
+          "sound": "익",
+          "meaning": "더할"
+        }
+      },
+      {
+        "char": "詠",
+        "hanja": {
+          "sound": "영",
+          "meaning": "읊을"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "樂殊貴賤 禮別尊卑",
+    "meaning": "음악은 신분의 높음과 낮음에 따라 다르고, 예도는 윗사람과 아랫사람을 가린다.",
+    "details": [
+      {
+        "char": "樂",
+        "hanja": {
+          "sound": "악",
+          "meaning": "풍류 악/즐길 락/좋아할"
+        }
+      },
+      {
+        "char": "殊",
+        "hanja": {
+          "sound": "수",
+          "meaning": "다를"
+        }
+      },
+      {
+        "char": "貴",
+        "hanja": {
+          "sound": "귀",
+          "meaning": "귀할"
+        }
+      },
+      {
+        "char": "賤",
+        "hanja": {
+          "sound": "천",
+          "meaning": "천할"
+        }
+      },
+      {
+        "char": "禮",
+        "hanja": {
+          "sound": "예",
+          "meaning": "예도"
+        }
+      },
+      {
+        "char": "別",
+        "hanja": {
+          "sound": "별",
+          "meaning": "다를"
+        }
+      },
+      {
+        "char": "尊",
+        "hanja": {
+          "sound": "존",
+          "meaning": "높을"
+        }
+      },
+      {
+        "char": "卑",
+        "hanja": {
+          "sound": "비",
+          "meaning": "낮을"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "上和下睦 夫唱婦隨",
+    "meaning": "위에서 따사로워야 아래에서 구순하고, 지아비가 이끌면 지어미는 따른다.",
+    "details": [
+      {
+        "char": "上",
+        "hanja": {
+          "sound": "상",
+          "meaning": "위"
+        }
+      },
+      {
+        "char": "和",
+        "hanja": {
+          "sound": "화",
+          "meaning": "화할"
+        }
+      },
+      {
+        "char": "下",
+        "hanja": {
+          "sound": "하",
+          "meaning": "아래"
+        }
+      },
+      {
+        "char": "睦",
+        "hanja": {
+          "sound": "목",
+          "meaning": "화목할"
+        }
+      },
+      {
+        "char": "夫",
+        "hanja": {
+          "sound": "부",
+          "meaning": "지아비"
+        }
+      },
+      {
+        "char": "唱",
+        "hanja": {
+          "sound": "창",
+          "meaning": "부를"
+        }
+      },
+      {
+        "char": "婦",
+        "hanja": {
+          "sound": "부",
+          "meaning": "며느리"
+        }
+      },
+      {
+        "char": "隨",
+        "hanja": {
+          "sound": "수",
+          "meaning": "따를"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "外受傅訓 入奉母儀",
+    "meaning": "밖에 나가서는 스승의 가르침을 받고, 들어와서는 어진 어미의 몸가짐을 받는다.",
+    "details": [
+      {
+        "char": "外",
+        "hanja": {
+          "sound": "외",
+          "meaning": "밖"
+        }
+      },
+      {
+        "char": "受",
+        "hanja": {
+          "sound": "수",
+          "meaning": "받을"
+        }
+      },
+      {
+        "char": "傅",
+        "hanja": {
+          "sound": "부",
+          "meaning": "스승"
+        }
+      },
+      {
+        "char": "訓",
+        "hanja": {
+          "sound": "훈",
+          "meaning": "가르칠"
+        }
+      },
+      {
+        "char": "入",
+        "hanja": {
+          "sound": "입",
+          "meaning": "들"
+        }
+      },
+      {
+        "char": "奉",
+        "hanja": {
+          "sound": "봉",
+          "meaning": "받들"
+        }
+      },
+      {
+        "char": "母",
+        "hanja": {
+          "sound": "모",
+          "meaning": "어미"
+        }
+      },
+      {
+        "char": "儀",
+        "hanja": {
+          "sound": "의",
+          "meaning": "거동"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "諸姑伯叔 猶子比兒",
+    "meaning": "모든 고모와 큰아버지와 삼촌들은, 조카를 자기 자식처럼 여기고, 자기 아이처럼 다정하게 대해야 하며,",
+    "details": [
+      {
+        "char": "諸",
+        "hanja": {
+          "sound": "제",
+          "meaning": "모두"
+        }
+      },
+      {
+        "char": "姑",
+        "hanja": {
+          "sound": "고",
+          "meaning": "시어미"
+        }
+      },
+      {
+        "char": "伯",
+        "hanja": {
+          "sound": "백",
+          "meaning": "맏"
+        }
+      },
+      {
+        "char": "叔",
+        "hanja": {
+          "sound": "숙",
+          "meaning": "아재비"
+        }
+      },
+      {
+        "char": "猶",
+        "hanja": {
+          "sound": "유",
+          "meaning": "같을"
+        }
+      },
+      {
+        "char": "子",
+        "hanja": {
+          "sound": "자",
+          "meaning": "아들"
+        }
+      },
+      {
+        "char": "比",
+        "hanja": {
+          "sound": "비",
+          "meaning": "견줄"
+        }
+      },
+      {
+        "char": "兒",
+        "hanja": {
+          "sound": "아",
+          "meaning": "아이"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "孔懷兄弟 同氣連枝",
+    "meaning": "깊게 형제를 그리워해야 하니, 같은 기운을 받아 이어진 가지와 같기 때문이다.",
+    "details": [
+      {
+        "char": "孔",
+        "hanja": {
+          "sound": "공",
+          "meaning": "구멍"
+        }
+      },
+      {
+        "char": "懷",
+        "hanja": {
+          "sound": "회",
+          "meaning": "품을"
+        }
+      },
+      {
+        "char": "兄",
+        "hanja": {
+          "sound": "형",
+          "meaning": "맏"
+        }
+      },
+      {
+        "char": "弟",
+        "hanja": {
+          "sound": "제",
+          "meaning": "아우"
+        }
+      },
+      {
+        "char": "同",
+        "hanja": {
+          "sound": "동",
+          "meaning": "한가지"
+        }
+      },
+      {
+        "char": "氣",
+        "hanja": {
+          "sound": "기",
+          "meaning": "기운"
+        }
+      },
+      {
+        "char": "連",
+        "hanja": {
+          "sound": "련",
+          "meaning": "이어질"
+        }
+      },
+      {
+        "char": "枝",
+        "hanja": {
+          "sound": "지",
+          "meaning": "가지"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "交友投分 切磨箴規",
+    "meaning": "벗을 사귀는 데에는 정분을 함께 나눠야 하고, 깎고 갈며 서로 잡도리하여 바른말로 잡아줘야 한다.",
+    "details": [
+      {
+        "char": "交",
+        "hanja": {
+          "sound": "교",
+          "meaning": "사귈"
+        }
+      },
+      {
+        "char": "友",
+        "hanja": {
+          "sound": "우",
+          "meaning": "벗"
+        }
+      },
+      {
+        "char": "投",
+        "hanja": {
+          "sound": "투",
+          "meaning": "던질"
+        }
+      },
+      {
+        "char": "分",
+        "hanja": {
+          "sound": "분",
+          "meaning": "나눌"
+        }
+      },
+      {
+        "char": "切",
+        "hanja": {
+          "sound": "절",
+          "meaning": "끊을 절/모두"
+        }
+      },
+      {
+        "char": "磨",
+        "hanja": {
+          "sound": "마",
+          "meaning": "갈"
+        }
+      },
+      {
+        "char": "箴",
+        "hanja": {
+          "sound": "잠",
+          "meaning": "경계"
+        }
+      },
+      {
+        "char": "規",
+        "hanja": {
+          "sound": "규",
+          "meaning": "법"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "仁慈隱惻 造次弗離",
+    "meaning": "어질고 사랑하며 안쓰럽게 여기는 마음은, 잠깐이라도 떠나보내서는 안 된다.",
+    "details": [
+      {
+        "char": "仁",
+        "hanja": {
+          "sound": "인",
+          "meaning": "어질"
+        }
+      },
+      {
+        "char": "慈",
+        "hanja": {
+          "sound": "자",
+          "meaning": "사랑할"
+        }
+      },
+      {
+        "char": "隱",
+        "hanja": {
+          "sound": "은",
+          "meaning": "숨을"
+        }
+      },
+      {
+        "char": "惻",
+        "hanja": {
+          "sound": "측",
+          "meaning": "슬플"
+        }
+      },
+      {
+        "char": "造",
+        "hanja": {
+          "sound": "조",
+          "meaning": "지을"
+        }
+      },
+      {
+        "char": "次",
+        "hanja": {
+          "sound": "차",
+          "meaning": "버금"
+        }
+      },
+      {
+        "char": "弗",
+        "hanja": {
+          "sound": "불",
+          "meaning": "아닐"
+        }
+      },
+      {
+        "char": "離",
+        "hanja": {
+          "sound": "리",
+          "meaning": "떠날"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "節義廉退 顚沛匪虧",
+    "meaning": "절개와 의리와 청렴과 물러남은 엎어지고 자빠지는 순간에도 이지러져서는 안 된다.",
+    "details": [
+      {
+        "char": "節",
+        "hanja": {
+          "sound": "절",
+          "meaning": "마디"
+        }
+      },
+      {
+        "char": "義",
+        "hanja": {
+          "sound": "의",
+          "meaning": "옳을"
+        }
+      },
+      {
+        "char": "廉",
+        "hanja": {
+          "sound": "렴",
+          "meaning": "청렴"
+        }
+      },
+      {
+        "char": "退",
+        "hanja": {
+          "sound": "퇴",
+          "meaning": "물러갈"
+        }
+      },
+      {
+        "char": "顚",
+        "hanja": {
+          "sound": "전",
+          "meaning": "엎드러질"
+        }
+      },
+      {
+        "char": "沛",
+        "hanja": {
+          "sound": "패",
+          "meaning": "자빠질"
+        }
+      },
+      {
+        "char": "匪",
+        "hanja": {
+          "sound": "비",
+          "meaning": "아닐"
+        }
+      },
+      {
+        "char": "虧",
+        "hanja": {
+          "sound": "휴",
+          "meaning": "이지러질"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "性靜情逸 心動神疲",
+    "meaning": "마음바탕이 고요하면 느낌이 푸근하고, 마음이 흔들리면 정신이 고달파진다.",
+    "details": [
+      {
+        "char": "性",
+        "hanja": {
+          "sound": "성",
+          "meaning": "성품"
+        }
+      },
+      {
+        "char": "靜",
+        "hanja": {
+          "sound": "정",
+          "meaning": "고요할"
+        }
+      },
+      {
+        "char": "情",
+        "hanja": {
+          "sound": "정",
+          "meaning": "뜻"
+        }
+      },
+      {
+        "char": "逸",
+        "hanja": {
+          "sound": "일",
+          "meaning": "편안할"
+        }
+      },
+      {
+        "char": "心",
+        "hanja": {
+          "sound": "심",
+          "meaning": "마음"
+        }
+      },
+      {
+        "char": "動",
+        "hanja": {
+          "sound": "동",
+          "meaning": "움직일"
+        }
+      },
+      {
+        "char": "神",
+        "hanja": {
+          "sound": "신",
+          "meaning": "귀신"
+        }
+      },
+      {
+        "char": "疲",
+        "hanja": {
+          "sound": "피",
+          "meaning": "피곤할"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "守眞志滿 逐物意移",
+    "meaning": "믿는 마음을 지키면 뜻이 가득해지고, 일몬을 쫓아가면 생각 또한 이리저리 움직이게 된다.",
+    "details": [
+      {
+        "char": "守",
+        "hanja": {
+          "sound": "수",
+          "meaning": "지킬"
+        }
+      },
+      {
+        "char": "眞",
+        "hanja": {
+          "sound": "진",
+          "meaning": "참"
+        }
+      },
+      {
+        "char": "志",
+        "hanja": {
+          "sound": "지",
+          "meaning": "뜻"
+        }
+      },
+      {
+        "char": "滿",
+        "hanja": {
+          "sound": "만",
+          "meaning": "찰"
+        }
+      },
+      {
+        "char": "逐",
+        "hanja": {
+          "sound": "축",
+          "meaning": "쫓을"
+        }
+      },
+      {
+        "char": "物",
+        "hanja": {
+          "sound": "물",
+          "meaning": "만물"
+        }
+      },
+      {
+        "char": "意",
+        "hanja": {
+          "sound": "의",
+          "meaning": "뜻"
+        }
+      },
+      {
+        "char": "移",
+        "hanja": {
+          "sound": "이",
+          "meaning": "옮길"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "堅持雅操 好爵自縻",
+    "meaning": "바른 지조를 굳게 가지면, 좋은 벼슬이 스스로 걸려든다.",
+    "details": [
+      {
+        "char": "堅",
+        "hanja": {
+          "sound": "견",
+          "meaning": "굳을"
+        }
+      },
+      {
+        "char": "持",
+        "hanja": {
+          "sound": "지",
+          "meaning": "가질"
+        }
+      },
+      {
+        "char": "雅",
+        "hanja": {
+          "sound": "아",
+          "meaning": "우아할"
+        }
+      },
+      {
+        "char": "操",
+        "hanja": {
+          "sound": "조",
+          "meaning": "잡을"
+        }
+      },
+      {
+        "char": "好",
+        "hanja": {
+          "sound": "호",
+          "meaning": "좋을"
+        }
+      },
+      {
+        "char": "爵",
+        "hanja": {
+          "sound": "작",
+          "meaning": "벼슬"
+        }
+      },
+      {
+        "char": "自",
+        "hanja": {
+          "sound": "자",
+          "meaning": "스스로"
+        }
+      },
+      {
+        "char": "縻",
+        "hanja": {
+          "sound": "미",
+          "meaning": "얽을"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "都邑華夏 東西二京",
+    "meaning": "중국의 서울은 동경과 서경의 둘로 되었으니",
+    "details": [
+      {
+        "char": "都",
+        "hanja": {
+          "sound": "도",
+          "meaning": "도읍"
+        }
+      },
+      {
+        "char": "邑",
+        "hanja": {
+          "sound": "읍",
+          "meaning": "고을"
+        }
+      },
+      {
+        "char": "華",
+        "hanja": {
+          "sound": "화",
+          "meaning": "빛날"
+        }
+      },
+      {
+        "char": "夏",
+        "hanja": {
+          "sound": "하",
+          "meaning": "여름"
+        }
+      },
+      {
+        "char": "東",
+        "hanja": {
+          "sound": "동",
+          "meaning": "동녘"
+        }
+      },
+      {
+        "char": "西",
+        "hanja": {
+          "sound": "서",
+          "meaning": "서녘"
+        }
+      },
+      {
+        "char": "二",
+        "hanja": {
+          "sound": "이",
+          "meaning": "두"
+        }
+      },
+      {
+        "char": "京",
+        "hanja": {
+          "sound": "경",
+          "meaning": "서울"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "背邙面洛 浮渭據涇",
+    "meaning": "북망산을 등 뒤로 하여 낙수를 바라보고 있으며, 위수를 위로 띄우고 경수를 움켜쥐고 있다.",
+    "details": [
+      {
+        "char": "背",
+        "hanja": {
+          "sound": "배",
+          "meaning": "등"
+        }
+      },
+      {
+        "char": "邙",
+        "hanja": {
+          "sound": "망",
+          "meaning": "산이름"
+        }
+      },
+      {
+        "char": "面",
+        "hanja": {
+          "sound": "면",
+          "meaning": "낯"
+        }
+      },
+      {
+        "char": "洛",
+        "hanja": {
+          "sound": "락",
+          "meaning": "강이름"
+        }
+      },
+      {
+        "char": "浮",
+        "hanja": {
+          "sound": "부",
+          "meaning": "뜰"
+        }
+      },
+      {
+        "char": "渭",
+        "hanja": {
+          "sound": "위",
+          "meaning": "강이름"
+        }
+      },
+      {
+        "char": "據",
+        "hanja": {
+          "sound": "거",
+          "meaning": "의거할"
+        }
+      },
+      {
+        "char": "涇",
+        "hanja": {
+          "sound": "경",
+          "meaning": "통할"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "宮殿盤鬱 樓觀飛驚",
+    "meaning": "궐과 전각은 굽이굽이 들어차 있고, 다락과 관대는 새가 날고 말이 솟구치는 듯하다.",
+    "details": [
+      {
+        "char": "宮",
+        "hanja": {
+          "sound": "궁",
+          "meaning": "집"
+        }
+      },
+      {
+        "char": "殿",
+        "hanja": {
+          "sound": "전",
+          "meaning": "큰집"
+        }
+      },
+      {
+        "char": "盤",
+        "hanja": {
+          "sound": "반",
+          "meaning": "서릴"
+        }
+      },
+      {
+        "char": "鬱",
+        "hanja": {
+          "sound": "울",
+          "meaning": "답답"
+        }
+      },
+      {
+        "char": "樓",
+        "hanja": {
+          "sound": "누",
+          "meaning": "다락"
+        }
+      },
+      {
+        "char": "觀",
+        "hanja": {
+          "sound": "관",
+          "meaning": "볼"
+        }
+      },
+      {
+        "char": "飛",
+        "hanja": {
+          "sound": "비",
+          "meaning": "날"
+        }
+      },
+      {
+        "char": "驚",
+        "hanja": {
+          "sound": "경",
+          "meaning": "놀랄"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "圖寫禽獸 畫綵仙靈",
+    "meaning": "온갖 날짐승과 길짐승을 그림으로 그렸고, 신선과 신령스러운 것들을 색칠해서 그렸다.",
+    "details": [
+      {
+        "char": "圖",
+        "hanja": {
+          "sound": "도",
+          "meaning": "그림"
+        }
+      },
+      {
+        "char": "寫",
+        "hanja": {
+          "sound": "사",
+          "meaning": "베낄"
+        }
+      },
+      {
+        "char": "禽",
+        "hanja": {
+          "sound": "금",
+          "meaning": "날짐승"
+        }
+      },
+      {
+        "char": "獸",
+        "hanja": {
+          "sound": "수",
+          "meaning": "짐승"
+        }
+      },
+      {
+        "char": "畫",
+        "hanja": {
+          "sound": "화",
+          "meaning": "그림"
+        }
+      },
+      {
+        "char": "綵",
+        "hanja": {
+          "sound": "채",
+          "meaning": "채색"
+        }
+      },
+      {
+        "char": "仙",
+        "hanja": {
+          "sound": "선",
+          "meaning": "신선"
+        }
+      },
+      {
+        "char": "靈",
+        "hanja": {
+          "sound": "령",
+          "meaning": "신령"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "丙舍傍啓 甲帳對楹",
+    "meaning": "신하들이 머무는 집은 양옆으로 나란히 열려 있고, 눈부신 가림막은 두 기둥 사이에 드리워 있다.",
+    "details": [
+      {
+        "char": "丙",
+        "hanja": {
+          "sound": "병",
+          "meaning": "남녘"
+        }
+      },
+      {
+        "char": "舍",
+        "hanja": {
+          "sound": "사",
+          "meaning": "집"
+        }
+      },
+      {
+        "char": "傍",
+        "hanja": {
+          "sound": "방",
+          "meaning": "곁"
+        }
+      },
+      {
+        "char": "啓",
+        "hanja": {
+          "sound": "계",
+          "meaning": "열"
+        }
+      },
+      {
+        "char": "甲",
+        "hanja": {
+          "sound": "갑",
+          "meaning": "갑옷"
+        }
+      },
+      {
+        "char": "帳",
+        "hanja": {
+          "sound": "장",
+          "meaning": "휘장"
+        }
+      },
+      {
+        "char": "對",
+        "hanja": {
+          "sound": "대",
+          "meaning": "대답할"
+        }
+      },
+      {
+        "char": "楹",
+        "hanja": {
+          "sound": "영",
+          "meaning": "기둥"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "肆筵設席 鼓瑟吹笙",
+    "meaning": "홑자리와 겹자리를 깔고서, 비파를 뜯고 생황을 분다.",
+    "details": [
+      {
+        "char": "肆",
+        "hanja": {
+          "sound": "사",
+          "meaning": "베풀"
+        }
+      },
+      {
+        "char": "筵",
+        "hanja": {
+          "sound": "연",
+          "meaning": "자리"
+        }
+      },
+      {
+        "char": "設",
+        "hanja": {
+          "sound": "설",
+          "meaning": "베풀"
+        }
+      },
+      {
+        "char": "席",
+        "hanja": {
+          "sound": "석",
+          "meaning": "자리"
+        }
+      },
+      {
+        "char": "鼓",
+        "hanja": {
+          "sound": "고",
+          "meaning": "북"
+        }
+      },
+      {
+        "char": "瑟",
+        "hanja": {
+          "sound": "슬",
+          "meaning": "비파"
+        }
+      },
+      {
+        "char": "吹",
+        "hanja": {
+          "sound": "취",
+          "meaning": "불"
+        }
+      },
+      {
+        "char": "笙",
+        "hanja": {
+          "sound": "생",
+          "meaning": "생황"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "陞階納陛 弁轉疑星",
+    "meaning": "섬돌을 올라 궁전에 들어가니, 고깔 움직이는 것이 별인 듯 어리둥절하다.",
+    "details": [
+      {
+        "char": "陞",
+        "hanja": {
+          "sound": "승",
+          "meaning": "오른쪽"
+        }
+      },
+      {
+        "char": "階",
+        "hanja": {
+          "sound": "계",
+          "meaning": "뜰"
+        }
+      },
+      {
+        "char": "納",
+        "hanja": {
+          "sound": "납",
+          "meaning": "바칠"
+        }
+      },
+      {
+        "char": "陛",
+        "hanja": {
+          "sound": "폐",
+          "meaning": "섬돌"
+        }
+      },
+      {
+        "char": "弁",
+        "hanja": {
+          "sound": "변",
+          "meaning": "고깔"
+        }
+      },
+      {
+        "char": "轉",
+        "hanja": {
+          "sound": "전",
+          "meaning": "구를"
+        }
+      },
+      {
+        "char": "疑",
+        "hanja": {
+          "sound": "의",
+          "meaning": "의심할"
+        }
+      },
+      {
+        "char": "星",
+        "hanja": {
+          "sound": "성",
+          "meaning": "별"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "右通廣內 左達承明",
+    "meaning": "오른쪽은 광내전으로 통하고, 왼쪽은 승명려에 닿는다.",
+    "details": [
+      {
+        "char": "右",
+        "hanja": {
+          "sound": "우",
+          "meaning": "오를"
+        }
+      },
+      {
+        "char": "通",
+        "hanja": {
+          "sound": "통",
+          "meaning": "통할"
+        }
+      },
+      {
+        "char": "廣",
+        "hanja": {
+          "sound": "광",
+          "meaning": "넓을"
+        }
+      },
+      {
+        "char": "內",
+        "hanja": {
+          "sound": "내",
+          "meaning": "안"
+        }
+      },
+      {
+        "char": "左",
+        "hanja": {
+          "sound": "좌",
+          "meaning": "왼"
+        }
+      },
+      {
+        "char": "達",
+        "hanja": {
+          "sound": "달",
+          "meaning": "통달할"
+        }
+      },
+      {
+        "char": "承",
+        "hanja": {
+          "sound": "승",
+          "meaning": "이을"
+        }
+      },
+      {
+        "char": "明",
+        "hanja": {
+          "sound": "명",
+          "meaning": "밝을"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "旣集墳典 亦聚群英",
+    "meaning": "이미 분전 같은 책을 모으고, 또한 뭇 뛰어난 사람들도 모았다.",
+    "details": [
+      {
+        "char": "旣",
+        "hanja": {
+          "sound": "기",
+          "meaning": "이미"
+        }
+      },
+      {
+        "char": "集",
+        "hanja": {
+          "sound": "집",
+          "meaning": "모을"
+        }
+      },
+      {
+        "char": "墳",
+        "hanja": {
+          "sound": "분",
+          "meaning": "무덤"
+        }
+      },
+      {
+        "char": "典",
+        "hanja": {
+          "sound": "전",
+          "meaning": "법"
+        }
+      },
+      {
+        "char": "亦",
+        "hanja": {
+          "sound": "역",
+          "meaning": "또"
+        }
+      },
+      {
+        "char": "聚",
+        "hanja": {
+          "sound": "취",
+          "meaning": "모을"
+        }
+      },
+      {
+        "char": "群",
+        "hanja": {
+          "sound": "군",
+          "meaning": "무리"
+        }
+      },
+      {
+        "char": "英",
+        "hanja": {
+          "sound": "영",
+          "meaning": "꽃부리"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "杜稿鍾隸 漆書壁經",
+    "meaning": "두백도의 초서와 종요의 예서가 있고, 옻칠로 쓴 벽 속의 경전이 있다.",
+    "details": [
+      {
+        "char": "杜",
+        "hanja": {
+          "sound": "두",
+          "meaning": "막을"
+        }
+      },
+      {
+        "char": "稿",
+        "hanja": {
+          "sound": "고",
+          "meaning": "볏짚"
+        }
+      },
+      {
+        "char": "鍾",
+        "hanja": {
+          "sound": "종",
+          "meaning": "쇠북"
+        }
+      },
+      {
+        "char": "隸",
+        "hanja": {
+          "sound": "예",
+          "meaning": "글씨"
+        }
+      },
+      {
+        "char": "漆",
+        "hanja": {
+          "sound": "칠",
+          "meaning": "옻칠할"
+        }
+      },
+      {
+        "char": "書",
+        "hanja": {
+          "sound": "서",
+          "meaning": "글씨"
+        }
+      },
+      {
+        "char": "壁",
+        "hanja": {
+          "sound": "벽",
+          "meaning": "벽"
+        }
+      },
+      {
+        "char": "經",
+        "hanja": {
+          "sound": "경",
+          "meaning": "날"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "府羅將相 路俠槐卿",
+    "meaning": "관부에는 장수와 정승들이 벌여 있고, 길은 공경의 집들을 끼고 있다.",
+    "details": [
+      {
+        "char": "府",
+        "hanja": {
+          "sound": "부",
+          "meaning": "마을"
+        }
+      },
+      {
+        "char": "羅",
+        "hanja": {
+          "sound": "라",
+          "meaning": "벌릴"
+        }
+      },
+      {
+        "char": "將",
+        "hanja": {
+          "sound": "장",
+          "meaning": "장수"
+        }
+      },
+      {
+        "char": "相",
+        "hanja": {
+          "sound": "상",
+          "meaning": "서로"
+        }
+      },
+      {
+        "char": "路",
+        "hanja": {
+          "sound": "노",
+          "meaning": "길"
+        }
+      },
+      {
+        "char": "俠",
+        "hanja": {
+          "sound": "협",
+          "meaning": "낄"
+        }
+      },
+      {
+        "char": "槐",
+        "hanja": {
+          "sound": "괴",
+          "meaning": "괴화나무"
+        }
+      },
+      {
+        "char": "卿",
+        "hanja": {
+          "sound": "경",
+          "meaning": "벼슬"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "戶封八縣 家給千兵",
+    "meaning": "여덟 고을을 식읍으로 하고, 그 가문에는 숱한 군사들을 주었다.",
+    "details": [
+      {
+        "char": "戶",
+        "hanja": {
+          "sound": "호",
+          "meaning": "지게"
+        }
+      },
+      {
+        "char": "封",
+        "hanja": {
+          "sound": "봉",
+          "meaning": "봉할"
+        }
+      },
+      {
+        "char": "八",
+        "hanja": {
+          "sound": "팔",
+          "meaning": "여덟"
+        }
+      },
+      {
+        "char": "縣",
+        "hanja": {
+          "sound": "현",
+          "meaning": "고을"
+        }
+      },
+      {
+        "char": "家",
+        "hanja": {
+          "sound": "가",
+          "meaning": "집"
+        }
+      },
+      {
+        "char": "給",
+        "hanja": {
+          "sound": "급",
+          "meaning": "줄"
+        }
+      },
+      {
+        "char": "千",
+        "hanja": {
+          "sound": "천",
+          "meaning": "일천"
+        }
+      },
+      {
+        "char": "兵",
+        "hanja": {
+          "sound": "병",
+          "meaning": "군사"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "高冠陪輦 驅轂振纓",
+    "meaning": "높은 갓 쓴 이들이 황제의 수레를 모시니, 말을 몰아 바퀴를 굴릴 때마다 끈과 술이 휘날리며,",
+    "details": [
+      {
+        "char": "高",
+        "hanja": {
+          "sound": "고",
+          "meaning": "높을"
+        }
+      },
+      {
+        "char": "冠",
+        "hanja": {
+          "sound": "관",
+          "meaning": "갓"
+        }
+      },
+      {
+        "char": "陪",
+        "hanja": {
+          "sound": "배",
+          "meaning": "더할"
+        }
+      },
+      {
+        "char": "輦",
+        "hanja": {
+          "sound": "련",
+          "meaning": "손수레"
+        }
+      },
+      {
+        "char": "驅",
+        "hanja": {
+          "sound": "구",
+          "meaning": "몰"
+        }
+      },
+      {
+        "char": "轂",
+        "hanja": {
+          "sound": "곡",
+          "meaning": "바퀴"
+        }
+      },
+      {
+        "char": "振",
+        "hanja": {
+          "sound": "진",
+          "meaning": "떨친"
+        }
+      },
+      {
+        "char": "纓",
+        "hanja": {
+          "sound": "영",
+          "meaning": "끈"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "世祿侈富 車駕肥輕",
+    "meaning": "대대로 녹을 받아 부유해지니, 말은 살찌고 수레는 가볍다.",
+    "details": [
+      {
+        "char": "世",
+        "hanja": {
+          "sound": "세",
+          "meaning": "세상"
+        }
+      },
+      {
+        "char": "祿",
+        "hanja": {
+          "sound": "록",
+          "meaning": "녹"
+        }
+      },
+      {
+        "char": "侈",
+        "hanja": {
+          "sound": "치",
+          "meaning": "사치할"
+        }
+      },
+      {
+        "char": "富",
+        "hanja": {
+          "sound": "부",
+          "meaning": "부자"
+        }
+      },
+      {
+        "char": "車",
+        "hanja": {
+          "sound": "거",
+          "meaning": "수레"
+        }
+      },
+      {
+        "char": "駕",
+        "hanja": {
+          "sound": "가",
+          "meaning": "멍에"
+        }
+      },
+      {
+        "char": "肥",
+        "hanja": {
+          "sound": "비",
+          "meaning": "살찔"
+        }
+      },
+      {
+        "char": "輕",
+        "hanja": {
+          "sound": "경",
+          "meaning": "가벼울"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "策功茂實 勒碑刻銘",
+    "meaning": "공을 금매겨 옹골참에 힘쓰게 하여, 비에 새기어 명문으로 파 놓는다.",
+    "details": [
+      {
+        "char": "策",
+        "hanja": {
+          "sound": "책",
+          "meaning": "꾀"
+        }
+      },
+      {
+        "char": "功",
+        "hanja": {
+          "sound": "공",
+          "meaning": "공"
+        }
+      },
+      {
+        "char": "茂",
+        "hanja": {
+          "sound": "무",
+          "meaning": "무성할"
+        }
+      },
+      {
+        "char": "實",
+        "hanja": {
+          "sound": "실",
+          "meaning": "열매"
+        }
+      },
+      {
+        "char": "勒",
+        "hanja": {
+          "sound": "늑",
+          "meaning": "굴레"
+        }
+      },
+      {
+        "char": "碑",
+        "hanja": {
+          "sound": "비",
+          "meaning": "비석"
+        }
+      },
+      {
+        "char": "刻",
+        "hanja": {
+          "sound": "각",
+          "meaning": "새길"
+        }
+      },
+      {
+        "char": "銘",
+        "hanja": {
+          "sound": "명",
+          "meaning": "새길"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "磻溪伊尹 佐時阿衡",
+    "meaning": "반계와 이윤은 때를 도왔고, 천하를 바로잡기 위하여 기댄 사람이며,",
+    "details": [
+      {
+        "char": "磻",
+        "hanja": {
+          "sound": "반",
+          "meaning": "강이름"
+        }
+      },
+      {
+        "char": "溪",
+        "hanja": {
+          "sound": "계",
+          "meaning": "시내"
+        }
+      },
+      {
+        "char": "伊",
+        "hanja": {
+          "sound": "이",
+          "meaning": "저"
+        }
+      },
+      {
+        "char": "尹",
+        "hanja": {
+          "sound": "윤",
+          "meaning": "다스릴"
+        }
+      },
+      {
+        "char": "佐",
+        "hanja": {
+          "sound": "좌",
+          "meaning": "도울"
+        }
+      },
+      {
+        "char": "時",
+        "hanja": {
+          "sound": "시",
+          "meaning": "때"
+        }
+      },
+      {
+        "char": "阿",
+        "hanja": {
+          "sound": "아",
+          "meaning": "언덕"
+        }
+      },
+      {
+        "char": "衡",
+        "hanja": {
+          "sound": "형",
+          "meaning": "저울대"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "奄宅曲阜 微旦孰營",
+    "meaning": "곡부를 어루만져 가라앉히니, 단이 아니면 누가 다스릴 수 있었겠는가.",
+    "details": [
+      {
+        "char": "奄",
+        "hanja": {
+          "sound": "엄",
+          "meaning": "문득"
+        }
+      },
+      {
+        "char": "宅",
+        "hanja": {
+          "sound": "택",
+          "meaning": "집 댁"
+        }
+      },
+      {
+        "char": "曲",
+        "hanja": {
+          "sound": "곡",
+          "meaning": "굽을"
+        }
+      },
+      {
+        "char": "阜",
+        "hanja": {
+          "sound": "부",
+          "meaning": "언덕"
+        }
+      },
+      {
+        "char": "微",
+        "hanja": {
+          "sound": "미",
+          "meaning": "작을"
+        }
+      },
+      {
+        "char": "旦",
+        "hanja": {
+          "sound": "단",
+          "meaning": "아침"
+        }
+      },
+      {
+        "char": "孰",
+        "hanja": {
+          "sound": "숙",
+          "meaning": "누구"
+        }
+      },
+      {
+        "char": "營",
+        "hanja": {
+          "sound": "영",
+          "meaning": "경영"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "桓公匡合 濟弱扶傾",
+    "meaning": "환공은 천하를 바로잡고 끌어 모아, 약한 자를 건지고 기우는 자를 붙들어 주었다.",
+    "details": [
+      {
+        "char": "桓",
+        "hanja": {
+          "sound": "환",
+          "meaning": "굳셀"
+        }
+      },
+      {
+        "char": "公",
+        "hanja": {
+          "sound": "공",
+          "meaning": "공변될"
+        }
+      },
+      {
+        "char": "匡",
+        "hanja": {
+          "sound": "광",
+          "meaning": "바를"
+        }
+      },
+      {
+        "char": "合",
+        "hanja": {
+          "sound": "합",
+          "meaning": "모을"
+        }
+      },
+      {
+        "char": "濟",
+        "hanja": {
+          "sound": "제",
+          "meaning": "건널"
+        }
+      },
+      {
+        "char": "弱",
+        "hanja": {
+          "sound": "약",
+          "meaning": "약할"
+        }
+      },
+      {
+        "char": "扶",
+        "hanja": {
+          "sound": "부",
+          "meaning": "도울"
+        }
+      },
+      {
+        "char": "傾",
+        "hanja": {
+          "sound": "경",
+          "meaning": "기울"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "綺回漢惠 說感武丁",
+    "meaning": "기리계는 한나라 혜제를 돌아오게 하였고, 부열은 무정과 따라 느끼었다.",
+    "details": [
+      {
+        "char": "綺",
+        "hanja": {
+          "sound": "기",
+          "meaning": "비단"
+        }
+      },
+      {
+        "char": "回",
+        "hanja": {
+          "sound": "회",
+          "meaning": "돌아올"
+        }
+      },
+      {
+        "char": "漢",
+        "hanja": {
+          "sound": "한",
+          "meaning": "한수"
+        }
+      },
+      {
+        "char": "惠",
+        "hanja": {
+          "sound": "혜",
+          "meaning": "은혜"
+        }
+      },
+      {
+        "char": "說",
+        "hanja": {
+          "sound": "열",
+          "meaning": "말씀 설/달랠 세/기뻐할"
+        }
+      },
+      {
+        "char": "感",
+        "hanja": {
+          "sound": "감",
+          "meaning": "느낄"
+        }
+      },
+      {
+        "char": "武",
+        "hanja": {
+          "sound": "무",
+          "meaning": "호반"
+        }
+      },
+      {
+        "char": "丁",
+        "hanja": {
+          "sound": "정",
+          "meaning": "고무래"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "俊乂密勿 多士寔寧",
+    "meaning": "재주와 덕이 뛰어난 사람들이 힘써 일하니, 대들보처럼 많은 인재들이 있어 참으로 푸근하다.",
+    "details": [
+      {
+        "char": "俊",
+        "hanja": {
+          "sound": "준",
+          "meaning": "준걸"
+        }
+      },
+      {
+        "char": "乂",
+        "hanja": {
+          "sound": "예",
+          "meaning": "어질"
+        }
+      },
+      {
+        "char": "密",
+        "hanja": {
+          "sound": "밀",
+          "meaning": "빽빽할"
+        }
+      },
+      {
+        "char": "勿",
+        "hanja": {
+          "sound": "물",
+          "meaning": "말"
+        }
+      },
+      {
+        "char": "多",
+        "hanja": {
+          "sound": "다",
+          "meaning": "많을"
+        }
+      },
+      {
+        "char": "士",
+        "hanja": {
+          "sound": "사",
+          "meaning": "선비"
+        }
+      },
+      {
+        "char": "寔",
+        "hanja": {
+          "sound": "식",
+          "meaning": "이"
+        }
+      },
+      {
+        "char": "寧",
+        "hanja": {
+          "sound": "녕",
+          "meaning": "편안"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "晋楚更覇 趙魏困橫",
+    "meaning": "진(晋),초(楚)는 번갈아 패권을 잡았고, 조(趙),위(魏)는 연횡책 탓에 어려움을 겪었다.",
+    "details": [
+      {
+        "char": "晋",
+        "hanja": {
+          "sound": "진",
+          "meaning": "나라"
+        }
+      },
+      {
+        "char": "楚",
+        "hanja": {
+          "sound": "초",
+          "meaning": "나라"
+        }
+      },
+      {
+        "char": "更",
+        "hanja": {
+          "sound": "경",
+          "meaning": "다시 갱/고칠"
+        }
+      },
+      {
+        "char": "覇",
+        "hanja": {
+          "sound": "패",
+          "meaning": "으뜸"
+        }
+      },
+      {
+        "char": "趙",
+        "hanja": {
+          "sound": "조",
+          "meaning": "나라"
+        }
+      },
+      {
+        "char": "魏",
+        "hanja": {
+          "sound": "위",
+          "meaning": "나라"
+        }
+      },
+      {
+        "char": "困",
+        "hanja": {
+          "sound": "곤",
+          "meaning": "곤할"
+        }
+      },
+      {
+        "char": "橫",
+        "hanja": {
+          "sound": "횡",
+          "meaning": "비낄"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "假道滅虢 踐土會盟",
+    "meaning": "길을 빌려 괵국을 멸하니 진헌공이 우국길을 빌려 괵국을 멸하고 진나라 문공이 제후를 천토에 모아서 주나라의 천자를 공경하고 조공할 것을 맹세하다.",
+    "details": [
+      {
+        "char": "假",
+        "hanja": {
+          "sound": "가",
+          "meaning": "거짓"
+        }
+      },
+      {
+        "char": "道",
+        "hanja": {
+          "sound": "도",
+          "meaning": "길"
+        }
+      },
+      {
+        "char": "滅",
+        "hanja": {
+          "sound": "멸",
+          "meaning": "멸할"
+        }
+      },
+      {
+        "char": "虢",
+        "hanja": {
+          "sound": "괵",
+          "meaning": "나라"
+        }
+      },
+      {
+        "char": "踐",
+        "hanja": {
+          "sound": "천",
+          "meaning": "밟을"
+        }
+      },
+      {
+        "char": "土",
+        "hanja": {
+          "sound": "토",
+          "meaning": "흙"
+        }
+      },
+      {
+        "char": "會",
+        "hanja": {
+          "sound": "회",
+          "meaning": "모일"
+        }
+      },
+      {
+        "char": "盟",
+        "hanja": {
+          "sound": "맹",
+          "meaning": "맹세"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "何遵約法 韓弊煩刑",
+    "meaning": "소하는 간략한 법을 준수했고, 한비는 번잡한 형벌로 피폐케 했다.",
+    "details": [
+      {
+        "char": "何",
+        "hanja": {
+          "sound": "하",
+          "meaning": "어찌"
+        }
+      },
+      {
+        "char": "遵",
+        "hanja": {
+          "sound": "준",
+          "meaning": "좇을"
+        }
+      },
+      {
+        "char": "約",
+        "hanja": {
+          "sound": "약",
+          "meaning": "약속할"
+        }
+      },
+      {
+        "char": "法",
+        "hanja": {
+          "sound": "법",
+          "meaning": "법"
+        }
+      },
+      {
+        "char": "韓",
+        "hanja": {
+          "sound": "한",
+          "meaning": "나라"
+        }
+      },
+      {
+        "char": "弊",
+        "hanja": {
+          "sound": "폐",
+          "meaning": "해질"
+        }
+      },
+      {
+        "char": "煩",
+        "hanja": {
+          "sound": "번",
+          "meaning": "번거로울"
+        }
+      },
+      {
+        "char": "刑",
+        "hanja": {
+          "sound": "형",
+          "meaning": "형벌"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "起翦頗牧 用軍最精",
+    "meaning": "백기, 왕전, 염파, 이목의 용병이 가장 정묘하였다.",
+    "details": [
+      {
+        "char": "起",
+        "hanja": {
+          "sound": "기",
+          "meaning": "일어날"
+        }
+      },
+      {
+        "char": "翦",
+        "hanja": {
+          "sound": "전",
+          "meaning": "자를"
+        }
+      },
+      {
+        "char": "頗",
+        "hanja": {
+          "sound": "파",
+          "meaning": "자못"
+        }
+      },
+      {
+        "char": "牧",
+        "hanja": {
+          "sound": "목",
+          "meaning": "칠"
+        }
+      },
+      {
+        "char": "用",
+        "hanja": {
+          "sound": "용",
+          "meaning": "쓸"
+        }
+      },
+      {
+        "char": "軍",
+        "hanja": {
+          "sound": "군",
+          "meaning": "군사"
+        }
+      },
+      {
+        "char": "最",
+        "hanja": {
+          "sound": "최",
+          "meaning": "가장"
+        }
+      },
+      {
+        "char": "精",
+        "hanja": {
+          "sound": "정",
+          "meaning": "정할"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "宣威沙漠 馳譽丹靑",
+    "meaning": "드레를 사막에까지 펼치니, 색칠로 그려저 좋은 이름을 드날렸다.",
+    "details": [
+      {
+        "char": "宣",
+        "hanja": {
+          "sound": "선",
+          "meaning": "베풀"
+        }
+      },
+      {
+        "char": "威",
+        "hanja": {
+          "sound": "위",
+          "meaning": "위엄"
+        }
+      },
+      {
+        "char": "沙",
+        "hanja": {
+          "sound": "사",
+          "meaning": "모래"
+        }
+      },
+      {
+        "char": "漠",
+        "hanja": {
+          "sound": "막",
+          "meaning": "아득할"
+        }
+      },
+      {
+        "char": "馳",
+        "hanja": {
+          "sound": "치",
+          "meaning": "달릴"
+        }
+      },
+      {
+        "char": "譽",
+        "hanja": {
+          "sound": "예",
+          "meaning": "칭찬할"
+        }
+      },
+      {
+        "char": "丹",
+        "hanja": {
+          "sound": "단",
+          "meaning": "붉을"
+        }
+      },
+      {
+        "char": "靑",
+        "hanja": {
+          "sound": "청",
+          "meaning": "푸를"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "九州禹跡 百郡秦幷",
+    "meaning": "아홉 고을은 우임금의 자취요, 모든 군은 진나라 때 아우른 것이다.",
+    "details": [
+      {
+        "char": "九",
+        "hanja": {
+          "sound": "구",
+          "meaning": "아홉"
+        }
+      },
+      {
+        "char": "州",
+        "hanja": {
+          "sound": "주",
+          "meaning": "고을"
+        }
+      },
+      {
+        "char": "禹",
+        "hanja": {
+          "sound": "우",
+          "meaning": "하우씨"
+        }
+      },
+      {
+        "char": "跡",
+        "hanja": {
+          "sound": "적",
+          "meaning": "자취"
+        }
+      },
+      {
+        "char": "百",
+        "hanja": {
+          "sound": "백",
+          "meaning": "일백"
+        }
+      },
+      {
+        "char": "郡",
+        "hanja": {
+          "sound": "군",
+          "meaning": "고을"
+        }
+      },
+      {
+        "char": "秦",
+        "hanja": {
+          "sound": "진",
+          "meaning": "나라"
+        }
+      },
+      {
+        "char": "幷",
+        "hanja": {
+          "sound": "병",
+          "meaning": "아우를"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "嶽宗恒岱 禪主云亭",
+    "meaning": "오악은 항산과 대산을 마루로 하고, 선 제사는 운운산과 정정산에서 한다.",
+    "details": [
+      {
+        "char": "嶽",
+        "hanja": {
+          "sound": "악",
+          "meaning": "산마루"
+        }
+      },
+      {
+        "char": "宗",
+        "hanja": {
+          "sound": "종",
+          "meaning": "마루"
+        }
+      },
+      {
+        "char": "恒",
+        "hanja": {
+          "sound": "항",
+          "meaning": "항상"
+        }
+      },
+      {
+        "char": "岱",
+        "hanja": {
+          "sound": "대",
+          "meaning": "뫼"
+        }
+      },
+      {
+        "char": "禪",
+        "hanja": {
+          "sound": "선",
+          "meaning": "터닦을"
+        }
+      },
+      {
+        "char": "主",
+        "hanja": {
+          "sound": "주",
+          "meaning": "임금"
+        }
+      },
+      {
+        "char": "云",
+        "hanja": {
+          "sound": "운",
+          "meaning": "이를"
+        }
+      },
+      {
+        "char": "亭",
+        "hanja": {
+          "sound": "정",
+          "meaning": "정자"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "雁門紫塞 鷄田赤城",
+    "meaning": "안문과 자새, 게전과 적성이며,",
+    "details": [
+      {
+        "char": "雁",
+        "hanja": {
+          "sound": "안",
+          "meaning": "기러기"
+        }
+      },
+      {
+        "char": "門",
+        "hanja": {
+          "sound": "문",
+          "meaning": "문"
+        }
+      },
+      {
+        "char": "紫",
+        "hanja": {
+          "sound": "자",
+          "meaning": "붉을"
+        }
+      },
+      {
+        "char": "塞",
+        "hanja": {
+          "sound": "새",
+          "meaning": "변방"
+        }
+      },
+      {
+        "char": "鷄",
+        "hanja": {
+          "sound": "계",
+          "meaning": "닭"
+        }
+      },
+      {
+        "char": "田",
+        "hanja": {
+          "sound": "전",
+          "meaning": "밭"
+        }
+      },
+      {
+        "char": "赤",
+        "hanja": {
+          "sound": "적",
+          "meaning": "붉을"
+        }
+      },
+      {
+        "char": "城",
+        "hanja": {
+          "sound": "성",
+          "meaning": "성"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "昆池碣石 鉅野洞庭",
+    "meaning": "곤지와 갈석, 거야와 동정은,",
+    "details": [
+      {
+        "char": "昆",
+        "hanja": {
+          "sound": "곤",
+          "meaning": "맏"
+        }
+      },
+      {
+        "char": "池",
+        "hanja": {
+          "sound": "지",
+          "meaning": "못"
+        }
+      },
+      {
+        "char": "碣",
+        "hanja": {
+          "sound": "갈",
+          "meaning": "돌"
+        }
+      },
+      {
+        "char": "石",
+        "hanja": {
+          "sound": "석",
+          "meaning": "돌"
+        }
+      },
+      {
+        "char": "鉅",
+        "hanja": {
+          "sound": "거",
+          "meaning": "클"
+        }
+      },
+      {
+        "char": "野",
+        "hanja": {
+          "sound": "야",
+          "meaning": "들"
+        }
+      },
+      {
+        "char": "洞",
+        "hanja": {
+          "sound": "동",
+          "meaning": "골 동/꿰뚫을"
+        }
+      },
+      {
+        "char": "庭",
+        "hanja": {
+          "sound": "정",
+          "meaning": "뜰"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "曠遠綿邈 巖峀杳冥",
+    "meaning": "드넓어 아스라히 멀고, 바위와 묏부리는 아득하게 깊다.",
+    "details": [
+      {
+        "char": "曠",
+        "hanja": {
+          "sound": "광",
+          "meaning": "빌"
+        }
+      },
+      {
+        "char": "遠",
+        "hanja": {
+          "sound": "원",
+          "meaning": "멀"
+        }
+      },
+      {
+        "char": "綿",
+        "hanja": {
+          "sound": "면",
+          "meaning": "이어질"
+        }
+      },
+      {
+        "char": "邈",
+        "hanja": {
+          "sound": "막",
+          "meaning": "멀"
+        }
+      },
+      {
+        "char": "巖",
+        "hanja": {
+          "sound": "암",
+          "meaning": "바위"
+        }
+      },
+      {
+        "char": "峀",
+        "hanja": {
+          "sound": "수",
+          "meaning": "메뿌리"
+        }
+      },
+      {
+        "char": "杳",
+        "hanja": {
+          "sound": "묘",
+          "meaning": "아득할"
+        }
+      },
+      {
+        "char": "冥",
+        "hanja": {
+          "sound": "명",
+          "meaning": "어두울"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "治本於農 務玆稼穡",
+    "meaning": "다스림은 농사로서 밑바탕을 삼으니, 바로 이 심고 거두는 일에 힘쓰게 하여,",
+    "details": [
+      {
+        "char": "治",
+        "hanja": {
+          "sound": "치",
+          "meaning": "다스릴"
+        }
+      },
+      {
+        "char": "本",
+        "hanja": {
+          "sound": "본",
+          "meaning": "근본"
+        }
+      },
+      {
+        "char": "於",
+        "hanja": {
+          "sound": "어",
+          "meaning": "어조사"
+        }
+      },
+      {
+        "char": "農",
+        "hanja": {
+          "sound": "농",
+          "meaning": "농사"
+        }
+      },
+      {
+        "char": "務",
+        "hanja": {
+          "sound": "무",
+          "meaning": "힘쓸"
+        }
+      },
+      {
+        "char": "玆",
+        "hanja": {
+          "sound": "자",
+          "meaning": "이"
+        }
+      },
+      {
+        "char": "稼",
+        "hanja": {
+          "sound": "가",
+          "meaning": "심을"
+        }
+      },
+      {
+        "char": "穡",
+        "hanja": {
+          "sound": "색",
+          "meaning": "거둘"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "俶載南畝 我藝黍稷",
+    "meaning": "남쪽 이랑에 나가 일을 비롯하니, 나는 메기장과 치기장을 심으며,",
+    "details": [
+      {
+        "char": "俶",
+        "hanja": {
+          "sound": "숙",
+          "meaning": "비로소"
+        }
+      },
+      {
+        "char": "載",
+        "hanja": {
+          "sound": "재",
+          "meaning": "실을"
+        }
+      },
+      {
+        "char": "南",
+        "hanja": {
+          "sound": "남",
+          "meaning": "남녘"
+        }
+      },
+      {
+        "char": "畝",
+        "hanja": {
+          "sound": "무",
+          "meaning": "이랑"
+        }
+      },
+      {
+        "char": "我",
+        "hanja": {
+          "sound": "아",
+          "meaning": "나"
+        }
+      },
+      {
+        "char": "藝",
+        "hanja": {
+          "sound": "예",
+          "meaning": "재주"
+        }
+      },
+      {
+        "char": "黍",
+        "hanja": {
+          "sound": "서",
+          "meaning": "기장"
+        }
+      },
+      {
+        "char": "稷",
+        "hanja": {
+          "sound": "직",
+          "meaning": "피"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "稅熟貢新 勸賞黜陟",
+    "meaning": "익은 곡식에 구실을 매기고 햇것을 공물로 바치며, 타이르고 상 주고 내치고 올려 준다.",
+    "details": [
+      {
+        "char": "稅",
+        "hanja": {
+          "sound": "세",
+          "meaning": "징수할"
+        }
+      },
+      {
+        "char": "熟",
+        "hanja": {
+          "sound": "숙",
+          "meaning": "익을"
+        }
+      },
+      {
+        "char": "貢",
+        "hanja": {
+          "sound": "공",
+          "meaning": "바칠"
+        }
+      },
+      {
+        "char": "新",
+        "hanja": {
+          "sound": "신",
+          "meaning": "새"
+        }
+      },
+      {
+        "char": "勸",
+        "hanja": {
+          "sound": "권",
+          "meaning": "권할"
+        }
+      },
+      {
+        "char": "賞",
+        "hanja": {
+          "sound": "상",
+          "meaning": "상줄"
+        }
+      },
+      {
+        "char": "黜",
+        "hanja": {
+          "sound": "출",
+          "meaning": "물리칠"
+        }
+      },
+      {
+        "char": "陟",
+        "hanja": {
+          "sound": "척",
+          "meaning": "오를"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "孟軻敦素 史魚秉直",
+    "meaning": "맹자는 바탕을 두텁게 하였고, 사어는 올곧음을 굳게 지녔다.",
+    "details": [
+      {
+        "char": "孟",
+        "hanja": {
+          "sound": "맹",
+          "meaning": "맏"
+        }
+      },
+      {
+        "char": "軻",
+        "hanja": {
+          "sound": "가",
+          "meaning": "수레"
+        }
+      },
+      {
+        "char": "敦",
+        "hanja": {
+          "sound": "돈",
+          "meaning": "도타울"
+        }
+      },
+      {
+        "char": "素",
+        "hanja": {
+          "sound": "소",
+          "meaning": "흴"
+        }
+      },
+      {
+        "char": "史",
+        "hanja": {
+          "sound": "사",
+          "meaning": "역사"
+        }
+      },
+      {
+        "char": "魚",
+        "hanja": {
+          "sound": "어",
+          "meaning": "물고기"
+        }
+      },
+      {
+        "char": "秉",
+        "hanja": {
+          "sound": "병",
+          "meaning": "잡을"
+        }
+      },
+      {
+        "char": "直",
+        "hanja": {
+          "sound": "직",
+          "meaning": "곧을"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "庶幾中庸 勞謙謹勅",
+    "meaning": "중용에 가까우려면, 부지런히 일하고 고분고분하고 삼가고 잡도리해야 한다.",
+    "details": [
+      {
+        "char": "庶",
+        "hanja": {
+          "sound": "서",
+          "meaning": "여러"
+        }
+      },
+      {
+        "char": "幾",
+        "hanja": {
+          "sound": "기",
+          "meaning": "몇"
+        }
+      },
+      {
+        "char": "中",
+        "hanja": {
+          "sound": "중",
+          "meaning": "가운데"
+        }
+      },
+      {
+        "char": "庸",
+        "hanja": {
+          "sound": "용",
+          "meaning": "떳떳"
+        }
+      },
+      {
+        "char": "勞",
+        "hanja": {
+          "sound": "노",
+          "meaning": "힘쓸"
+        }
+      },
+      {
+        "char": "謙",
+        "hanja": {
+          "sound": "겸",
+          "meaning": "겸손"
+        }
+      },
+      {
+        "char": "謹",
+        "hanja": {
+          "sound": "근",
+          "meaning": "삼갈"
+        }
+      },
+      {
+        "char": "勅",
+        "hanja": {
+          "sound": "칙",
+          "meaning": "칙서"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "聆音察理 鑑貌辨色",
+    "meaning": "소리를 듣고 갈피를 살피며, 생김새를 보고 낌새를 가리어 안다.",
+    "details": [
+      {
+        "char": "聆",
+        "hanja": {
+          "sound": "영",
+          "meaning": "들을"
+        }
+      },
+      {
+        "char": "音",
+        "hanja": {
+          "sound": "음",
+          "meaning": "소리"
+        }
+      },
+      {
+        "char": "察",
+        "hanja": {
+          "sound": "찰",
+          "meaning": "살필"
+        }
+      },
+      {
+        "char": "理",
+        "hanja": {
+          "sound": "리",
+          "meaning": "다스릴"
+        }
+      },
+      {
+        "char": "鑑",
+        "hanja": {
+          "sound": "감",
+          "meaning": "거울"
+        }
+      },
+      {
+        "char": "貌",
+        "hanja": {
+          "sound": "모",
+          "meaning": "모양"
+        }
+      },
+      {
+        "char": "辨",
+        "hanja": {
+          "sound": "변",
+          "meaning": "분별"
+        }
+      },
+      {
+        "char": "色",
+        "hanja": {
+          "sound": "색",
+          "meaning": "빛"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "貽厥嘉猷 勉其祗植",
+    "meaning": "그분에게 아름다운 얼개를 주고, 그것을 떠받을어 심기에 힘써라.",
+    "details": [
+      {
+        "char": "貽",
+        "hanja": {
+          "sound": "이",
+          "meaning": "끼칠"
+        }
+      },
+      {
+        "char": "厥",
+        "hanja": {
+          "sound": "궐",
+          "meaning": "그"
+        }
+      },
+      {
+        "char": "嘉",
+        "hanja": {
+          "sound": "가",
+          "meaning": "아름다울"
+        }
+      },
+      {
+        "char": "猷",
+        "hanja": {
+          "sound": "유",
+          "meaning": "꾀"
+        }
+      },
+      {
+        "char": "勉",
+        "hanja": {
+          "sound": "면",
+          "meaning": "힘쓸"
+        }
+      },
+      {
+        "char": "其",
+        "hanja": {
+          "sound": "기",
+          "meaning": "그"
+        }
+      },
+      {
+        "char": "祗",
+        "hanja": {
+          "sound": "지",
+          "meaning": "공경"
+        }
+      },
+      {
+        "char": "植",
+        "hanja": {
+          "sound": "식",
+          "meaning": "심을"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "省躬譏誡 寵增抗極",
+    "meaning": "자기 몸을 살펴서 나무람이나 잡도리함이 있을까 조심하고, 임금의 고임이 더할수록 잘난 체하여 뽐내지 말아야 한다.",
+    "details": [
+      {
+        "char": "省",
+        "hanja": {
+          "sound": "성",
+          "meaning": "살필 성/덜"
+        }
+      },
+      {
+        "char": "躬",
+        "hanja": {
+          "sound": "궁",
+          "meaning": "몸"
+        }
+      },
+      {
+        "char": "譏",
+        "hanja": {
+          "sound": "기",
+          "meaning": "나무랄"
+        }
+      },
+      {
+        "char": "誡",
+        "hanja": {
+          "sound": "계",
+          "meaning": "경계"
+        }
+      },
+      {
+        "char": "寵",
+        "hanja": {
+          "sound": "총",
+          "meaning": "고일"
+        }
+      },
+      {
+        "char": "增",
+        "hanja": {
+          "sound": "증",
+          "meaning": "더할"
+        }
+      },
+      {
+        "char": "抗",
+        "hanja": {
+          "sound": "항",
+          "meaning": "저항할"
+        }
+      },
+      {
+        "char": "極",
+        "hanja": {
+          "sound": "극",
+          "meaning": "다할"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "殆辱近恥 林皐幸卽",
+    "meaning": "위태로움과 욕됨은 부끄러움이 가까우니, 숲이 우거진 시냇가 언덕으로 나아가야 한다.",
+    "details": [
+      {
+        "char": "殆",
+        "hanja": {
+          "sound": "태",
+          "meaning": "위태"
+        }
+      },
+      {
+        "char": "辱",
+        "hanja": {
+          "sound": "욕",
+          "meaning": "욕할"
+        }
+      },
+      {
+        "char": "近",
+        "hanja": {
+          "sound": "근",
+          "meaning": "가까울"
+        }
+      },
+      {
+        "char": "恥",
+        "hanja": {
+          "sound": "치",
+          "meaning": "부끄러울"
+        }
+      },
+      {
+        "char": "林",
+        "hanja": {
+          "sound": "임",
+          "meaning": "수풀"
+        }
+      },
+      {
+        "char": "皐",
+        "hanja": {
+          "sound": "고",
+          "meaning": "언덕"
+        }
+      },
+      {
+        "char": "幸",
+        "hanja": {
+          "sound": "행",
+          "meaning": "다행"
+        }
+      },
+      {
+        "char": "卽",
+        "hanja": {
+          "sound": "즉",
+          "meaning": "곧"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "兩疏見機 解組誰逼",
+    "meaning": "소광가 소수는 낌새를 알아차려, 인끈을 풀었으니 누가 다그칠 수 있으리오.",
+    "details": [
+      {
+        "char": "兩",
+        "hanja": {
+          "sound": "양",
+          "meaning": "두"
+        }
+      },
+      {
+        "char": "疏",
+        "hanja": {
+          "sound": "소",
+          "meaning": "상소할"
+        }
+      },
+      {
+        "char": "見",
+        "hanja": {
+          "sound": "견",
+          "meaning": "볼 견/나타날"
+        }
+      },
+      {
+        "char": "機",
+        "hanja": {
+          "sound": "기",
+          "meaning": "틀"
+        }
+      },
+      {
+        "char": "解",
+        "hanja": {
+          "sound": "해",
+          "meaning": "풀"
+        }
+      },
+      {
+        "char": "組",
+        "hanja": {
+          "sound": "조",
+          "meaning": "짤"
+        }
+      },
+      {
+        "char": "誰",
+        "hanja": {
+          "sound": "수",
+          "meaning": "누구"
+        }
+      },
+      {
+        "char": "逼",
+        "hanja": {
+          "sound": "핍",
+          "meaning": "핍박할"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "索居閑處 沈默寂寥",
+    "meaning": "홀로 떨어져 살고 한갓지게 머무니, 잠긴 듯 잠잠하고 고요하구나.",
+    "details": [
+      {
+        "char": "索",
+        "hanja": {
+          "sound": "삭",
+          "meaning": "찾을"
+        }
+      },
+      {
+        "char": "居",
+        "hanja": {
+          "sound": "거",
+          "meaning": "살"
+        }
+      },
+      {
+        "char": "閑",
+        "hanja": {
+          "sound": "한",
+          "meaning": "한가"
+        }
+      },
+      {
+        "char": "處",
+        "hanja": {
+          "sound": "처",
+          "meaning": "곳"
+        }
+      },
+      {
+        "char": "沈",
+        "hanja": {
+          "sound": "침",
+          "meaning": "잠길"
+        }
+      },
+      {
+        "char": "默",
+        "hanja": {
+          "sound": "묵",
+          "meaning": "잠잠할"
+        }
+      },
+      {
+        "char": "寂",
+        "hanja": {
+          "sound": "적",
+          "meaning": "고요할"
+        }
+      },
+      {
+        "char": "寥",
+        "hanja": {
+          "sound": "요",
+          "meaning": "고요"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "求古尋論 散慮逍遙",
+    "meaning": "옛것과 생각을 나누었던 자취를 찾고, 걱정을 흩어 버리고 한가로이 노닌다.",
+    "details": [
+      {
+        "char": "求",
+        "hanja": {
+          "sound": "구",
+          "meaning": "구할"
+        }
+      },
+      {
+        "char": "古",
+        "hanja": {
+          "sound": "고",
+          "meaning": "옛"
+        }
+      },
+      {
+        "char": "尋",
+        "hanja": {
+          "sound": "심",
+          "meaning": "찾을"
+        }
+      },
+      {
+        "char": "論",
+        "hanja": {
+          "sound": "륜",
+          "meaning": "의논할"
+        }
+      },
+      {
+        "char": "散",
+        "hanja": {
+          "sound": "산",
+          "meaning": "흩을"
+        }
+      },
+      {
+        "char": "慮",
+        "hanja": {
+          "sound": "려",
+          "meaning": "생각"
+        }
+      },
+      {
+        "char": "逍",
+        "hanja": {
+          "sound": "소",
+          "meaning": "거닐"
+        }
+      },
+      {
+        "char": "遙",
+        "hanja": {
+          "sound": "요",
+          "meaning": "멀"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "欣奏累遣 慼謝歡招",
+    "meaning": "기쁜 일은 아뢰어지고 근심은 내쳐지며, 슬픔은 사라지고 즐거움이 손짓하여 부른다.",
+    "details": [
+      {
+        "char": "欣",
+        "hanja": {
+          "sound": "흔",
+          "meaning": "기쁠"
+        }
+      },
+      {
+        "char": "奏",
+        "hanja": {
+          "sound": "주",
+          "meaning": "아뢸"
+        }
+      },
+      {
+        "char": "累",
+        "hanja": {
+          "sound": "루",
+          "meaning": "여러"
+        }
+      },
+      {
+        "char": "遣",
+        "hanja": {
+          "sound": "견",
+          "meaning": "보낼"
+        }
+      },
+      {
+        "char": "慼",
+        "hanja": {
+          "sound": "척",
+          "meaning": "슬플"
+        }
+      },
+      {
+        "char": "謝",
+        "hanja": {
+          "sound": "사",
+          "meaning": "사례"
+        }
+      },
+      {
+        "char": "歡",
+        "hanja": {
+          "sound": "환",
+          "meaning": "기뻐할"
+        }
+      },
+      {
+        "char": "招",
+        "hanja": {
+          "sound": "초",
+          "meaning": "부를"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "渠荷的歷 園莽抽條",
+    "meaning": "도랑의 연꽃은 또렷이 빛나고, 동산에 잡풀은 죽죽 뻗어 우거졌으며,",
+    "details": [
+      {
+        "char": "渠",
+        "hanja": {
+          "sound": "거",
+          "meaning": "개천"
+        }
+      },
+      {
+        "char": "荷",
+        "hanja": {
+          "sound": "하",
+          "meaning": "연꽃"
+        }
+      },
+      {
+        "char": "的",
+        "hanja": {
+          "sound": "적",
+          "meaning": "과녁"
+        }
+      },
+      {
+        "char": "歷",
+        "hanja": {
+          "sound": "력",
+          "meaning": "지낼"
+        }
+      },
+      {
+        "char": "園",
+        "hanja": {
+          "sound": "원",
+          "meaning": "동산"
+        }
+      },
+      {
+        "char": "莽",
+        "hanja": {
+          "sound": "망",
+          "meaning": "풀"
+        }
+      },
+      {
+        "char": "抽",
+        "hanja": {
+          "sound": "추",
+          "meaning": "빼낼"
+        }
+      },
+      {
+        "char": "條",
+        "hanja": {
+          "sound": "조",
+          "meaning": "조목"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "枇杷晩翠 梧桐早凋",
+    "meaning": "비파나무는 늦게까지 푸르고, 오동나무는 일찍 시든다.",
+    "details": [
+      {
+        "char": "枇",
+        "hanja": {
+          "sound": "비",
+          "meaning": "비파나무"
+        }
+      },
+      {
+        "char": "杷",
+        "hanja": {
+          "sound": "파",
+          "meaning": "비파나무"
+        }
+      },
+      {
+        "char": "晩",
+        "hanja": {
+          "sound": "만",
+          "meaning": "늦을"
+        }
+      },
+      {
+        "char": "翠",
+        "hanja": {
+          "sound": "취",
+          "meaning": "푸를"
+        }
+      },
+      {
+        "char": "梧",
+        "hanja": {
+          "sound": "오",
+          "meaning": "오동"
+        }
+      },
+      {
+        "char": "桐",
+        "hanja": {
+          "sound": "동",
+          "meaning": "오동"
+        }
+      },
+      {
+        "char": "早",
+        "hanja": {
+          "sound": "조",
+          "meaning": "이를"
+        }
+      },
+      {
+        "char": "凋",
+        "hanja": {
+          "sound": "조",
+          "meaning": "시들"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "陳根委翳 落葉飄颻",
+    "meaning": "묵은 뿌리들은 말라 시들고, 떨어진 잎들은 바람에 흩날린다.",
+    "details": [
+      {
+        "char": "陳",
+        "hanja": {
+          "sound": "진",
+          "meaning": "베풀"
+        }
+      },
+      {
+        "char": "根",
+        "hanja": {
+          "sound": "근",
+          "meaning": "뿌리"
+        }
+      },
+      {
+        "char": "委",
+        "hanja": {
+          "sound": "위",
+          "meaning": "맡길"
+        }
+      },
+      {
+        "char": "翳",
+        "hanja": {
+          "sound": "예",
+          "meaning": "가릴"
+        }
+      },
+      {
+        "char": "落",
+        "hanja": {
+          "sound": "낙",
+          "meaning": "떨어질"
+        }
+      },
+      {
+        "char": "葉",
+        "hanja": {
+          "sound": "엽",
+          "meaning": "잎사귀"
+        }
+      },
+      {
+        "char": "飄",
+        "hanja": {
+          "sound": "표",
+          "meaning": "나부낄"
+        }
+      },
+      {
+        "char": "颻",
+        "hanja": {
+          "sound": "요",
+          "meaning": "나부낄"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "遊鵾獨運 凌摩絳霄",
+    "meaning": "곤어는 홀로 제 뜻대로 노닐다가, 하늘 테두리를 넘어 미끄러지듯 날아간다.",
+    "details": [
+      {
+        "char": "遊",
+        "hanja": {
+          "sound": "유",
+          "meaning": "헤엄칠"
+        }
+      },
+      {
+        "char": "鵾",
+        "hanja": {
+          "sound": "곤",
+          "meaning": "곤새"
+        }
+      },
+      {
+        "char": "獨",
+        "hanja": {
+          "sound": "독",
+          "meaning": "홀로"
+        }
+      },
+      {
+        "char": "運",
+        "hanja": {
+          "sound": "운",
+          "meaning": "운전"
+        }
+      },
+      {
+        "char": "凌",
+        "hanja": {
+          "sound": "능",
+          "meaning": "업신여길"
+        }
+      },
+      {
+        "char": "摩",
+        "hanja": {
+          "sound": "마",
+          "meaning": "만질"
+        }
+      },
+      {
+        "char": "絳",
+        "hanja": {
+          "sound": "강",
+          "meaning": "붉을"
+        }
+      },
+      {
+        "char": "霄",
+        "hanja": {
+          "sound": "소",
+          "meaning": "하늘"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "耽讀翫市 寓目囊箱",
+    "meaning": "저잣거리 책방에서 글 읽기에 골똘하니, 눈길을 붙이기만 하면 그대로 주머니와 상자 속에 갈무리하는 것 같다.",
+    "details": [
+      {
+        "char": "耽",
+        "hanja": {
+          "sound": "탐",
+          "meaning": "즐길"
+        }
+      },
+      {
+        "char": "讀",
+        "hanja": {
+          "sound": "독",
+          "meaning": "읽을 독/이두"
+        }
+      },
+      {
+        "char": "翫",
+        "hanja": {
+          "sound": "완",
+          "meaning": "가지고놀"
+        }
+      },
+      {
+        "char": "市",
+        "hanja": {
+          "sound": "시",
+          "meaning": "저자"
+        }
+      },
+      {
+        "char": "寓",
+        "hanja": {
+          "sound": "우",
+          "meaning": "붙일"
+        }
+      },
+      {
+        "char": "目",
+        "hanja": {
+          "sound": "목",
+          "meaning": "눈"
+        }
+      },
+      {
+        "char": "囊",
+        "hanja": {
+          "sound": "낭",
+          "meaning": "주머니"
+        }
+      },
+      {
+        "char": "箱",
+        "hanja": {
+          "sound": "상",
+          "meaning": "상자"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "易輶攸畏 屬耳垣牆",
+    "meaning": "쉽고 가볍게 보이는 것은 두려워해야 할 바이니, 귀를 담장에 붙여놓았기 때문이다.",
+    "details": [
+      {
+        "char": "易",
+        "hanja": {
+          "sound": "역",
+          "meaning": "쉬울 이/바꿀"
+        }
+      },
+      {
+        "char": "輶",
+        "hanja": {
+          "sound": "유",
+          "meaning": "가벼울"
+        }
+      },
+      {
+        "char": "攸",
+        "hanja": {
+          "sound": "유",
+          "meaning": "바"
+        }
+      },
+      {
+        "char": "畏",
+        "hanja": {
+          "sound": "외",
+          "meaning": "두려워할"
+        }
+      },
+      {
+        "char": "屬",
+        "hanja": {
+          "sound": "속",
+          "meaning": "붙을 속/이을"
+        }
+      },
+      {
+        "char": "耳",
+        "hanja": {
+          "sound": "이",
+          "meaning": "귀"
+        }
+      },
+      {
+        "char": "垣",
+        "hanja": {
+          "sound": "원",
+          "meaning": "담"
+        }
+      },
+      {
+        "char": "牆",
+        "hanja": {
+          "sound": "장",
+          "meaning": "담"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "具膳飱飯 適口充腸",
+    "meaning": "찬 갖춘 밥을 물 말아 먹고, 입에 맞게 창자를 채우는 것이니,",
+    "details": [
+      {
+        "char": "具",
+        "hanja": {
+          "sound": "구",
+          "meaning": "갖출"
+        }
+      },
+      {
+        "char": "膳",
+        "hanja": {
+          "sound": "선",
+          "meaning": "반찬"
+        }
+      },
+      {
+        "char": "飱",
+        "hanja": {
+          "sound": "손",
+          "meaning": "밥"
+        }
+      },
+      {
+        "char": "飯",
+        "hanja": {
+          "sound": "반",
+          "meaning": "밥"
+        }
+      },
+      {
+        "char": "適",
+        "hanja": {
+          "sound": "적",
+          "meaning": "마침"
+        }
+      },
+      {
+        "char": "口",
+        "hanja": {
+          "sound": "구",
+          "meaning": "입"
+        }
+      },
+      {
+        "char": "充",
+        "hanja": {
+          "sound": "충",
+          "meaning": "채울"
+        }
+      },
+      {
+        "char": "腸",
+        "hanja": {
+          "sound": "장",
+          "meaning": "창자"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "飽飫烹宰 饑厭糟糠",
+    "meaning": "배부르면 고기음식이라도 먹기 싫고, 배고프면 술지게미나 겨도 달갑게 느껴진다.",
+    "details": [
+      {
+        "char": "飽",
+        "hanja": {
+          "sound": "포",
+          "meaning": "배부를"
+        }
+      },
+      {
+        "char": "飫",
+        "hanja": {
+          "sound": "어",
+          "meaning": "배부를"
+        }
+      },
+      {
+        "char": "烹",
+        "hanja": {
+          "sound": "팽",
+          "meaning": "삶을"
+        }
+      },
+      {
+        "char": "宰",
+        "hanja": {
+          "sound": "재",
+          "meaning": "재상"
+        }
+      },
+      {
+        "char": "饑",
+        "hanja": {
+          "sound": "기",
+          "meaning": "주릴"
+        }
+      },
+      {
+        "char": "厭",
+        "hanja": {
+          "sound": "염",
+          "meaning": "싫을"
+        }
+      },
+      {
+        "char": "糟",
+        "hanja": {
+          "sound": "조",
+          "meaning": "재강"
+        }
+      },
+      {
+        "char": "糠",
+        "hanja": {
+          "sound": "강",
+          "meaning": "겨"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "親戚故舊 老少異糧",
+    "meaning": "곁붙이와 옛 친구들을 대접할 때에는, 늙고 젊음에 따라 먹을 것을 달리해야 한다.",
+    "details": [
+      {
+        "char": "親",
+        "hanja": {
+          "sound": "친",
+          "meaning": "친할"
+        }
+      },
+      {
+        "char": "戚",
+        "hanja": {
+          "sound": "척",
+          "meaning": "겨레"
+        }
+      },
+      {
+        "char": "故",
+        "hanja": {
+          "sound": "고",
+          "meaning": "연고"
+        }
+      },
+      {
+        "char": "舊",
+        "hanja": {
+          "sound": "구",
+          "meaning": "옛"
+        }
+      },
+      {
+        "char": "老",
+        "hanja": {
+          "sound": "노",
+          "meaning": "늙을"
+        }
+      },
+      {
+        "char": "少",
+        "hanja": {
+          "sound": "소",
+          "meaning": "젊을"
+        }
+      },
+      {
+        "char": "異",
+        "hanja": {
+          "sound": "이",
+          "meaning": "다를"
+        }
+      },
+      {
+        "char": "糧",
+        "hanja": {
+          "sound": "량",
+          "meaning": "양식"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "妾御績紡 侍巾帷房",
+    "meaning": "아내와 첩은 길쌈을 하고, 장막 친 안방에서 수건 들고 시중든다.",
+    "details": [
+      {
+        "char": "妾",
+        "hanja": {
+          "sound": "첩",
+          "meaning": "첩"
+        }
+      },
+      {
+        "char": "御",
+        "hanja": {
+          "sound": "어",
+          "meaning": "모실"
+        }
+      },
+      {
+        "char": "績",
+        "hanja": {
+          "sound": "적",
+          "meaning": "길쌈"
+        }
+      },
+      {
+        "char": "紡",
+        "hanja": {
+          "sound": "방",
+          "meaning": "길쌈"
+        }
+      },
+      {
+        "char": "侍",
+        "hanja": {
+          "sound": "시",
+          "meaning": "모실"
+        }
+      },
+      {
+        "char": "巾",
+        "hanja": {
+          "sound": "건",
+          "meaning": "수건"
+        }
+      },
+      {
+        "char": "帷",
+        "hanja": {
+          "sound": "유",
+          "meaning": "장막"
+        }
+      },
+      {
+        "char": "房",
+        "hanja": {
+          "sound": "방",
+          "meaning": "방"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "紈扇圓潔 銀燭煒煌",
+    "meaning": "흰 비단으로 만든 부채는 둥글고 깨끗하며, 은빛 나는 촛불은 환하게 빛나고,",
+    "details": [
+      {
+        "char": "紈",
+        "hanja": {
+          "sound": "환",
+          "meaning": "흰비단"
+        }
+      },
+      {
+        "char": "扇",
+        "hanja": {
+          "sound": "선",
+          "meaning": "부채"
+        }
+      },
+      {
+        "char": "圓",
+        "hanja": {
+          "sound": "원",
+          "meaning": "둥글"
+        }
+      },
+      {
+        "char": "潔",
+        "hanja": {
+          "sound": "결",
+          "meaning": "깨끗할"
+        }
+      },
+      {
+        "char": "銀",
+        "hanja": {
+          "sound": "은",
+          "meaning": "은"
+        }
+      },
+      {
+        "char": "燭",
+        "hanja": {
+          "sound": "촉",
+          "meaning": "촛불"
+        }
+      },
+      {
+        "char": "煒",
+        "hanja": {
+          "sound": "휘",
+          "meaning": "빛날"
+        }
+      },
+      {
+        "char": "煌",
+        "hanja": {
+          "sound": "황",
+          "meaning": "빛날"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "晝眠夕寐 藍筍象床",
+    "meaning": "낮에는 졸고 밤에는 자니, 대나무 침상과 상아로 치레한 긴 걸상이다.",
+    "details": [
+      {
+        "char": "晝",
+        "hanja": {
+          "sound": "주",
+          "meaning": "낮"
+        }
+      },
+      {
+        "char": "眠",
+        "hanja": {
+          "sound": "면",
+          "meaning": "잘"
+        }
+      },
+      {
+        "char": "夕",
+        "hanja": {
+          "sound": "석",
+          "meaning": "저녁"
+        }
+      },
+      {
+        "char": "寐",
+        "hanja": {
+          "sound": "매",
+          "meaning": "잘"
+        }
+      },
+      {
+        "char": "藍",
+        "hanja": {
+          "sound": "남",
+          "meaning": "쪽"
+        }
+      },
+      {
+        "char": "筍",
+        "hanja": {
+          "sound": "순",
+          "meaning": "죽순"
+        }
+      },
+      {
+        "char": "象",
+        "hanja": {
+          "sound": "상",
+          "meaning": "코끼리"
+        }
+      },
+      {
+        "char": "床",
+        "hanja": {
+          "sound": "상",
+          "meaning": "상"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "弦歌酒讌 接杯擧觴",
+    "meaning": "거문고 타고 노래하며 술 마시는 잔치 마당에서는 얌전하게 잔을 주고 두 손으로 들어 올려 권하고,",
+    "details": [
+      {
+        "char": "弦",
+        "hanja": {
+          "sound": "현",
+          "meaning": "줄"
+        }
+      },
+      {
+        "char": "歌",
+        "hanja": {
+          "sound": "가",
+          "meaning": "노래"
+        }
+      },
+      {
+        "char": "酒",
+        "hanja": {
+          "sound": "주",
+          "meaning": "술"
+        }
+      },
+      {
+        "char": "讌",
+        "hanja": {
+          "sound": "연",
+          "meaning": "잔치"
+        }
+      },
+      {
+        "char": "接",
+        "hanja": {
+          "sound": "접",
+          "meaning": "이을"
+        }
+      },
+      {
+        "char": "杯",
+        "hanja": {
+          "sound": "배",
+          "meaning": "잔"
+        }
+      },
+      {
+        "char": "擧",
+        "hanja": {
+          "sound": "거",
+          "meaning": "들"
+        }
+      },
+      {
+        "char": "觴",
+        "hanja": {
+          "sound": "상",
+          "meaning": "잔"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "矯手頓足 悅豫且康",
+    "meaning": "손을 굽혔다 펴고 발을 구르니, 기쁘고 즐거우며 걱정 없기 그지없다.",
+    "details": [
+      {
+        "char": "矯",
+        "hanja": {
+          "sound": "교",
+          "meaning": "바로잡을"
+        }
+      },
+      {
+        "char": "手",
+        "hanja": {
+          "sound": "수",
+          "meaning": "손"
+        }
+      },
+      {
+        "char": "頓",
+        "hanja": {
+          "sound": "돈",
+          "meaning": "두드릴"
+        }
+      },
+      {
+        "char": "足",
+        "hanja": {
+          "sound": "족",
+          "meaning": "발"
+        }
+      },
+      {
+        "char": "悅",
+        "hanja": {
+          "sound": "열",
+          "meaning": "기쁠"
+        }
+      },
+      {
+        "char": "豫",
+        "hanja": {
+          "sound": "예",
+          "meaning": "미리"
+        }
+      },
+      {
+        "char": "且",
+        "hanja": {
+          "sound": "차",
+          "meaning": "또"
+        }
+      },
+      {
+        "char": "康",
+        "hanja": {
+          "sound": "강",
+          "meaning": "편안"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "嫡後嗣續 祭祀蒸嘗",
+    "meaning": "맏아들은 대를 이어, 조상께 증상 제사를 지내니,",
+    "details": [
+      {
+        "char": "嫡",
+        "hanja": {
+          "sound": "적",
+          "meaning": "정실"
+        }
+      },
+      {
+        "char": "後",
+        "hanja": {
+          "sound": "후",
+          "meaning": "뒤"
+        }
+      },
+      {
+        "char": "嗣",
+        "hanja": {
+          "sound": "사",
+          "meaning": "이을"
+        }
+      },
+      {
+        "char": "續",
+        "hanja": {
+          "sound": "속",
+          "meaning": "이을"
+        }
+      },
+      {
+        "char": "祭",
+        "hanja": {
+          "sound": "제",
+          "meaning": "제사"
+        }
+      },
+      {
+        "char": "祀",
+        "hanja": {
+          "sound": "사",
+          "meaning": "제사"
+        }
+      },
+      {
+        "char": "蒸",
+        "hanja": {
+          "sound": "증",
+          "meaning": "찔"
+        }
+      },
+      {
+        "char": "嘗",
+        "hanja": {
+          "sound": "상",
+          "meaning": "맛볼"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "稽顙再拜 悚懼恐惶",
+    "meaning": "이마를 땅에 대어 거듭 절하되, 두렵고 두려워서 거듭 두려워해야 한다.",
+    "details": [
+      {
+        "char": "稽",
+        "hanja": {
+          "sound": "계",
+          "meaning": "조아릴"
+        }
+      },
+      {
+        "char": "顙",
+        "hanja": {
+          "sound": "상",
+          "meaning": "이마"
+        }
+      },
+      {
+        "char": "再",
+        "hanja": {
+          "sound": "재",
+          "meaning": "둘"
+        }
+      },
+      {
+        "char": "拜",
+        "hanja": {
+          "sound": "배",
+          "meaning": "절"
+        }
+      },
+      {
+        "char": "悚",
+        "hanja": {
+          "sound": "송",
+          "meaning": "두려워할"
+        }
+      },
+      {
+        "char": "懼",
+        "hanja": {
+          "sound": "구",
+          "meaning": "두려워할"
+        }
+      },
+      {
+        "char": "恐",
+        "hanja": {
+          "sound": "공",
+          "meaning": "두려워할"
+        }
+      },
+      {
+        "char": "惶",
+        "hanja": {
+          "sound": "황",
+          "meaning": "두려워할"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "牋牒簡要 顧答審詳",
+    "meaning": "편지는 간동하게 간추려서 하고, 안부를 묻거나 답장할 대에는 잘 살펴서 빈틈없이 해야 한다.",
+    "details": [
+      {
+        "char": "牋",
+        "hanja": {
+          "sound": "전",
+          "meaning": "편지"
+        }
+      },
+      {
+        "char": "牒",
+        "hanja": {
+          "sound": "첩",
+          "meaning": "편지"
+        }
+      },
+      {
+        "char": "簡",
+        "hanja": {
+          "sound": "간",
+          "meaning": "편지"
+        }
+      },
+      {
+        "char": "要",
+        "hanja": {
+          "sound": "요",
+          "meaning": "중요"
+        }
+      },
+      {
+        "char": "顧",
+        "hanja": {
+          "sound": "고",
+          "meaning": "돌아볼"
+        }
+      },
+      {
+        "char": "答",
+        "hanja": {
+          "sound": "답",
+          "meaning": "대답"
+        }
+      },
+      {
+        "char": "審",
+        "hanja": {
+          "sound": "심",
+          "meaning": "살필"
+        }
+      },
+      {
+        "char": "詳",
+        "hanja": {
+          "sound": "상",
+          "meaning": "자세할"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "骸垢想浴 執熱願凉",
+    "meaning": "몸에 때가 끼면 목욕을 생각하고 뜨거운 것을 잡으면 시원한 것을 원한다.",
+    "details": [
+      {
+        "char": "骸",
+        "hanja": {
+          "sound": "해",
+          "meaning": "뼈"
+        }
+      },
+      {
+        "char": "垢",
+        "hanja": {
+          "sound": "구",
+          "meaning": "때"
+        }
+      },
+      {
+        "char": "想",
+        "hanja": {
+          "sound": "상",
+          "meaning": "생각할"
+        }
+      },
+      {
+        "char": "浴",
+        "hanja": {
+          "sound": "욕",
+          "meaning": "목욕할"
+        }
+      },
+      {
+        "char": "執",
+        "hanja": {
+          "sound": "집",
+          "meaning": "잡을"
+        }
+      },
+      {
+        "char": "熱",
+        "hanja": {
+          "sound": "열",
+          "meaning": "더울"
+        }
+      },
+      {
+        "char": "願",
+        "hanja": {
+          "sound": "원",
+          "meaning": "원할"
+        }
+      },
+      {
+        "char": "凉",
+        "hanja": {
+          "sound": "량",
+          "meaning": "서늘할"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "驢騾犢特 駭躍超驤",
+    "meaning": "나귀와 노새와 송아지가 놀라서 뛰고 달린다",
+    "details": [
+      {
+        "char": "驢",
+        "hanja": {
+          "sound": "여",
+          "meaning": "나귀"
+        }
+      },
+      {
+        "char": "騾",
+        "hanja": {
+          "sound": "라",
+          "meaning": "노새"
+        }
+      },
+      {
+        "char": "犢",
+        "hanja": {
+          "sound": "독",
+          "meaning": "송아지"
+        }
+      },
+      {
+        "char": "特",
+        "hanja": {
+          "sound": "특",
+          "meaning": "특별"
+        }
+      },
+      {
+        "char": "駭",
+        "hanja": {
+          "sound": "해",
+          "meaning": "놀랄"
+        }
+      },
+      {
+        "char": "躍",
+        "hanja": {
+          "sound": "약",
+          "meaning": "뛸"
+        }
+      },
+      {
+        "char": "超",
+        "hanja": {
+          "sound": "초",
+          "meaning": "넘을"
+        }
+      },
+      {
+        "char": "驤",
+        "hanja": {
+          "sound": "양",
+          "meaning": "달릴"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "誅斬賊盜 捕獲叛亡",
+    "meaning": "도적을 베며 배반하고 도망한 자를 사로잡는다.",
+    "details": [
+      {
+        "char": "誅",
+        "hanja": {
+          "sound": "주",
+          "meaning": "벨"
+        }
+      },
+      {
+        "char": "斬",
+        "hanja": {
+          "sound": "참",
+          "meaning": "벨"
+        }
+      },
+      {
+        "char": "賊",
+        "hanja": {
+          "sound": "적",
+          "meaning": "도적"
+        }
+      },
+      {
+        "char": "盜",
+        "hanja": {
+          "sound": "도",
+          "meaning": "도적"
+        }
+      },
+      {
+        "char": "捕",
+        "hanja": {
+          "sound": "포",
+          "meaning": "잡을"
+        }
+      },
+      {
+        "char": "獲",
+        "hanja": {
+          "sound": "획",
+          "meaning": "얻을"
+        }
+      },
+      {
+        "char": "叛",
+        "hanja": {
+          "sound": "반",
+          "meaning": "배반할"
+        }
+      },
+      {
+        "char": "亡",
+        "hanja": {
+          "sound": "망",
+          "meaning": "망할 망/없을"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "布射僚丸 嵇琴阮嘯",
+    "meaning": "여포는 활을 잘 쐈고 웅의료(熊宜僚)는 탄환을 잘 가지고 놀았고 혜강(嵇康)은 거문고를 잘 타고 완적(阮籍)은 휘파람을 잘 불었다.",
+    "details": [
+      {
+        "char": "布",
+        "hanja": {
+          "sound": "포",
+          "meaning": "베"
+        }
+      },
+      {
+        "char": "射",
+        "hanja": {
+          "sound": "사",
+          "meaning": "쏠"
+        }
+      },
+      {
+        "char": "僚",
+        "hanja": {
+          "sound": "료",
+          "meaning": "벗"
+        }
+      },
+      {
+        "char": "丸",
+        "hanja": {
+          "sound": "환",
+          "meaning": "알"
+        }
+      },
+      {
+        "char": "嵇",
+        "hanja": {
+          "sound": "혜",
+          "meaning": "산이름"
+        }
+      },
+      {
+        "char": "琴",
+        "hanja": {
+          "sound": "금",
+          "meaning": "거문고"
+        }
+      },
+      {
+        "char": "阮",
+        "hanja": {
+          "sound": "완",
+          "meaning": "악기"
+        }
+      },
+      {
+        "char": "嘯",
+        "hanja": {
+          "sound": "소",
+          "meaning": "휘파람"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "恬筆倫紙 鈞巧任釣",
+    "meaning": "몽념은 붓, 채륜은 종이를 만들었고 마균은 기교가 뛰어났고 임공자(任公子,전국시대 임나라의 공자라는 사람이다!)는 낚싯대를 만들었다.",
+    "details": [
+      {
+        "char": "恬",
+        "hanja": {
+          "sound": "염",
+          "meaning": "편안"
+        }
+      },
+      {
+        "char": "筆",
+        "hanja": {
+          "sound": "필",
+          "meaning": "붓"
+        }
+      },
+      {
+        "char": "倫",
+        "hanja": {
+          "sound": "륜",
+          "meaning": "인륜"
+        }
+      },
+      {
+        "char": "紙",
+        "hanja": {
+          "sound": "지",
+          "meaning": "종이"
+        }
+      },
+      {
+        "char": "鈞",
+        "hanja": {
+          "sound": "균",
+          "meaning": "고를"
+        }
+      },
+      {
+        "char": "巧",
+        "hanja": {
+          "sound": "교",
+          "meaning": "공교할"
+        }
+      },
+      {
+        "char": "任",
+        "hanja": {
+          "sound": "임",
+          "meaning": "맡길"
+        }
+      },
+      {
+        "char": "釣",
+        "hanja": {
+          "sound": "조",
+          "meaning": "낚시"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "釋紛利俗 竝皆佳妙",
+    "meaning": "(위에 나온 기술들은)어지러움을 풀고 세속을 이롭게 하니 아울러 모두 아름답고 신묘했다.",
+    "details": [
+      {
+        "char": "釋",
+        "hanja": {
+          "sound": "석",
+          "meaning": "놓을"
+        }
+      },
+      {
+        "char": "紛",
+        "hanja": {
+          "sound": "분",
+          "meaning": "어지러울"
+        }
+      },
+      {
+        "char": "利",
+        "hanja": {
+          "sound": "리",
+          "meaning": "이로울/날카로울"
+        }
+      },
+      {
+        "char": "俗",
+        "hanja": {
+          "sound": "속",
+          "meaning": "풍속"
+        }
+      },
+      {
+        "char": "竝",
+        "hanja": {
+          "sound": "병",
+          "meaning": "아우를"
+        }
+      },
+      {
+        "char": "皆",
+        "hanja": {
+          "sound": "개",
+          "meaning": "다"
+        }
+      },
+      {
+        "char": "佳",
+        "hanja": {
+          "sound": "가",
+          "meaning": "아름다울"
+        }
+      },
+      {
+        "char": "妙",
+        "hanja": {
+          "sound": "묘",
+          "meaning": "묘할"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "毛施淑姿 工嚬姸笑",
+    "meaning": "모장(毛嬙)과 서시(西施)는 생김새가 아름다운데, 찡그리는(顰) 모습도 공교하고(간드러지고), 웃는 모습은 곱구나.",
+    "details": [
+      {
+        "char": "毛",
+        "hanja": {
+          "sound": "모",
+          "meaning": "털"
+        }
+      },
+      {
+        "char": "施",
+        "hanja": {
+          "sound": "시",
+          "meaning": "베풀"
+        }
+      },
+      {
+        "char": "淑",
+        "hanja": {
+          "sound": "숙",
+          "meaning": "맑을"
+        }
+      },
+      {
+        "char": "姿",
+        "hanja": {
+          "sound": "자",
+          "meaning": "모양"
+        }
+      },
+      {
+        "char": "工",
+        "hanja": {
+          "sound": "공",
+          "meaning": "장인"
+        }
+      },
+      {
+        "char": "嚬",
+        "hanja": {
+          "sound": "빈",
+          "meaning": "찡그릴"
+        }
+      },
+      {
+        "char": "姸",
+        "hanja": {
+          "sound": "연",
+          "meaning": "고울"
+        }
+      },
+      {
+        "char": "笑",
+        "hanja": {
+          "sound": "소",
+          "meaning": "웃을"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "年矢每催 曦暉朗耀",
+    "meaning": "해는 화살처럼 늘 재촉하고 햇빛은 밝고 빛난다.",
+    "details": [
+      {
+        "char": "年",
+        "hanja": {
+          "sound": "연",
+          "meaning": "해"
+        }
+      },
+      {
+        "char": "矢",
+        "hanja": {
+          "sound": "시",
+          "meaning": "화살"
+        }
+      },
+      {
+        "char": "每",
+        "hanja": {
+          "sound": "매",
+          "meaning": "매양"
+        }
+      },
+      {
+        "char": "催",
+        "hanja": {
+          "sound": "최",
+          "meaning": "재촉"
+        }
+      },
+      {
+        "char": "曦",
+        "hanja": {
+          "sound": "희",
+          "meaning": "햇빛"
+        }
+      },
+      {
+        "char": "暉",
+        "hanja": {
+          "sound": "휘",
+          "meaning": "빛날"
+        }
+      },
+      {
+        "char": "朗",
+        "hanja": {
+          "sound": "랑",
+          "meaning": "밝을"
+        }
+      },
+      {
+        "char": "耀",
+        "hanja": {
+          "sound": "요",
+          "meaning": "빛날"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "璇璣懸斡 晦魄環照",
+    "meaning": "선기옥형은 매달린 채로 돌고, 그믐이 되면 빛 없는 달이 둘레만 비칠 뿐이다.",
+    "details": [
+      {
+        "char": "璇",
+        "hanja": {
+          "sound": "선",
+          "meaning": "구슬"
+        }
+      },
+      {
+        "char": "璣",
+        "hanja": {
+          "sound": "기",
+          "meaning": "구슬"
+        }
+      },
+      {
+        "char": "懸",
+        "hanja": {
+          "sound": "현",
+          "meaning": "달"
+        }
+      },
+      {
+        "char": "斡",
+        "hanja": {
+          "sound": "알",
+          "meaning": "빙빙돌"
+        }
+      },
+      {
+        "char": "晦",
+        "hanja": {
+          "sound": "회",
+          "meaning": "그믐"
+        }
+      },
+      {
+        "char": "魄",
+        "hanja": {
+          "sound": "백",
+          "meaning": "넋"
+        }
+      },
+      {
+        "char": "環",
+        "hanja": {
+          "sound": "환",
+          "meaning": "고리"
+        }
+      },
+      {
+        "char": "照",
+        "hanja": {
+          "sound": "소",
+          "meaning": "비칠"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "指薪修祐 永綏吉劭",
+    "meaning": "복을 닦는 것은 손가락으로 장작을 지피는 것과 같으니, 오래도록 편안하여 상서로움이 높아지리라.",
+    "details": [
+      {
+        "char": "指",
+        "hanja": {
+          "sound": "지",
+          "meaning": "손가락"
+        }
+      },
+      {
+        "char": "薪",
+        "hanja": {
+          "sound": "신",
+          "meaning": "섶나무"
+        }
+      },
+      {
+        "char": "修",
+        "hanja": {
+          "sound": "수",
+          "meaning": "닦을"
+        }
+      },
+      {
+        "char": "祐",
+        "hanja": {
+          "sound": "우",
+          "meaning": "복"
+        }
+      },
+      {
+        "char": "永",
+        "hanja": {
+          "sound": "영",
+          "meaning": "길"
+        }
+      },
+      {
+        "char": "綏",
+        "hanja": {
+          "sound": "수",
+          "meaning": "편안"
+        }
+      },
+      {
+        "char": "吉",
+        "hanja": {
+          "sound": "길",
+          "meaning": "길할"
+        }
+      },
+      {
+        "char": "劭",
+        "hanja": {
+          "sound": "소",
+          "meaning": "아름다울"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "矩步引領 俯仰廊廟",
+    "meaning": "자로 잰 듯 법도대로 학, 옷깃을 얌전하고 바르게 여미며 조정 일을 깊이 생각해서 치러 내야 하며,",
+    "details": [
+      {
+        "char": "矩",
+        "hanja": {
+          "sound": "구",
+          "meaning": "법"
+        }
+      },
+      {
+        "char": "步",
+        "hanja": {
+          "sound": "보",
+          "meaning": "걸음"
+        }
+      },
+      {
+        "char": "引",
+        "hanja": {
+          "sound": "인",
+          "meaning": "끌"
+        }
+      },
+      {
+        "char": "領",
+        "hanja": {
+          "sound": "령",
+          "meaning": "거느릴"
+        }
+      },
+      {
+        "char": "俯",
+        "hanja": {
+          "sound": "부",
+          "meaning": "굽을"
+        }
+      },
+      {
+        "char": "仰",
+        "hanja": {
+          "sound": "앙",
+          "meaning": "우러를"
+        }
+      },
+      {
+        "char": "廊",
+        "hanja": {
+          "sound": "랑",
+          "meaning": "행랑"
+        }
+      },
+      {
+        "char": "廟",
+        "hanja": {
+          "sound": "묘",
+          "meaning": "사당"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "束帶矜莊 徘徊瞻眺",
+    "meaning": "옷갓을 갖춰 떳떳한 몸가짐을 하고, 이리저리 움직이면서 이곳저곳을 바라보며 골똘히 생각한다.",
+    "details": [
+      {
+        "char": "束",
+        "hanja": {
+          "sound": "속",
+          "meaning": "묶을"
+        }
+      },
+      {
+        "char": "帶",
+        "hanja": {
+          "sound": "대",
+          "meaning": "띠"
+        }
+      },
+      {
+        "char": "矜",
+        "hanja": {
+          "sound": "긍",
+          "meaning": "자랑"
+        }
+      },
+      {
+        "char": "莊",
+        "hanja": {
+          "sound": "장",
+          "meaning": "씩씩할"
+        }
+      },
+      {
+        "char": "徘",
+        "hanja": {
+          "sound": "배",
+          "meaning": "배회"
+        }
+      },
+      {
+        "char": "徊",
+        "hanja": {
+          "sound": "회",
+          "meaning": "배회"
+        }
+      },
+      {
+        "char": "瞻",
+        "hanja": {
+          "sound": "첨",
+          "meaning": "쳐다볼"
+        }
+      },
+      {
+        "char": "眺",
+        "hanja": {
+          "sound": "조",
+          "meaning": "바라볼"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "孤陋寡聞 愚蒙等誚",
+    "meaning": "고루하고 배움이 적으면 어리석고 몽매한 자와 똑같이 꾸짖는다.",
+    "details": [
+      {
+        "char": "孤",
+        "hanja": {
+          "sound": "고",
+          "meaning": "외로울"
+        }
+      },
+      {
+        "char": "陋",
+        "hanja": {
+          "sound": "루",
+          "meaning": "더러울"
+        }
+      },
+      {
+        "char": "寡",
+        "hanja": {
+          "sound": "과",
+          "meaning": "적을"
+        }
+      },
+      {
+        "char": "聞",
+        "hanja": {
+          "sound": "문",
+          "meaning": "들을"
+        }
+      },
+      {
+        "char": "愚",
+        "hanja": {
+          "sound": "우",
+          "meaning": "어리석을"
+        }
+      },
+      {
+        "char": "蒙",
+        "hanja": {
+          "sound": "몽",
+          "meaning": "어릴"
+        }
+      },
+      {
+        "char": "等",
+        "hanja": {
+          "sound": "등",
+          "meaning": "등급"
+        }
+      },
+      {
+        "char": "誚",
+        "hanja": {
+          "sound": "초",
+          "meaning": "꾸짖을"
+        }
+      }
+    ]
+  },
+  {
+    "phrase": "謂語助者 焉哉乎也",
+    "meaning": "언재호야와 같은 조사의 구실은 이 말들이 할 수 있으리라.",
+    "details": [
+      {
+        "char": "謂",
+        "hanja": {
+          "sound": "위",
+          "meaning": "이를"
+        }
+      },
+      {
+        "char": "語",
+        "hanja": {
+          "sound": "어",
+          "meaning": "말씀"
+        }
+      },
+      {
+        "char": "助",
+        "hanja": {
+          "sound": "조",
+          "meaning": "도울"
+        }
+      },
+      {
+        "char": "者",
+        "hanja": {
+          "sound": "자",
+          "meaning": "놈"
+        }
+      },
+      {
+        "char": "焉",
+        "hanja": {
+          "sound": "언",
+          "meaning": "어찌"
+        }
+      },
+      {
+        "char": "哉",
+        "hanja": {
+          "sound": "재",
+          "meaning": "어조사"
+        }
+      },
+      {
+        "char": "乎",
+        "hanja": {
+          "sound": "호",
+          "meaning": "어조사"
+        }
+      },
+      {
+        "char": "也",
+        "hanja": {
+          "sound": "야",
+          "meaning": "어조사"
+        }
+      }
+    ]
+  }
+]
