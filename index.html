@@ -3,37 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>한자 학습</title>
+  <title>천자문 학습</title>
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
   <div class="container">
-    <h1>천자문 공부</h1>
+    <h1>천자문 공부 페이지에 오신 것을 환영합니다.</h1>
     <nav class="main-nav">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="1000.html">1000</a></li>
         <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
-    
-    <div class="char-set-selector">
-      <button data-charset="hanja" class="active">한자 (Hanja)</button>
-      <button data-charset="chineseS">간체 (Simplified)</button>
-      <button data-charset="japanese">일본어 (Kanji)</button>
-    </div>
-
-    <button id="theme-toggle" class="control-button">🌙</button>
-
-    <cheonjamun-card></cheonjamun-card>
-
-    <div class="navigation">
-      <button id="prev-btn">이전</button>
-      <button id="next-btn">다음</button>
-    </div>
-
-    <div id="details-container"></div>
   </div>
-  <script src="js/marked.min.js"></script>
   <script defer type="module" src="/main.js"></script>
 </body>
 </html>
