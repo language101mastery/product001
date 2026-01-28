@@ -44,17 +44,29 @@ function translatePage(lang) {
 }
 
 function updateLangUI(lang) {
-    const langButtons = document.querySelectorAll('.lang-selector button');
+    const langConfig = {
+        ko: '🇰🇷',
+        en: '🇺🇸',
+        zh: '🇨🇳',
+        ja: '🇯🇵'
+    };
+
+    const dropdownBtn = document.querySelector('.lang-dropdown-btn');
+    if (dropdownBtn) {
+        dropdownBtn.textContent = langConfig[lang] || '🌐';
+    }
+
+    const langButtons = document.querySelectorAll('.lang-dropdown-content button');
     langButtons.forEach(button => {
         button.classList.toggle('active', button.dataset.lang === lang);
     });
 }
 
 async function initI18n() {
-    const langButtons = document.querySelectorAll('.lang-selector button');
+    const langButtons = document.querySelectorAll('.lang-dropdown-content button');
     langButtons.forEach(button => {
         button.addEventListener('click', (e) => {
-            const newLang = e.target.dataset.lang;
+            const newLang = e.currentTarget.dataset.lang;
             if(newLang) setLanguage(newLang);
         });
     });
