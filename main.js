@@ -139,7 +139,12 @@ async function loadCheonjamunData(charset) {
     }
     const detailsContainer = document.getElementById('details-container'); 
     try {
-        let fileName = `data/${charset}_data.json`;
+        let fileName;
+        if (charset === 'chineseS') {
+            fileName = 'data/simplified_chinese_data.json';
+        } else {
+            fileName = `data/${charset}_data.json`;
+        }
         const response = await fetch(fileName);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
