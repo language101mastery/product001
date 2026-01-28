@@ -26,6 +26,14 @@ This project is a web application designed to help users study Hanja (Chinese ch
 
 ## Current Plan
 
+### Task: Add Sample Blog Content
+- Created 4 new Markdown blog posts in `blog/`:
+  - `importance-of-stroke-order.md`
+  - `kanji-vs-hanja.md`
+  - `learning-simplified-chinese.md`
+  - `memory-techniques.md`
+- Updated `blog/blog_posts.json` to include metadata for these new posts.
+
 ### Task: Fix Blog Routing and Asset Loading
 
 This task addressed a critical bug where the blog list page (`blog.html`) and blog post page (`post.html`) were failing to load content due to incorrect routing logic and a missing library reference.

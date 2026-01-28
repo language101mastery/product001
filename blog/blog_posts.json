@@ -1,5 +1,29 @@
 [
   {
+    "slug": "memory-techniques",
+    "title": "한자 암기 비법: 뇌과학을 활용한 공부법",
+    "date": "2026-02-02",
+    "summary": "파자법, 분산 반복, 맥락 학습 등 뇌과학 원리를 이용한 효율적인 암기법을 공유합니다."
+  },
+  {
+    "slug": "learning-simplified-chinese",
+    "title": "간체자(Simplified Chinese) 학습을 위한 3가지 꿀팁",
+    "date": "2026-02-01",
+    "summary": "부수 변화 패턴과 윤곽 파악을 통해 중국 간체자를 쉽게 익히는 방법을 소개합니다."
+  },
+  {
+    "slug": "kanji-vs-hanja",
+    "title": "일본어 칸지(Kanji) vs 한국 한자(Hanja): 무엇이 다를까요?",
+    "date": "2026-01-30",
+    "summary": "한국의 정자와 일본의 신자체, 그리고 발음과 사용 목적의 차이를 알아봅니다."
+  },
+  {
+    "slug": "importance-of-stroke-order",
+    "title": "획순의 중요성: 왜 순서대로 써야 할까요?",
+    "date": "2026-01-29",
+    "summary": "획순은 글씨의 균형과 암기 효율성을 높이는 중요한 요소입니다."
+  },
+  {
     "slug": "welcome-to-the-blog",
     "title": "블로그에 오신 것을 환영합니다!",
     "date": "2026-01-27",
