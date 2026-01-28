@@ -1,3 +1,5 @@
+// main.js loaded
+console.log('main.js loaded');
 
 // 1. Data
 let cheonjamunData = {}; // Will be loaded from data.json
@@ -264,24 +266,39 @@ async function handleIndexPage() {
 
 // --- Blog Listing Page Logic ---
 async function handleBlogListPage() {
+    console.log('handleBlogListPage: Function started.'); // Added log
     const blogPostsListDiv = document.getElementById('blog-posts-list');
-    if (!blogPostsListDiv) return;
+    if (!blogPostsListDiv) {
+        console.log('handleBlogListPage: blog-posts-list div not found, exiting.');
+        return;
+    }
+    console.log('handleBlogListPage: Initiated for blog.html');
 
     try {
-        console.log('handleBlogListPage: Fetching blog_posts.json');
+        console.log('handleBlogListPage: Attempting to fetch blog/blog_posts.json');
         const response = await fetch('blog/blog_posts.json');
+        console.log(`handleBlogListPage: Fetch response received. Status: ${response.status}, OK: ${response.ok}`);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const blogPosts = await response.json();
+        console.log('handleBlogListPage: blog_posts.json parsed successfully.', blogPosts);
 
         blogPostsListDiv.innerHTML = ''; // Clear "Loading..."
-        console.log('handleBlogListPage: Blog posts fetched and cleared loading message.');
+        console.log('handleBlogListPage: Cleared "Loading..." message.');
+
+        if (blogPosts.length === 0) {
+            blogPostsListDiv.innerHTML = '<p>게시물이 없습니다.</p>';
+            console.log('handleBlogListPage: No blog posts found.');
+            return;
+        }
 
         const postList = document.createElement('ul');
         postList.className = 'blog-list';
+        console.log('handleBlogListPage: Created ul.blog-list element.');
 
         blogPosts.forEach(post => {
+            // console.log(`handleBlogListPage: Processing post: ${post.slug}`); // Removed for less verbosity
             const listItem = document.createElement('li');
             const link = document.createElement('a');
             link.href = `post.html?slug=${post.slug}`;
@@ -299,9 +316,10 @@ async function handleBlogListPage() {
             listItem.appendChild(dateSpan);
             listItem.appendChild(summaryP);
             postList.appendChild(listItem);
+            // console.log(`handleBlogListPage: Appended post ${post.slug} to list.`); // Removed for less verbosity
         });
         blogPostsListDiv.appendChild(postList);
-        console.log('handleBlogListPage: Blog posts rendered.');
+        console.log('handleBlogListPage: All blog posts rendered and appended to blog-posts-list.');
 
     } catch (error) {
         console.error('handleBlogListPage: Failed to load blog posts:', error);
@@ -367,13 +385,14 @@ async function handleBlogPostPage() {
 
 // Main routing logic
 document.addEventListener('DOMContentLoaded', () => {
-    const path = window.location.pathname;
-
-    if (path.endsWith('index.html') || path === '/') {
+    console.log('DOM Content Loaded'); // Added log
+    
+    // Use element detection for robust routing
+    if (document.querySelector('cheonjamun-card')) {
         handleIndexPage();
-    } else if (path.endsWith('blog.html')) {
+    } else if (document.getElementById('blog-posts-list')) {
         handleBlogListPage();
-    } else if (path.endsWith('post.html')) {
+    } else if (document.getElementById('blog-post-content')) {
         handleBlogPostPage();
     }
 });

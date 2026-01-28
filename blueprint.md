@@ -26,7 +26,17 @@ This project is a web application designed to help users study Hanja (Chinese ch
 
 ## Current Plan
 
-### Task: Refactor Data Handling and Add Dynamic Language Switching
+### Task: Fix Blog Routing and Asset Loading
+
+This task addressed a critical bug where the blog list page (`blog.html`) and blog post page (`post.html`) were failing to load content due to incorrect routing logic and a missing library reference.
+
+1.  **Robust Routing in `main.js`:**
+    -   Replaced fragile URL-based routing (`window.location.pathname.endsWith(...)`) with robust element-presence detection.
+    -   The application now checks for unique DOM elements (`cheonjamun-card`, `blog-posts-list`, `blog-post-content`) to determine which page logic to execute. This ensures compatibility across different hosting environments and URLs.
+2.  **Fix `post.html` Script Reference:**
+    -   Corrected the `script` tag for the `marked` library in `post.html`. It was pointing to a non-existent `js/marked.v4.umd.js` and has been updated to use the available `js/marked.min.js`.
+
+### Previous Task: Refactor Data Handling and Add Dynamic Language Switching
 
 This task involved refactoring how character data is stored and loaded, and implementing dynamic switching between Hanja, Simplified Chinese, and Japanese character sets.
 
