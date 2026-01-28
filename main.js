@@ -348,6 +348,7 @@ async function handleBlogPostPage() {
         if (!responseMeta.ok) throw new Error(`HTTP error! status: ${responseMeta.status}`);
         const blogPostsMeta = await responseMeta.json();
         const postMeta = blogPostsMeta.find(p => p.slug === postSlug);
+        const currentIndex = blogPostsMeta.findIndex(p => p.slug === postSlug);
 
         if (postTitleH1 && postMeta) {
             postTitleH1.textContent = postMeta.title;
@@ -356,6 +357,54 @@ async function handleBlogPostPage() {
              postTitleH1.textContent = '게시물 없음';
              document.title = '게시물 없음 - 한자 학습';
         }
+
+        // --- Navigation Buttons Logic ---
+        const navContainer = document.getElementById('post-navigation');
+        if (navContainer && currentIndex !== -1) {
+            navContainer.innerHTML = ''; // Clear existing
+
+            // Next Post (Newer) -> index - 1
+            const nextPost = currentIndex > 0 ? blogPostsMeta[currentIndex - 1] : null;
+            // Previous Post (Older) -> index + 1
+            const prevPost = currentIndex < blogPostsMeta.length - 1 ? blogPostsMeta[currentIndex + 1] : null;
+
+            // Create Previous Button (Left side visually, but chronologically older)
+            if (prevPost) {
+                const prevBtn = document.createElement('a');
+                prevBtn.href = `post.html?slug=${prevPost.slug}`;
+                prevBtn.className = 'nav-btn prev';
+                prevBtn.textContent = `← 이전 글`;
+                // Optional: Add tooltip or small text for title? For now, simple.
+                navContainer.appendChild(prevBtn);
+            } else {
+                 // Placeholder to keep spacing if using flex space-between, 
+                 // but since we center or use gaps, maybe not needed. 
+                 // Let's just add an empty span if we want rigid structure, 
+                 // or just nothing.
+                 const emptySpan = document.createElement('span');
+                 navContainer.appendChild(emptySpan);
+            }
+
+            // List Button (Center)
+            const listBtn = document.createElement('a');
+            listBtn.href = 'blog.html';
+            listBtn.className = 'nav-btn list';
+            listBtn.textContent = '목록';
+            navContainer.appendChild(listBtn);
+
+            // Next Button (Right side visually, chronologically newer)
+            if (nextPost) {
+                const nextBtn = document.createElement('a');
+                nextBtn.href = `post.html?slug=${nextPost.slug}`;
+                nextBtn.className = 'nav-btn next';
+                nextBtn.textContent = `다음 글 →`;
+                navContainer.appendChild(nextBtn);
+            } else {
+                const emptySpan = document.createElement('span');
+                 navContainer.appendChild(emptySpan);
+            }
+        }
+        // --- End Navigation Buttons Logic ---
 
         // Fetch Markdown content
         console.log(`handleBlogPostPage: Fetching Markdown for slug: ${postSlug}`);

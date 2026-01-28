@@ -369,3 +369,49 @@ h1 {
   border-radius: 0;
   font-size: 1em;
 }
+
+/* Post Navigation Styles */
+.post-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--button-border);
+}
+
+.nav-btn {
+  text-decoration: none;
+  color: var(--text-color);
+  background-color: var(--card-background);
+  border: 1px solid var(--button-border);
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  min-width: 100px;
+  text-align: center;
+}
+
+.nav-btn:hover {
+  background-color: var(--button-bg);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.nav-btn.list {
+  background-color: transparent;
+  border-color: transparent;
+  font-weight: bold;
+}
+
+.nav-btn.list:hover {
+  background-color: var(--button-bg);
+  border-color: var(--button-border);
+}
+
+/* Ensure empty placeholders take up space to maintain layout */
+.post-navigation span {
+  width: 100px; /* Same as min-width of nav-btn */
+  display: block;
+}

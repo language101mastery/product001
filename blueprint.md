@@ -26,6 +26,11 @@ This project is a web application designed to help users study Hanja (Chinese ch
 
 ## Current Plan
 
+### Task: Add Blog Post Navigation
+- Added navigation controls to the blog post view (`post.html`).
+- Implemented "Previous Post", "List", and "Next Post" buttons in `main.js`.
+- Added CSS styles for the navigation container and buttons in `style.css`.
+
 ### Task: Add Sample Blog Content
 - Created 4 new Markdown blog posts in `blog/`:
   - `importance-of-stroke-order.md`
