@@ -243,6 +243,8 @@ async function handleIndexPage() {
     const detailsContainer = document.getElementById('details-container');
     const prevBtn = document.getElementById('prev-btn');
     const nextBtn = document.getElementById('next-btn');
+    const jumpToInput = document.getElementById('jump-to-input');
+    const jumpToBtn = document.getElementById('jump-to-btn');
     const charsetButtons = document.querySelectorAll('.char-set-selector button');
     const themeToggle = document.getElementById('theme-toggle');
 
@@ -317,6 +319,17 @@ async function handleIndexPage() {
         }
     }
 
+    function jumpToIndex() {
+        const index = parseInt(jumpToInput.value, 10);
+        if (isNaN(index) || index < 1 || index > 250) {
+            alert('1부터 250 사이의 숫자를 입력해주세요.');
+            return;
+        }
+        currentCheonjamunIndex = index - 1; // Convert to 0-based index
+        showCheonjamun(currentCheonjamunIndex);
+        jumpToInput.value = '';
+    }
+
     if (prevBtn) {
         prevBtn.addEventListener('click', () => {
             currentCheonjamunIndex = (currentCheonjamunIndex - 1 + cheonjamunData[currentCharset].length) % cheonjamunData[currentCharset].length;
@@ -328,6 +341,18 @@ async function handleIndexPage() {
         nextBtn.addEventListener('click', () => {
             currentCheonjamunIndex = (currentCheonjamunIndex + 1) % cheonjamunData[currentCharset].length;
             showCheonjamun(currentCheonjamunIndex);
+        });
+    }
+
+    if (jumpToBtn) {
+        jumpToBtn.addEventListener('click', jumpToIndex);
+    }
+
+    if (jumpToInput) {
+        jumpToInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                jumpToIndex();
+            }
         });
     }
 

@@ -233,35 +233,86 @@ h1 {
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-.navigation {
-  margin-top: 2rem;
+/* UPDATED Controls Container */
+.controls-container {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   gap: 1rem;
+  margin-top: 2rem;
+  background-color: var(--card-background);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-#prev-btn, #next-btn {
-  background-color: var(--card-background);
-  color: var(--text-color);
+.navigation {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin: 0;
+}
+
+.jump-to-index {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+/* UNIFIED Button and Input Styles */
+#prev-btn, #next-btn, #jump-to-btn {
+  background-color: var(--button-bg);
+  color: var(--button-text);
   border: 1px solid var(--button-border);
-  padding: 0.8rem 1.5rem;
+  padding: 0.75rem 1.25rem;
   font-family: var(--main-font);
-  font-size: 1rem;
+  font-size: 0.9rem;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
 }
 
-#prev-btn:hover, #next-btn:hover {
+#prev-btn:hover, #next-btn:hover, #jump-to-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15), 0 0 15px var(--glow-color);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 0 15px var(--glow-color);
   color: var(--text-color);
+  background-color: var(--button-bg);
 }
 
-#prev-btn:active, #next-btn:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+#jump-to-input {
+  width: 80px;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--button-border);
+  background-color: var(--body-background);
+  color: var(--text-color);
+  font-family: var(--main-font);
+  font-size: 0.9rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+#jump-to-input:focus {
+  outline: none;
+  border-color: var(--glow-color);
+  box-shadow: 0 0 10px var(--glow-color);
+  background-color: var(--card-background);
+}
+
+#jump-to-input::-webkit-outer-spin-button,
+#jump-to-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#jump-to-input[type=number] {
+  -moz-appearance: textfield;
 }
 
 
@@ -520,14 +571,33 @@ h1 {
   cheonjamun-card {
     /* The component itself will manage its internal padding via its shadow DOM styles */
   }
+  
+  /* UPDATED Responsive Controls */
+  .controls-container {
+    flex-direction: column;
+    padding: 0.75rem;
+  }
 
   .navigation {
-    flex-direction: column;
-    gap: 0.5rem;
+    width: 100%;
+    justify-content: center;
   }
 
   #prev-btn, #next-btn {
-    width: 100%;
+      flex-grow: 1;
+  }
+
+  .jump-to-index {
+      width: 100%;
+      justify-content: center;
+  }
+  
+  #jump-to-input {
+      width: 40%;
+  }
+  
+  #jump-to-btn {
+      flex-grow: 1;
   }
 
   .details-grid {
