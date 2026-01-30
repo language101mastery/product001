@@ -10,7 +10,8 @@
   "charSetHanja": "漢字（韓国語）",
   "charSetChineseS": "簡体字中国語",
   "charSetJapanese": "漢字（日本語）",
-  "prevButton": "前へ",
-  "nextButton": "次へ",
+  "prevButton": "<前へ",
+  "nextButton": "次へ>",
+  "jumpButton": "移動",
   "loadingMessage": "読み込み中..."
 }

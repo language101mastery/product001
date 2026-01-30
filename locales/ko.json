@@ -10,7 +10,8 @@
   "charSetHanja": "한자 (Hanja)",
   "charSetChineseS": "간체 (Simplified)",
   "charSetJapanese": "일본어 (Kanji)",
-  "prevButton": "이전",
-  "nextButton": "다음",
+  "prevButton": "<이전",
+  "nextButton": "다음>",
+  "jumpButton": "이동",
   "loadingMessage": "로딩 중..."
 }
