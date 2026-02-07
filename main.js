@@ -264,6 +264,15 @@ async function handleIndexPage() {
         ctx.lineJoin = 'round';
         ctx.lineCap = 'round';
         ctx.lineWidth = 5;
+        // Fix for blurry canvas on high DPI screens
+        const dpr = window.devicePixelRatio || 1;
+        const rect = canvas.getBoundingClientRect();
+        canvas.width = rect.width * dpr;
+        canvas.height = rect.height * dpr;
+        ctx.scale(dpr, dpr);
+        canvas.style.width = `${rect.width}px`;
+        canvas.style.height = `${rect.height}px`;
+
         ctx.strokeStyle = '#000000'; // Default color
     }
     
@@ -272,6 +281,61 @@ async function handleIndexPage() {
        if (!ctx) return;
        const currentTheme = htmlElement.getAttribute('data-theme');
        ctx.strokeStyle = currentTheme === 'dark' ? '#ffffff' : '#000000';
+    }
+    
+    // Draw background character guide
+    function drawBackgroundCharacter() {
+        if (!ctx || !cheonjamunData[currentCharset]) return;
+        
+        const currentData = cheonjamunData[currentCharset][currentCheonjamunIndex];
+        if (!currentData) return;
+
+        const char = currentData.phrase.charAt(0); // Assuming one char per card for now, or take first
+        // Ideally, we want to practice individual characters. 
+        // For cheonjamun data structure, 'phrase' is 4 chars.
+        // Let's just use the first char of the phrase as a placeholder,
+        // OR better, if we had individual char breakdown. 
+        // The data has 'details' array with individual chars.
+        // Let's use the first char from details if available, or just 'phrase'
+        
+        let charToDraw = '';
+        if (currentData.details && currentData.details.length > 0) {
+             charToDraw = currentData.details[0].char; // Draw the first character of the set
+        } else {
+             charToDraw = currentData.phrase.charAt(0);
+        }
+
+        // Save current context state
+        ctx.save();
+        
+        // Clear only if needed, but usually we call this after clearRect
+        // ctx.clearRect(0, 0, canvas.width, canvas.height); // Don't clear here, assume cleared before
+
+        ctx.font = `200px ${getFontVariable(currentCharset).replace('var(', '').replace(')', '')}, sans-serif`;
+        ctx.fillStyle = 'rgba(200, 200, 200, 0.3)'; // Light gray, semi-transparent
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        
+        // Use logic coordinates (since we scaled context)
+        const width = canvas.width / (window.devicePixelRatio || 1);
+        const height = canvas.height / (window.devicePixelRatio || 1);
+        
+        ctx.fillText(charToDraw, width / 2, height / 2);
+        
+        ctx.restore();
+    }
+    
+    function clearAndDrawGuide() {
+        if (!ctx) return;
+        const width = canvas.width; // Actual pixel width
+        const height = canvas.height; // Actual pixel height
+        // Clear using pixel dimensions (clearing transforms doesn't matter for clearRect usually, but safer)
+        ctx.save();
+        ctx.setTransform(1, 0, 0, 1, 0, 0); // Reset transform to clear full pixel buffer
+        ctx.clearRect(0, 0, width, height);
+        ctx.restore();
+        
+        drawBackgroundCharacter();
     }
     
     // Initial color set
@@ -348,9 +412,9 @@ async function handleIndexPage() {
             }, 200);
         }
         
-        // Clear canvas on navigation
-        if (ctx) {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        // Update canvas guide on navigation
+        if (!practiceContainer.classList.contains('hidden')) {
+             clearAndDrawGuide();
         }
     }
 
@@ -424,7 +488,7 @@ async function handleIndexPage() {
 
     if (clearCanvasBtn) {
         clearCanvasBtn.addEventListener('click', () => {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
+             clearAndDrawGuide();
         });
     }
 
@@ -432,8 +496,16 @@ async function handleIndexPage() {
         togglePracticeBtn.addEventListener('click', () => {
             practiceContainer.classList.toggle('hidden');
             if (!practiceContainer.classList.contains('hidden')) {
-                 // Resize canvas if needed when shown, or just clear
-                 ctx.clearRect(0, 0, canvas.width, canvas.height);
+                 // Ensure canvas is sized correctly when shown
+                 const dpr = window.devicePixelRatio || 1;
+                 const rect = canvas.getBoundingClientRect();
+                 if (canvas.width !== rect.width * dpr) {
+                    canvas.width = rect.width * dpr;
+                    canvas.height = rect.height * dpr;
+                    ctx.scale(dpr, dpr);
+                 }
+                 updateCanvasColor();
+                 clearAndDrawGuide();
             }
         });
     }
