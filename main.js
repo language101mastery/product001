@@ -297,36 +297,30 @@ async function handleIndexPage() {
         }
     }
     
-    // Draw background character guide
-    function drawBackgroundCharacter() {
-        if (!ctx || !cheonjamunData[currentCharset]) return;
+    // Draw background grid (dotted crosshair)
+    function drawGrid() {
+        if (!ctx) return;
         
-        const currentData = cheonjamunData[currentCharset][currentCheonjamunIndex];
-        if (!currentData) return;
-
-        let charToDraw = '';
-        if (currentData.details && currentData.details.length > 0) {
-             charToDraw = currentData.details[0].char; 
-        } else {
-             charToDraw = currentData.phrase.charAt(0);
-        }
+        const dpr = window.devicePixelRatio || 1;
+        // Use logical width/height because we scaled the context
+        const width = canvas.width / dpr;
+        const height = canvas.height / dpr;
 
         ctx.save();
-        
-        // Calculate font size relative to canvas width
-        // Use logic width (canvas.width / dpr)
-        const dpr = window.devicePixelRatio || 1;
-        const logicWidth = canvas.width / dpr;
-        const logicHeight = canvas.height / dpr;
-        const fontSize = Math.min(logicWidth, logicHeight) * 0.7; // 70% of smaller dimension
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(200, 200, 200, 0.5)'; // Light gray, semi-transparent
+        ctx.lineWidth = 1;
+        ctx.setLineDash([5, 5]); // Dotted line pattern [dash, gap]
 
-        ctx.font = `${fontSize}px ${getFontVariable(currentCharset).replace('var(', '').replace(')', '')}, sans-serif`;
-        ctx.fillStyle = 'rgba(200, 200, 200, 0.3)'; // Light gray, semi-transparent
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        
-        ctx.fillText(charToDraw, logicWidth / 2, logicHeight / 2 + (fontSize * 0.05)); // Slight offset for visual center
-        
+        // Horizontal line
+        ctx.moveTo(0, height / 2);
+        ctx.lineTo(width, height / 2);
+
+        // Vertical line
+        ctx.moveTo(width / 2, 0);
+        ctx.lineTo(width / 2, height);
+
+        ctx.stroke();
         ctx.restore();
     }
     
@@ -340,7 +334,7 @@ async function handleIndexPage() {
         ctx.clearRect(0, 0, width, height);
         ctx.restore();
         
-        drawBackgroundCharacter();
+        drawGrid();
     }
     
     // Initial color set
