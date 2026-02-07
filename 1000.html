@@ -7,6 +7,8 @@
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
+  <button id="theme-toggle" class="control-button">🌙</button>
+
   <div class="container">
     <div class="lang-selector-container">
       <div class="lang-dropdown">
@@ -29,12 +31,10 @@
     </nav>
     
     <div class="char-set-selector">
-      <button data-charset="hanja" class="active" data-i18n-key="charSetHanja">한자 (Hanja)</button>
-      <button data-charset="chineseS" data-i18n-key="charSetChineseS">간체 (Simplified)</button>
-      <button data-charset="japanese" data-i18n-key="charSetJapanese">일본어 (Kanji)</button>
+      <button data-charset="hanja" class="active" data-i18n-key="charSetHanja">한자</button>
+      <button data-charset="chineseS" data-i18n-key="charSetChineseS">간체</button>
+      <button data-charset="japanese" data-i18n-key="charSetJapanese">일본어</button>
     </div>
-
-    <button id="theme-toggle" class="control-button">🌙</button>
 
     <cheonjamun-card></cheonjamun-card>
 

@@ -50,6 +50,7 @@ body {
   text-align: center;
   transition: background-color 0.3s ease, color 0.3s ease;
   box-sizing: border-box;
+  position: relative; /* For absolute positioning of children */
 }
 
 .container {
@@ -180,6 +181,9 @@ h1 {
 
 /* Theme Toggle Button specific styling */
 #theme-toggle {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
     border-radius: 50%;
@@ -188,8 +192,9 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem auto;
+    margin: 0; /* Remove auto margin */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 20; /* Ensure it's above other elements */
 }
 
 #theme-toggle:hover {
@@ -217,6 +222,7 @@ h1 {
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: none;
+  white-space: nowrap; /* Prevent text wrapping inside button */
 }
 
 .char-set-selector button:hover {
@@ -621,6 +627,7 @@ h1 {
   .container {
     width: 100%;
     padding: 0 0.5rem;
+    margin-top: 3rem; /* Add top margin to prevent overlapping with theme toggle */
   }
 
   h1 {
@@ -629,6 +636,21 @@ h1 {
   
   cheonjamun-card {
     /* The component itself will manage its internal padding via its shadow DOM styles */
+  }
+  
+  /* Character Set Selector Mobile */
+  .char-set-selector {
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 0.5rem; /* Reduce gap */
+    overflow-x: auto; /* Allow scrolling if needed on very small screens */
+    padding-bottom: 0.5rem; /* Space for scrollbar if any */
+  }
+  
+  .char-set-selector button {
+    flex: 1; /* Distribute space evenly */
+    padding: 0.6rem 0.5rem; /* Reduce padding */
+    font-size: 0.8rem; /* Slightly smaller font */
+    min-width: 80px; /* Minimum width */
   }
   
   /* UPDATED Responsive Controls */
