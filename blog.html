@@ -8,6 +8,9 @@
 </head>
 <body>
   <div class="container">
+    <div class="theme-toggle-container">
+        <button id="theme-toggle" class="control-button">🌙</button>
+    </div>
     <div class="lang-selector-container">
       <div class="lang-dropdown">
         <button class="lang-dropdown-btn">🇰🇷</button>
@@ -33,6 +36,17 @@
       <p data-i18n-key="loadingMessage">로딩 중...</p>
     </div>
   </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+        <nav class="footer-nav">
+            <a href="privacy.html" data-i18n-key="privacyPolicy">개인정보처리방침</a>
+            <a href="terms.html" data-i18n-key="termsOfService">이용약관</a>
+        </nav>
+        <p>&copy; 2024 Language 101 Mastery. All rights reserved.</p>
+    </div>
+  </footer>
+
   <script src="js/marked.min.js"></script>
   <script defer type="module" src="/main.js"></script>
 </body>

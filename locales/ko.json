@@ -15,5 +15,7 @@
   "jumpButton": "이동",
   "practiceButton": "쓰기 연습",
   "clearButton": "지우기",
-  "loadingMessage": "로딩 중..."
+  "loadingMessage": "로딩 중...",
+  "privacyPolicy": "개인정보처리방침",
+  "termsOfService": "이용약관"
 }

@@ -15,5 +15,7 @@
   "jumpButton": "前往",
   "practiceButton": "练习写作",
   "clearButton": "清除",
-  "loadingMessage": "加载中..."
+  "loadingMessage": "加载中...",
+  "privacyPolicy": "隐私政策",
+  "termsOfService": "服务条款"
 }

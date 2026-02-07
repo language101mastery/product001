@@ -15,5 +15,7 @@
   "jumpButton": "Go",
   "practiceButton": "Practice Writing",
   "clearButton": "Clear",
-  "loadingMessage": "Loading..."
+  "loadingMessage": "Loading...",
+  "privacyPolicy": "Privacy Policy",
+  "termsOfService": "Terms of Service"
 }

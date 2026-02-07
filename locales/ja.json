@@ -15,5 +15,7 @@
   "jumpButton": "移動",
   "practiceButton": "書き取り練習",
   "clearButton": "クリア",
-  "loadingMessage": "読み込み中..."
+  "loadingMessage": "読み込み中...",
+  "privacyPolicy": "プライバシーポリシー",
+  "termsOfService": "利用規約"
 }
