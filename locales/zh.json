@@ -13,5 +13,7 @@
   "prevButton": "<上一页",
   "nextButton": "下一页>",
   "jumpButton": "前往",
+  "practiceButton": "练习写作",
+  "clearButton": "清除",
   "loadingMessage": "加载中..."
 }

@@ -13,5 +13,7 @@
   "prevButton": "<前へ",
   "nextButton": "次へ>",
   "jumpButton": "移動",
+  "practiceButton": "書き取り練習",
+  "clearButton": "クリア",
   "loadingMessage": "読み込み中..."
 }

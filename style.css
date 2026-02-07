@@ -264,7 +264,7 @@ h1 {
 }
 
 /* UNIFIED Button and Input Styles */
-#prev-btn, #next-btn, #jump-to-btn {
+#prev-btn, #next-btn, #jump-to-btn, #toggle-practice-btn {
   background-color: var(--button-bg);
   color: var(--button-text);
   border: 1px solid var(--button-border);
@@ -277,7 +277,7 @@ h1 {
   box-shadow: none;
 }
 
-#prev-btn:hover, #next-btn:hover, #jump-to-btn:hover {
+#prev-btn:hover, #next-btn:hover, #jump-to-btn:hover, #toggle-practice-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 0 15px var(--glow-color);
   color: var(--text-color);
@@ -313,6 +313,61 @@ h1 {
 
 #jump-to-input[type=number] {
   -moz-appearance: textfield;
+}
+
+/* Practice Canvas Styles */
+#practice-container {
+    width: 100%;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+}
+
+#practice-container.hidden {
+    display: none;
+}
+
+.canvas-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--card-background);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+#practice-canvas {
+    border: 2px dashed var(--button-border);
+    border-radius: 10px;
+    background-color: var(--body-background); /* Slight contrast */
+    cursor: crosshair;
+    touch-action: none; /* Prevent scrolling while drawing */
+}
+
+.canvas-controls {
+    display: flex;
+    gap: 1rem;
+}
+
+#clear-canvas-btn {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: 1px solid var(--button-border);
+    padding: 0.6rem 1.2rem;
+    font-family: var(--main-font);
+    font-size: 0.9rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#clear-canvas-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #ff6b6b; /* Reddish for clear action */
+    color: white;
+    border-color: #ff6b6b;
 }
 
 
@@ -581,10 +636,18 @@ h1 {
   .navigation {
     width: 100%;
     justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping on small screens if needed */
   }
 
-  #prev-btn, #next-btn {
+  #prev-btn, #next-btn, #toggle-practice-btn {
       flex-grow: 1;
+  }
+  
+  /* Adjust order on mobile to put practice button in a good spot */
+  #toggle-practice-btn {
+      order: 3; /* Example: Put it last in the nav group */
+      width: 100%; /* Make it full width on mobile */
+      margin-top: 0.5rem;
   }
 
   .jump-to-index {

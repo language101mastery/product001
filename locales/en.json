@@ -13,5 +13,7 @@
   "prevButton": "<Prev",
   "nextButton": "Next>",
   "jumpButton": "Go",
+  "practiceButton": "Practice Writing",
+  "clearButton": "Clear",
   "loadingMessage": "Loading..."
 }

@@ -248,11 +248,41 @@ async function handleIndexPage() {
     const charsetButtons = document.querySelectorAll('.char-set-selector button');
     const themeToggle = document.getElementById('theme-toggle');
 
+    // Canvas Elements
+    const togglePracticeBtn = document.getElementById('toggle-practice-btn');
+    const practiceContainer = document.getElementById('practice-container');
+    const canvas = document.getElementById('practice-canvas');
+    const clearCanvasBtn = document.getElementById('clear-canvas-btn');
+    let ctx;
+    let isDrawing = false;
+    let lastX = 0;
+    let lastY = 0;
+
+    if (canvas) {
+        ctx = canvas.getContext('2d');
+        // Initial setup for canvas context
+        ctx.lineJoin = 'round';
+        ctx.lineCap = 'round';
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = '#000000'; // Default color
+    }
+    
+    // Adjust canvas color based on theme
+    function updateCanvasColor() {
+       if (!ctx) return;
+       const currentTheme = htmlElement.getAttribute('data-theme');
+       ctx.strokeStyle = currentTheme === 'dark' ? '#ffffff' : '#000000';
+    }
+    
+    // Initial color set
+    updateCanvasColor();
+
     if (themeToggle) { 
         themeToggle.addEventListener('click', () => {
             const currentTheme = htmlElement.getAttribute('data-theme');
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
             setTheme(newTheme);
+            updateCanvasColor(); // Update canvas stroke color
         });
     }
 
@@ -317,6 +347,11 @@ async function handleIndexPage() {
                 cheonjamunCard.style.transform = 'scale(1)';
             }, 200);
         }
+        
+        // Clear canvas on navigation
+        if (ctx) {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
     }
 
     function jumpToIndex() {
@@ -328,6 +363,79 @@ async function handleIndexPage() {
         currentCheonjamunIndex = index - 1; // Convert to 0-based index
         showCheonjamun(currentCheonjamunIndex);
         jumpToInput.value = '';
+    }
+
+    // --- Canvas Logic ---
+    function startDrawing(e) {
+        isDrawing = true;
+        [lastX, lastY] = getCoordinates(e);
+    }
+
+    function draw(e) {
+        if (!isDrawing) return;
+        const [x, y] = getCoordinates(e);
+        
+        ctx.beginPath();
+        ctx.moveTo(lastX, lastY);
+        ctx.lineTo(x, y);
+        ctx.stroke();
+        [lastX, lastY] = [x, y];
+    }
+
+    function stopDrawing() {
+        isDrawing = false;
+    }
+
+    function getCoordinates(e) {
+        const rect = canvas.getBoundingClientRect();
+        let clientX, clientY;
+
+        if (e.changedTouches) {
+            clientX = e.changedTouches[0].clientX;
+            clientY = e.changedTouches[0].clientY;
+        } else {
+            clientX = e.clientX;
+            clientY = e.clientY;
+        }
+
+        return [
+            clientX - rect.left,
+            clientY - rect.top
+        ];
+    }
+
+    if (canvas) {
+        canvas.addEventListener('mousedown', startDrawing);
+        canvas.addEventListener('mousemove', draw);
+        canvas.addEventListener('mouseup', stopDrawing);
+        canvas.addEventListener('mouseout', stopDrawing);
+
+        // Touch support
+        canvas.addEventListener('touchstart', (e) => {
+             e.preventDefault(); // Prevent scrolling
+             startDrawing(e);
+        });
+        canvas.addEventListener('touchmove', (e) => {
+            e.preventDefault(); // Prevent scrolling
+            draw(e);
+        });
+        canvas.addEventListener('touchend', stopDrawing);
+    }
+
+    if (clearCanvasBtn) {
+        clearCanvasBtn.addEventListener('click', () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        });
+    }
+
+    if (togglePracticeBtn) {
+        togglePracticeBtn.addEventListener('click', () => {
+            practiceContainer.classList.toggle('hidden');
+            if (!practiceContainer.classList.contains('hidden')) {
+                 // Resize canvas if needed when shown, or just clear
+                 ctx.clearRect(0, 0, canvas.width, canvas.height);
+            }
+        });
     }
 
     if (prevBtn) {
