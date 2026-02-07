@@ -644,14 +644,24 @@ h1 {
   }
 
   #prev-btn, #next-btn, #toggle-practice-btn {
-      flex-grow: 1;
+      flex: 1; /* Distribute space evenly */
+      min-width: 0; /* Allow shrinking */
   }
   
   /* Adjust order on mobile to put practice button in a good spot */
+  #prev-btn {
+      order: 1;
+  }
+  
   #toggle-practice-btn {
-      order: 3; /* Example: Put it last in the nav group */
-      width: 100%; /* Make it full width on mobile */
-      margin-top: 0.5rem;
+      order: 2; /* Put in middle */
+      margin-top: 0; /* Remove top margin from previous style */
+      margin-left: 0.5rem; /* Add some spacing */
+      margin-right: 0.5rem;
+  }
+
+  #next-btn {
+      order: 3;
   }
 
   .jump-to-index {
