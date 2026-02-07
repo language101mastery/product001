@@ -264,16 +264,7 @@ async function handleIndexPage() {
         ctx.lineJoin = 'round';
         ctx.lineCap = 'round';
         ctx.lineWidth = 5;
-        // Fix for blurry canvas on high DPI screens
-        const dpr = window.devicePixelRatio || 1;
-        const rect = canvas.getBoundingClientRect();
-        canvas.width = rect.width * dpr;
-        canvas.height = rect.height * dpr;
-        ctx.scale(dpr, dpr);
-        canvas.style.width = `${rect.width}px`;
-        canvas.style.height = `${rect.height}px`;
-
-        ctx.strokeStyle = '#000000'; // Default color
+        // Color is set in updateCanvasColor
     }
     
     // Adjust canvas color based on theme
@@ -283,6 +274,29 @@ async function handleIndexPage() {
        ctx.strokeStyle = currentTheme === 'dark' ? '#ffffff' : '#000000';
     }
     
+    // Function to resize canvas and redraw content
+    function updateCanvasSize() {
+        if (!canvas || !ctx || practiceContainer.classList.contains('hidden')) return;
+
+        const dpr = window.devicePixelRatio || 1;
+        const rect = canvas.getBoundingClientRect();
+        
+        // Only resize if dimensions changed
+        if (canvas.width !== rect.width * dpr || canvas.height !== rect.height * dpr) {
+             canvas.width = rect.width * dpr;
+             canvas.height = rect.height * dpr;
+             ctx.scale(dpr, dpr);
+             
+             // Restore context properties lost on resize
+             ctx.lineJoin = 'round';
+             ctx.lineCap = 'round';
+             ctx.lineWidth = 5;
+             updateCanvasColor();
+             
+             clearAndDrawGuide();
+        }
+    }
+    
     // Draw background character guide
     function drawBackgroundCharacter() {
         if (!ctx || !cheonjamunData[currentCharset]) return;
@@ -290,48 +304,39 @@ async function handleIndexPage() {
         const currentData = cheonjamunData[currentCharset][currentCheonjamunIndex];
         if (!currentData) return;
 
-        const char = currentData.phrase.charAt(0); // Assuming one char per card for now, or take first
-        // Ideally, we want to practice individual characters. 
-        // For cheonjamun data structure, 'phrase' is 4 chars.
-        // Let's just use the first char of the phrase as a placeholder,
-        // OR better, if we had individual char breakdown. 
-        // The data has 'details' array with individual chars.
-        // Let's use the first char from details if available, or just 'phrase'
-        
         let charToDraw = '';
         if (currentData.details && currentData.details.length > 0) {
-             charToDraw = currentData.details[0].char; // Draw the first character of the set
+             charToDraw = currentData.details[0].char; 
         } else {
              charToDraw = currentData.phrase.charAt(0);
         }
 
-        // Save current context state
         ctx.save();
         
-        // Clear only if needed, but usually we call this after clearRect
-        // ctx.clearRect(0, 0, canvas.width, canvas.height); // Don't clear here, assume cleared before
+        // Calculate font size relative to canvas width
+        // Use logic width (canvas.width / dpr)
+        const dpr = window.devicePixelRatio || 1;
+        const logicWidth = canvas.width / dpr;
+        const logicHeight = canvas.height / dpr;
+        const fontSize = Math.min(logicWidth, logicHeight) * 0.7; // 70% of smaller dimension
 
-        ctx.font = `200px ${getFontVariable(currentCharset).replace('var(', '').replace(')', '')}, sans-serif`;
+        ctx.font = `${fontSize}px ${getFontVariable(currentCharset).replace('var(', '').replace(')', '')}, sans-serif`;
         ctx.fillStyle = 'rgba(200, 200, 200, 0.3)'; // Light gray, semi-transparent
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
         
-        // Use logic coordinates (since we scaled context)
-        const width = canvas.width / (window.devicePixelRatio || 1);
-        const height = canvas.height / (window.devicePixelRatio || 1);
-        
-        ctx.fillText(charToDraw, width / 2, height / 2);
+        ctx.fillText(charToDraw, logicWidth / 2, logicHeight / 2 + (fontSize * 0.05)); // Slight offset for visual center
         
         ctx.restore();
     }
     
     function clearAndDrawGuide() {
         if (!ctx) return;
-        const width = canvas.width; // Actual pixel width
-        const height = canvas.height; // Actual pixel height
-        // Clear using pixel dimensions (clearing transforms doesn't matter for clearRect usually, but safer)
+        const width = canvas.width; 
+        const height = canvas.height; 
+        
         ctx.save();
-        ctx.setTransform(1, 0, 0, 1, 0, 0); // Reset transform to clear full pixel buffer
+        ctx.setTransform(1, 0, 0, 1, 0, 0); 
         ctx.clearRect(0, 0, width, height);
         ctx.restore();
         
@@ -349,6 +354,12 @@ async function handleIndexPage() {
             updateCanvasColor(); // Update canvas stroke color
         });
     }
+    
+    // Listen for resize events
+    window.addEventListener('resize', () => {
+        // Debounce slightly or just call
+        window.requestAnimationFrame(updateCanvasSize);
+    });
 
     function renderCharacterDetails(details) {
         if (!detailsContainer) return; 
@@ -496,16 +507,8 @@ async function handleIndexPage() {
         togglePracticeBtn.addEventListener('click', () => {
             practiceContainer.classList.toggle('hidden');
             if (!practiceContainer.classList.contains('hidden')) {
-                 // Ensure canvas is sized correctly when shown
-                 const dpr = window.devicePixelRatio || 1;
-                 const rect = canvas.getBoundingClientRect();
-                 if (canvas.width !== rect.width * dpr) {
-                    canvas.width = rect.width * dpr;
-                    canvas.height = rect.height * dpr;
-                    ctx.scale(dpr, dpr);
-                 }
-                 updateCanvasColor();
-                 clearAndDrawGuide();
+                 // Force update size immediately when shown
+                 updateCanvasSize();
             }
         });
     }

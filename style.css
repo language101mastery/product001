@@ -338,6 +338,10 @@ h1 {
 }
 
 #practice-canvas {
+    width: 100%; /* 너비를 부모 요소에 맞춤 */
+    max-width: 500px; /* 최대 너비 제한 */
+    height: auto; /* 높이 자동 조절 */
+    aspect-ratio: 1 / 1; /* 정사각형 비율 유지 */
     border: 2px dashed var(--button-border);
     border-radius: 10px;
     background-color: var(--body-background); /* Slight contrast */
@@ -687,5 +691,9 @@ h1 {
   .main-nav li a {
     font-size: 1rem;
     padding: 0.5rem 0.75rem;
+  }
+  
+  .canvas-wrapper {
+      padding: 0.5rem; /* 모바일에서 패딩 줄임 */
   }
 }
