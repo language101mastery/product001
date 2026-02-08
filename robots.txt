@@ -1,0 +1,27 @@
+# robots.txt for Language 101 Mastery - Cheonjamun Learning Platform
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /1000.html
+Allow: /blog.html
+Allow: /post.html
+Allow: /privacy.html
+Allow: /terms.html
+Allow: /style.css
+Allow: /main.js
+Allow: /js/
+Allow: /locales/
+Allow: /images/
+Allow: /data/
+
+Disallow: /firebase-debug.log
+Disallow: /.git/
+Disallow: /.idx/
+Disallow: /.vscode/
+
+# Sitemap location
+Sitemap: https://www.language101mastery.com/sitemap.xml
+
+# Crawl-delay (optional, adjust as needed)
+Crawl-delay: 1

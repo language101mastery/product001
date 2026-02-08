@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.language101mastery.com/</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.language101mastery.com/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.language101mastery.com/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.language101mastery.com/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.language101mastery.com/?lang=ja"/>
+  </url>
+  
+  <!-- 1000 Characters Learning Page -->
+  <url>
+    <loc>https://www.language101mastery.com/1000.html</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.language101mastery.com/1000.html?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.language101mastery.com/1000.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.language101mastery.com/1000.html?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.language101mastery.com/1000.html?lang=ja"/>
+  </url>
+  
+  <!-- Blog Page -->
+  <url>
+    <loc>https://www.language101mastery.com/blog.html</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.language101mastery.com/blog.html?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.language101mastery.com/blog.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.language101mastery.com/blog.html?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.language101mastery.com/blog.html?lang=ja"/>
+  </url>
+  
+  <!-- Blog Post Page -->
+  <url>
+    <loc>https://www.language101mastery.com/post.html</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- About Page -->
+  <url>
+    <loc>https://www.language101mastery.com/about.html</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.language101mastery.com/about.html?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.language101mastery.com/about.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.language101mastery.com/about.html?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.language101mastery.com/about.html?lang=ja"/>
+  </url>
+  
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://www.language101mastery.com/privacy.html</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <!-- Terms of Service -->
+  <url>
+    <loc>https://www.language101mastery.com/terms.html</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+</urlset>
